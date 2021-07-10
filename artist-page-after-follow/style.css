@@ -1,0 +1,204 @@
+/************ STYLE & UTILITIES ***********/
+/******************************************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0f111c;                
+    color: white;
+}
+.dark-gradient {
+    background: linear-gradient(.75turn, #232537, #141622);
+}            
+.border-radius {
+    border-radius: 16px;
+}
+.letter-spacing {
+    letter-spacing: .05rem;
+}
+.font-200 {
+    font-weight: 200;
+}
+.font-300 {
+    font-weight: 300;
+}
+.font-400 {
+    font-weight: 400;
+}
+.font-500 {
+    font-weight: 500;
+}
+.light-grey {
+    color: #d8d8d8;
+}
+
+            
+button {
+    width: 100%;
+    padding: 5% 0;
+    border-radius: .8em;
+    margin: 5.5% 0;
+    border: none;
+    background: linear-gradient(180deg,#587adc,#395eca);                
+}
+button span {
+    color:#ffffff;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: .1em;
+}
+
+
+
+/******** FLEXBOX AND GRID SYSTEM  ********/
+/******************************************/            
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.j-c-space-between {
+    justify-content: space-between;
+}
+.j-c-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.overflow-x {
+    overflow-x: auto;
+}
+/*****//*****//*****/
+section {
+    margin: 10% 0 24% 0;
+}
+.container {
+    padding-bottom: 24px;
+}
+/*****//*****//*****/
+.description p {
+    font-size: .9rem;
+    margin: 0 0 8% 0;
+}
+.description h4 {
+    font-size: 1.4rem;
+    margin: 0 0 1% 0;
+}
+/*****//*****//*****/
+.padding-m {
+    padding: 6% 8%;
+}
+.padding-lg {
+    padding: 8% 8%;
+}
+.m-right {
+    margin-right: 4%;
+}
+/*****//*****//*****/
+            
+
+/************* PRIZES SECTION *************/
+/******************************************/
+.prize {
+    align-items: stretch;
+    width: 90%;
+    flex-shrink: 0;           
+}
+.prize-carousel {
+    margin-left: -7.5%;
+    padding: 0 7.5%;
+    width: 115%;
+}
+.prize p {
+    color: #888B9A;
+    font-size: .8rem;
+}
+.prize h5 {
+    font-size: 1.4rem;
+    margin: 15% 0 2% 0;
+}
+.prize h6 {
+    font-size: 1.1rem;
+    margin: 8% 0 0 0;
+}
+
+/******************* RANK *****************/
+/******************************************/
+.rank-avatar {
+    height: 48px;
+    width: 48px;
+    border-radius: 200px;
+    background-color: pink;
+}
+
+/********** INVITE FRIEND SECTION *********/
+/******************************************/            
+.subtitle-wrapper {
+    color: #888B9A;
+    font-size: .8rem;
+    /* width: 104%; */
+}            
+
+/**************** APP BAR *****************/
+/******************************************/ 
+.app-bar-area {
+    width: 100%;
+    height: 64px;
+    background-color: #0f111c;
+    position: fixed;
+    bottom: 0;
+}
+.app-bar {                
+    width: 85%;
+}
+.app-bar a {
+    max-height: 36px;
+    max-width: 36px;
+}            
+
+/******************************************/
+/************** MEDIA QUERIES *************/
+/******************************************/
+@media (max-width: 576px){
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 55%;
+        margin: auto;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 45%;
+        margin: auto;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        width: 35%;
+        margin: auto;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 30%;
+        margin: auto;
+    }
+}
