@@ -10,6 +10,10 @@ body {
     background-color: #0f111c;                
     color: white;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .dark-gradient {
     background: linear-gradient(.75turn, #232537, #141622);
 }            
