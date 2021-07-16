@@ -14,8 +14,17 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.dark-gradient {
+.grey-500 {
+    color: #4D4D4D;
+}
+.bg-dark-gradient {
     background: linear-gradient(.75turn, #232537, #141622);
+}
+.bg-dark-soft {
+    background-color: #141622;
+}
+.bg-blue-gradient {
+    background: linear-gradient(180deg,#587adc,#395eca);
 }            
 .border-radius {
     border-radius: 16px;
@@ -45,8 +54,7 @@ button {
     padding: 5% 0;
     border-radius: .8em;
     margin: 5.5% 0;
-    border: none;
-    background: linear-gradient(180deg,#587adc,#395eca);                
+    border: none;                
 }
 button span {
     color:#ffffff;
