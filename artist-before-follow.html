@@ -3,70 +3,70 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Midly Artist Page After Follow</title>
+        <title>Artist Page Before Follow</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style-fan-v1.css">
     </head>
     <body>
-        <div class="top-bar-area d-flex-row j-c-center">
-            <div class="top-bar d-flex-row align-items-center">
-                <a class="d-flex-row align-items-center" href="#">
+        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white">
+            <div class="container d-flex-row align-items-center">
+                <a href="#">
                     <img src="assets/icon-arrowleft.svg" alt="BACK">
                 </a>
             </div>
-        </div>
+        </nav>
 
         <div id="header">
             <div class="overlay"></div>
             <div class="container">
                 <div class="artist-header d-flex-row align-items-center">
                     <div class="artist-avatar">
-                        <img class="verified-icon" src="assets/icon-verified-artist.svg"></img>
+                        <img class="verified-icon" src="assets/icon-verified-artist.svg" alt="Verified">
                     </div>
                     <div class="d-flex-column j-c-start">
-                        <h5 class="font-500">Calcutta</h5>
-                        <span class="font-300 light-grey letter-spacing">211K followers</span>
+                        <h5 class="f-w-500">Calcutta</h5>
+                        <span class="f-w-300 grey-200 letter-spacing-1">211K followers</span>
                     </div>                    
                 </div>
             </div>              
         </div>
         
-        <div class="container">
+        <div class="container p-b-24">
             <div id="sub-header">
-                <p class="font-200 light-grey letter-spacing">Segui l'artista e guadagna un punto in classifica per ogni suo brano che ascolti su Spotify!</p>
+                <p class="fsize-xxs-2 f-w-200 grey-200 letter-spacing-1">Segui l'artista e guadagna un punto in classifica per ogni suo brano che ascolti su Spotify!</p>
                 <a href="artist-after-follow.html">
                     <button class="bg-blue-gradient">
-                        <span>SEGUI</span>                        
+                        <span class="fsize-xxs-3 f-w-500 white letter-spacing-1">Segui</span>                        
                     </button>
                 </a>
             </div>
 
-            <section id="prizes">
-                <div class="description">
-                    <h4 class="letter-spacing font-500">Premi</h4>
-                    <p class="font-200 light-grey letter-spacing">Ecco i premi messi in palio dall’artista questo mese!</p>
+            <section id="prizes" class="m-t-10">
+                <div class="m-b-8">
+                    <h4 class="fsize-xxs-5 m-b-1 letter-spacing-2 f-w-500">Premi</h4>
+                    <p class="fsize-xxs-2 f-w-200 grey-200 letter-spacing-1">Ecco i premi messi in palio dall’artista questo mese!</p>
                 </div>
                 <div class="prize-carousel d-flex-row overflow-x">
-                    <div class="prize d-flex-column bg-dark-gradient padding-m border-radius j-c-space-between m-right">
-                        <h6 class="letter-spacing font-300">1° classificato</h6>
+                    <div class="prize d-flex-column bg-dark-gradient padding-m border-radius-16 j-c-space-between m-r-4">
+                        <h6 class="fsize-xxs-5 letter-spacing-1 f-w-300">1° classificato</h6>
                         <div class="d-flex-column">
-                            <h5 class="font-400">Una gita in studio</h5>
-                            <p>Non te lo aspettavi eh?! Vieni a trovarci in studio di registrazione!</p>
+                            <h5 class="fsize-xxs-6 f-w-400">Una gita in studio</h5>
+                            <p class="fsize-xxs-1 grey-300 letter-spacing-1">Non te lo aspettavi eh?! Vieni a trovarci in studio di registrazione!</p>
                         </div>
                     </div>
-                    <div class="prize d-flex-column bg-dark-gradient padding-m border-radius j-c-space-between m-right">
-                        <h6 class="letter-spacing font-300">2° classificato</h6>
+                    <div class="prize d-flex-column bg-dark-gradient padding-m border-radius-16 j-c-space-between m-r-4">
+                        <h6 class="fsize-xxs-5 letter-spacing-1 f-w-300">2° classificato</h6>
                         <div class="d-flex-column">
-                            <h5 class="font-400">Maglietta firmata</h5>
-                            <p>Una maglietta limited edition firmata a mano da me!</p>
+                            <h5 class="fsize-xxs-6 f-w-400">Maglietta firmata</h5>
+                            <p class="fsize-xxs-1 grey-300 letter-spacing-1">Una maglietta limited edition firmata a mano da me!</p>
                         </div>
                     </div>
-                    <div class="prize d-flex-column bg-dark-gradient padding-m border-radius j-c-space-between">
-                        <h6 class="letter-spacing font-300">3° classificato</h6>
+                    <div class="prize d-flex-column bg-dark-gradient padding-m border-radius-16 j-c-space-between">
+                        <h6 class="fsize-xxs-5 letter-spacing-1 f-w-300">3° classificato</h6>
                         <div class="d-flex-column">
-                            <h5 class="font-400">Nome del premio</h5>
-                            <p>Nel prossimo concerto avraia ccesso al backstage per tutta la durata dello show!</p>
+                            <h5 class="fsize-xxs-6 f-w-400">Nome del premio</h5>
+                            <p class="fsize-xxs-1 grey-300 letter-spacing-1">Nel prossimo concerto avrai accesso al backstage per tutta la durata dello show!</p>
                         </div>
                     </div>
                 </div>
@@ -74,15 +74,15 @@
         </div>            
         
         <div class="app-bar-area d-flex-row j-c-center">            
-            <div class="app-bar d-flex-row align-items-center j-c-space-between">                
+            <div class="container d-flex-row align-items-center j-c-space-between">                
                 <a href="">
-                    <img src="assets/icon-search-inactive.svg" alt="">
+                    <img src="assets/icon-search-inactive.svg" alt="Search">
                 </a>
                 <a href="">
-                    <img src="assets/icon-rankings-active.svg" alt="">
+                    <img src="assets/icon-rankings-active.svg" alt="Ranks">
                 </a>
                 <a href="profile.html">
-                    <img src="assets/icon-profile-inactive.svg" alt="">
+                    <img src="assets/icon-profile-inactive.svg" alt="Profile">
                 </a>                
             </div>
         </div>  

@@ -3,91 +3,84 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Midly Artist Page After Follow</title>
+        <title>Fan Profile</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style-fan-v1.css">
     </head>
     <body>
-        <div class="top-bar-area-relative d-flex-row j-c-center">
-            <div class="top-bar d-flex-row j-c-center align-items-center">
+        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white">
+            <div class="container d-flex-row align-items-center j-c-center">
                 <a href="#">
                     <img src="assets/logo.svg" alt="MIDLY">
                 </a>
             </div>
-        </div>
+        </nav>
 
-        <div class="container">
+        <div class="container p-b-24">
             <div id="page-title">
                 <h1>Profilo</h1>
-                <p class="letter-spacing light-grey font-200">La tua pagina profilo e tutte le impostazioni.</p>
+                <p class="fsize-xxs-2 f-w-200 grey-200 letter-spacing-1">La tua pagina profilo e le impostazioni</p>
             </div>
 
             <div class="fan-header d-flex-row align-items-center">
-                <div class="fan-avatar"></div>
+                <div class="m-r-4 fan-avatar"></div>
                 <div class="d-flex-column j-c-start">
-                    <h5 class="font-500">Daniel</h5>
-                    <span class="font-300 light-grey letter-spacing">Member since yesterday</span>
+                    <h5 class="fsize-xxs-5 f-w-500">Daniel</h5>
+                    <span class="fsize-xxs-3 f-w-300 grey-200 letter-spacing-1">Member since yesterday</span>
                 </div>                    
             </div>
 
-            <section id="social-accounts">
-                <h4 class="font-500 letter-spacing text-h4 m-bottom-5">I tuoi social musicali</h4>
-                <div class="d-flex-row social-accounts-wrapper">
-                    <div id="spotify" class="social-card bg-dark-gradient-radial border-radius d-flex-column j-c-center align-items-center">
-                        <img class="social-logo" src="assets/spotify-logo.svg"></img>
-                        <span class="bg-blue-gradient font-200">Connetti</span>
-                    </div>
-                    <div id="youtube" class="social-card bg-dark-gradient-radial border-radius d-flex-column j-c-center align-items-center">
-                        <img class="social-logo" src="assets/youtube-logo.svg"></img>
-                        <span class="bg-blue-gradient font-200">Cooming soon</span>                    
-                    </div>
+            <section id="social-accounts" class="m-t-10">
+                <h4 class="fsize-xxs-5 m-b-4 letter-spacing-2 f-w-500">Il tuo Spotify</h4>
+                <div id="spotify" class="w-100 social-card bg-dark-gradient-radial border-radius-16 d-flex-column j-c-center align-items-center">
+                    <img class="social-logo" src="assets/spotify-logo.svg" alt="Spotify">
+                    <span class="bg-blue-gradient fsize-xxs-2 f-w-200">Connetti</span>
                 </div>
             </section>
 
-            <section id="profile-setting">
-                <h4 class="font-500 letter-spacing text-h4 m-bottom-5">Impostazioni</h4>
+            <section id="profile-setting" class="m-t-24">
+                <h4 class="fsize-xxs-5 m-b-4 letter-spacing-2 f-w-500">Impostazioni</h4>
                 <div class="d-flex-column">
                     <a class="d-flex-row j-c-space-between setting-item" href="#">
                         <div class="d-flex-row align-items-center w-100">
-                            <img class="m-right" src="assets/icon-settings.svg" alt="SETTINGS">
-                            <h5 class="text-h5 font-300 letter-spacing">Informazioni personali</h5>
+                            <img class="m-r-4" src="assets/icon-settings.svg" alt="SETTINGS">
+                            <h5 class="fsize-xxs-3 f-w-300 letter-spacing-1">Informazioni personali</h5>
                         </div>
                         <img src="assets/icon-arrowright.svg" alt="">
                     </a>
                     <a class="d-flex-row j-c-space-between setting-item" href="#">
                         <div class="d-flex-row align-items-center w-100">
-                            <img class="m-right" src="assets/icon-faq.svg" alt="FAQ">
-                            <h5 class="text-h5 font-300 letter-spacing">FAQ</h5>
+                            <img class="m-r-4" src="assets/icon-faq.svg" alt="FAQ">
+                            <h5 class="fsize-xxs-3 f-w-300 letter-spacing-1">FAQ</h5>
                         </div>
-                        <img src="assets/icon-arrowright.svg" alt="">
+                        <img src="assets/icon-arrowright.svg" alt="Go right">
                     </a>
                     <a class="d-flex-row j-c-space-between setting-item" href="#">
                         <div class="d-flex-row align-items-center w-100">
-                            <img class="m-right" src="assets/icon-terms.svg" alt="TERMS">
-                            <h5 class="text-h5 font-300 letter-spacing">Termini e condizioni</h5>
+                            <img class="m-r-4" src="assets/icon-terms.svg" alt="TERMS">
+                            <h5 class="fsize-xxs-3 f-w-300 letter-spacing-1">Termini e condizioni</h5>
                         </div>
-                        <img src="assets/icon-arrowright.svg" alt="">
+                        <img src="assets/icon-arrowright.svg" alt="Go Right">
                     </a>
                 </div>
             </section>
             
-            <div id="copyright">
-                <span class="light-grey font-200 text-caption">© Mydly 2021</span>
-            </div>
-
+            <section id="copyright" class="t-align-center m-t-5 m-b-2">
+                <span class="grey-300 fsize-xxs-1">© Mydly 2021</span>
+            </section>
         </div>            
         
         <div class="app-bar-area d-flex-row j-c-center">            
-            <div class="app-bar d-flex-row align-items-center j-c-space-between">                
+            <div class="container d-flex-row align-items-center j-c-space-between">                
                 <a href="">
-                    <img src="assets/icon-search-inactive.svg" alt="">
+                    <img src="assets/icon-search-inactive.svg" alt="Search">
                 </a>
                 <a href="">
-                    <img src="assets/icon-rankings-inactive.svg" alt="">
+                    <img src="assets/icon-rankings-inactive.svg" alt="Ranks">
                 </a>
                 <a href="profile.html">
-                    <img src="assets/icon-profile-active.svg" alt="">
+                    <img src="assets/icon-profile-active.svg" alt="Profile">
                 </a>                
             </div>
         </div>  
