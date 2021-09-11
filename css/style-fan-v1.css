@@ -299,11 +299,24 @@ nav .container {
 /**************** APP BAR *****************/
 /******************************************/ 
 .app-bar-area {
-    width: 100%;
-    height: 64px;
-    background-color: #0f111c;
+    width: 100%;    
+    height: 72px;
     position: fixed;
     bottom: -2px;
+    border-radius: 24px 24px 0 0;    
+    background-color: #0f111c;
+    box-shadow: 0 12px 12px 0 rgba(11, 12, 20, 0.6), 0 -12px 12px 0 rgba(11, 12, 20, 0.6);   
+}
+.app-bar-area-suspended {
+    width: 85%;    
+    height: 72px;
+    position: fixed;    
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 24px;    
+    background-color: #0f111c;
+    box-shadow: 0 12px 12px 0 rgba(11, 12, 20, 0.6), 0 -12px 12px 0 rgba(11, 12, 20, 0.6);
 }
 .app-bar {                
     width: 85%;
