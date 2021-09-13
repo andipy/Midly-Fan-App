@@ -40,12 +40,7 @@ input::placeholder {
     color: #707070;
     letter-spacing: .1em;
 }
-.w-100 {
-    width: 100%;
-}
-.h-100 {
-    height: 100%;
-}
+
 
 /******************************************/
 /************ BACKGROUND COLORS ***********/
@@ -63,12 +58,21 @@ input::placeholder {
 .bg-green-spotify {
     background-color: #1DB954;
 }
+.bg-dark-soft-transp75 {
+    background-color: rgba(15, 17, 28, .75);
+}
 /**************** GRADIENT ****************/
 .bg-dark-gradient {
     background: linear-gradient(.75turn, #232537, #141622);
 }
 .bg-dark-gradient-radial {
     background: radial-gradient(#232537, #141622);
+}
+.bg-dark-overlay-header {
+    background: linear-gradient(0turn, #0F111C, #0f111c00);
+}
+.bg-dark-overlay-card {
+    background: linear-gradient(180deg,rgba(10,10,10,0) 2.49%,rgba(10,10,10,.5) 39.64%,#0a0a0a);
 }
 .bg-blue-gradient {
     background: linear-gradient(180deg,#587adc,#395eca);
@@ -125,6 +129,12 @@ input::placeholder {
 .black {
     color: #000000;
 }
+.blue-300 {
+    color: #7aa9ff;
+}
+.blue-400 {
+    color: #395eca;
+}
 /************** TEXT WEIGHT **************/
 .f-w-200 {
     font-weight: 200;
@@ -141,6 +151,11 @@ input::placeholder {
 .f-w-800 {
     font-weight: 800;
 }
+/************* TEXT DECORATION ************/
+.text-underline {
+    text-decoration: underline;
+}
+
 /************* LETTER SPACING *************/
 .letter-spacing-1 {
     letter-spacing: .05rem;
@@ -187,6 +202,9 @@ input::placeholder {
 .overflow-x {
     overflow-x: auto;
 }
+.overflow-hidden {
+    overflow-x: hidden;
+}
 .position-relative {
     position: relative;
 }
@@ -195,6 +213,18 @@ input::placeholder {
 }
 .container {
     margin: 0 auto;
+}
+.z-index-1 {
+    z-index: 1;
+}
+.z-index-2 {
+    z-index: 2;
+}
+.z-index-3 {
+    z-index: 3;
+}
+.z-index-4 {
+    z-index: 4;
 }
 .z-index-max {
     z-index: 999;
@@ -208,18 +238,46 @@ input::placeholder {
 .right-0 {
     right: 0;
 }
+.w-100 {
+    width: 100%;
+}
+.w-70 {
+    width: 70%;
+}
+.h-100 {
+    height: 100%;
+}
+.carousel {
+    margin-left: -7.5%;
+    padding: 0 7.5%;
+    width: 115%;
+}
 
 /******************************************/
 /*********** ARTIST PAGE HEADER ***********/
 /******************************************/
-.overlay {
+.overlay-header {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0turn, #0F111C, #0f111c00);
     z-index: 1;
+}
+.overlay-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: 1;
+}
+.overlay-card-followed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .artist-avatar-wrapper {
     width: 72px;
@@ -252,25 +310,27 @@ input::placeholder {
     height: 48px;
 }
 
+/******************************************/
+/*************** ARTIST CARD **************/
+/******************************************/
+.artist-card {
+    width: 50vw;
+    height: 38vh;
+}
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/******************************************/
 /************* PRIZE SECTION *************/
 /******************************************/
 .prize {
     align-items: stretch;
-    width: 90%;
+    width: 80vw;
     flex-shrink: 0;
 }
-.prize-carousel {
-    margin-left: -7.5%;
-    padding: 0 7.5%;
-    width: 115%;
-}
-.prize h5 {
-    margin: 15% 0 2% 0;
-}
-.prize h6 {
-    margin: 8% 0 0 0;
-}
 
+/******************************************/
 /*************** RANK SECTION *************/
 /******************************************/
 .rank-avatar {
@@ -301,6 +361,7 @@ input::placeholder {
     background-color: lawngreen;
 }
 
+/******************************************/
 /**************** TOP BAR *****************/
 /******************************************/
 nav .container {
@@ -310,12 +371,10 @@ nav .container {
     width: 100%;
     position: absolute;
     height: 5rem;
-    z-index: 999;
 }
 .top-bar-area-block {
     width: 100%;
     height: 5rem;
-    z-index: 999;
 }
 .topbar-icon-left {
     position: absolute;
@@ -326,6 +385,7 @@ nav .container {
     right: 0;
 }
 
+/******************************************/ 
 /**************** APP BAR *****************/
 /******************************************/ 
 .app-bar-area {
@@ -431,6 +491,12 @@ nav .container {
     }
     .mr-xs-4 {
         margin-right: 4%;
+    }
+    .mr-xs-5 {
+        margin-right: 5%;
+    }
+    .mr-xs-6 {
+        margin-right: 6%;
     }
     .mr-xs-10 {
         margin-right: 10%;
