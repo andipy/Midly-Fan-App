@@ -201,6 +201,7 @@ input::placeholder {
 }
 .overflow-x {
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .overflow-hidden {
     overflow-x: hidden;
@@ -315,7 +316,7 @@ input::placeholder {
 /******************************************/
 .artist-card {
     width: 50vw;
-    height: 100%;
+    height: 38vh;
 }
 .object-fit-cover {
     object-fit: cover;
