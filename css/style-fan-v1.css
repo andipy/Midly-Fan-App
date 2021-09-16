@@ -37,8 +37,13 @@ input {
     text-indent: 20px;
 }
 input::placeholder {
-    color: #707070;
+    color: #8d8d8d;
     letter-spacing: .1em;
+}
+input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    border-radius: 16px;
 }
 
 
@@ -129,6 +134,9 @@ input::placeholder {
 .black {
     color: #000000;
 }
+.blue-200 {
+    color: #8DCFFF;
+}
 .blue-300 {
     color: #7aa9ff;
 }
@@ -147,6 +155,12 @@ input::placeholder {
 }
 .f-w-500 {
     font-weight: 500;
+}
+.f-w-600 {
+    font-weight: 600;
+}
+.f-w-700 {
+    font-weight: 700;
 }
 .f-w-800 {
     font-weight: 800;
@@ -229,6 +243,9 @@ input::placeholder {
 }
 .z-index-max {
     z-index: 999;
+}
+.bottom-0 {
+    bottom: 0;
 }
 .bottom-5 {
     bottom: 5%;
@@ -443,6 +460,9 @@ nav .container {
     .mt-xs-5 {
         margin-top: 5%;
     }
+    .mt-xs-6 {
+        margin-top: 6%;
+    }
     .mt-xs-8 {
         margin-top: 8%;
     }
@@ -535,6 +555,9 @@ nav .container {
     .pb-xs-8 {
         padding-bottom: 8%;
     }
+    .pb-xs-12 {
+        padding-bottom: 12%;
+    }
     .pb-xs-24 {
         padding-bottom: 24%;
     }
@@ -554,6 +577,9 @@ nav .container {
     /* PADDING LEFT */
     .pl-xs-4 {
         padding-left: 4%;
+    }
+    .pl-xs-6 {
+        padding-left: 6%;
     }
     .pl-xs-8 {
         padding-left: 8%;

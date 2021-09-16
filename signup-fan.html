@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style-fan-v1.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container pb-xs-12">
             <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
                 <div class="container d-flex-row align-items-center j-c-center">
                     <a href="#">
@@ -19,35 +19,51 @@
             </nav>
 
             <div>
-                <h2 class="fsize-xs-9 mb-xs-1 white">Benvenuta!</h2>
-                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Registrati a Midly con mail e password!</p>
+                <h2 class="fsize-xs-9 mb-xs-1 white">Crea un account!</h2>
+                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Crea il tuo account su Midly con mail e password.</p>
             </div>
+
             <div>
                 <form action="POST">
                     <div class="mt-xs-8 mb-xs-8">
-                        <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-nickname">NICKNAME</label>
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-nickname">NICKNAME</label>
                         <input id="input-nickname" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="Crea il tuo nickname">
                     </div>
                     <div class="mt-xs-8 mb-xs-8">
-                        <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-email">EMAIL</label>
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-email">EMAIL</label>
                         <input id="input-email" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="email" placeholder="La tua email">
                     </div>
                     <div class="mt-xs-8 mb-xs-8">
-                        <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-create-password">PASSWORD</label>
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-create-password">PASSWORD</label>
                         <input id="input-create-password" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="password" placeholder="Crea una password">
                     </div>
                     <div class="mt-xs-8 mb-xs-8">
-                        <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-confirm-password">CONFERMA PASSWORD</label>
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-confirm-password">CONFERMA PASSWORD</label>
                         <input id="input-confirm-password" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="password" placeholder="Conferma la password">
                     </div>
-                    <div>
-                        <input type="checkbox" name="" id="">
-                        <p>Accetto i <span><a href="">Termini e le condizioni</a></span></p>
+
+                    <div class="d-flex-row j-c-start align-items-center mt-xs-4">
+                        <input class="mr-xs-4 no-shrink" type="checkbox" name="" id="">
+                        <p class="fsize-xs-1 grey-400">Accetto i <a class="grey-200 text-underline" href="">Termini e le condizioni</a> e la <a class="grey-200 text-underline" href="">Privacy policy</a></p>
                     </div>
-                    <button class="bg-blue-gradient">
-                        <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Crea account</span>                        
-                    </button>                    
+                    <div class="d-flex-row j-c-start align-items-center mt-xs-4">
+                        <input class="mr-xs-4 no-shrink" type="checkbox" name="" id="">
+                        <p class="fsize-xs-1 grey-400">Acconsento al trattamento dei miei dati per finalità di marketing e promozionale.</p>
+                    </div>
+                    <a href="hooray.html">
+                        <button class="bg-blue-gradient" disabled="false">
+                            <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Registrati</span>                        
+                        </button>
+                    </a>
+                    <!-- <button class="bg-dark-soft" disabled="true">
+                        <span class="fsize-xs-3 f-w-400 grey-500 letter-spacing-1">Registrati</span>                        
+                    </button> -->
                 </form>
+            </div>
+
+            <div class="d-flex-row align-items-center j-c-center mt-xs-6">
+                <p class="fsize-xs-2 grey-400 letter-spacing-1 mr-xs-2">Hai già un account?</p>
+                <a class="fsize-xs-2 grey-200 letter-spacing-1 text-underline" href="login-fan.html">Accedi qui</a>
             </div>
         </div>        
     </body>
