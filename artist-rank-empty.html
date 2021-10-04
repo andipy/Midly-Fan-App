@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Artist Page After Follow</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style-fan-v1.css">
+    </head>
+    <body>
+        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center">
+                <a href="artist-after-follow.html">
+                    <img src="assets/icon-arrowleft.svg" alt="BACK">
+                </a>
+            </div>
+        </nav>
+
+        <header class="position-relative">            
+            <div>
+                <img class="w-100" src="assets/calcutta.png" alt="{{artist-name}}">
+                <div class="overlay-header bg-dark-overlay-header"></div>
+            </div>
+
+            <div class="container">
+                <div class="position-absolute d-flex-row align-items-center bottom-5 z-index-2">
+                    <div class="artist-avatar-wrapper position-relative">
+                        <img class="artist-avatar border-radius-100" src="assets/calcutta.png">                       
+                        <img class="artist-avatar-verified-icon" src="assets/icon-verified-artist.svg" alt="Verified">
+                    </div>
+                    <div class="d-flex-column no-shrink j-c-start ml-xs-8">
+                        <h5 class="fsize-xs-5 f-w-500">Calcutta</h5>
+                        <span class="fsize-xs-1 f-w-300 grey-200 letter-spacing-1">211K followers</span>
+                    </div>                    
+                </div>
+            </div>
+        </header>
+        
+        <div class="container pb-xs-24">
+            <section id="rank" class="mt-xs-10">
+                <div class="mb-xs-8">
+                    <h4 class="fsize-xs-5 mb-xs-1 letter-spacing-2 f-w-500">Classifica</h4>
+                    <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Scala la classifica mensile e vinci i premi messi in palio dall'artista!</p>
+                </div>
+
+                <div id="rank-empty-state" class="d-flex-column align-items-center j-c-center no-shrink mt-xs-12">
+                    <img src="assets/illustration-empty-rank.svg" alt="NO ONE IS HERE!">
+                    <h4 class="fsize-xs-5 mb-xs-4 letter-spacing-2 f-w-500 mt-xs-6 t-align-center">Non c’è nessuno qui!</h4>
+                    <p class="fsize-xs-2 f-w-300 grey-200 letter-spacing-1 mt-xs-2 t-align-center w-80">Guadagna almeno un punto per essere il primo ad entrare nella classifica di questo mese dell’artista!</p>                  
+                </div>
+            </section>
+        </div>            
+        
+        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+            <div class="container d-flex-row align-items-center j-c-space-between">                
+                <a href="search.html">
+                    <img src="assets/icon-search-inactive.svg" alt="Search">
+                </a>
+                <a href="your-ranks-full.html">
+                    <img src="assets/icon-rankings-active.svg" alt="Ranks">
+                </a>
+                <a href="profile.html">
+                    <img src="assets/icon-profile-inactive.svg" alt="Profile">
+                </a>                
+            </div>
+        </div>  
+    </body>
+</html>
