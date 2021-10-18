@@ -435,10 +435,12 @@ nav .container {
     height: 5rem;
 }
 .topbar-icon-left {
+    display: flex;
     position: absolute;
     left: 0;
 }
 .topbar-icon-right {
+    display: flex;
     position: absolute;
     right: 0;
 }
