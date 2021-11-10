@@ -24,26 +24,54 @@
             </div> -->
 
             <div>
-                <form action="POST">
+                <form>
                     <div class="mt-xs-8 mb-xs-8">
                         <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-name">EMAIL</label>
                         <input id="input-name" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="Inserisci la nuova email">
                     </div>
 
-                    <div class="container position-absolute bottom-5">
-                        <a href="#">                            
-                            <button class="bg-blue-gradient" disabled="true">
-                                <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Conferma modifiche</span>                        
-                            </button>
-                            <!-- <button class="bg-dark-soft" disabled="true">
-                                <span class="fsize-xs-3 f-w-400 grey-500 letter-spacing-1">Conferma modifiche</span>                        
-                            </button> -->
-                        </a>
+                    <div class="container position-absolute bottom-5">                      
+                        <button id="verify-email-btn" class="bg-blue-gradient" onclick="location.href=''">
+                            <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Invia email di verifica</span>                        
+                        </button>
+                        <!-- <button id="verify-email-btn" class="bg-dark-soft" disabled="true" onclick="location.href=''">
+                            <span class="fsize-xs-3 f-w-400 grey-500 letter-spacing-1">Invia email di verifica</span>                        
+                        </button> -->
                     </div>                    
                 </form>
             </div>
 
-             
-        </div>        
+            <div id="simple-modal-group" class="modal">
+                <div class="d-flex-column pl-xs-8 pr-xs-8 pt-xs-6 pb-xs-8 pl-sm-4 pr-sm-4 pt-sm-3 pb-sm-3 pl-md-4 pr-md-4 pt-md-3 pb-md-3 pl-lg-2 pr-lg-2 pt-lg-2 pb-lg-2 modal-content border-radius-1">
+                    <h4 class="fsize-xs-5 mb-xs-4 grey-1000 letter-spacing-2 f-w-500">Controlla la tua email!</h4>
+                    <p class="fsize-xs-2 f-w-400 grey-800 letter-spacing-1">Segui il link che abbiamo mandato a {{daniel.romano@gmail.com}} per confermare il tuo indirizzo email e proteggere il tuo account.<br><br>Appena verificherai l’email, diventerà ufficialmente la nuova email del tuo account Midly!</p>
+                    <div class="d-flex-column align-items-center mt-xs-8 mt-md-4">
+                        <h6 id="modal-confirm" class="fsize-xs-3 f-w-700 blue-500 letter-spacing-1 mt-xs-4 mb-xs-4">Ok!</h6>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <script>
+            //get the spotify connected card
+            var verifyEmailBtn = document.getElementById("verify-email-btn");
+
+            // get the whole modal group (overlay + actual modal content)
+            var modalGroup = document.getElementById("simple-modal-group");
+            //get the "ok!" button in the modal
+            var okBtn = document.getElementById("modal-confirm");
+
+            //function to open the modal: it changes the CSS display property value from "none" to "block"
+            function openModal(){
+                modalGroup.style.display = "block";
+            }
+            //function to close the modal: it changes the CSS display property value from "block" to "none"
+            function closeModal() {
+                modalGroup.style.display = "none";
+            }
+
+            verifyEmailBtn.addEventListener("click", openModal());
+            okBtn.addEventListener("click", closeModal);
+        </script>
     </body>
 </html>
