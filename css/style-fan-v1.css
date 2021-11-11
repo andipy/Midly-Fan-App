@@ -96,6 +96,17 @@ hr {
     to{opacity: 1}
 }
 
+.snackbar {
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.snackbar-2 {
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 
 /******************************************/
 /************ BACKGROUND COLORS ***********/
@@ -115,6 +126,9 @@ hr {
 }
 .bg-green-whatsapp {
     background-color: #25D366;
+}
+.bg-green-300 {
+    background-color: #42CD71;
 }
 .bg-dark-soft-transp75 {
     background-color: rgba(15, 17, 28, .75);
@@ -309,6 +323,9 @@ hr {
 }
 .position-absolute {
     position: absolute;
+}
+.position-fixed {
+    position: fixed;
 }
 .container {
     margin: 0 auto;
