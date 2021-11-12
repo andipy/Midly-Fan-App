@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Fan Profile</title>
+        <title>Fan Profile Spotify Connected Error Message</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style-fan-v1.css">
@@ -17,7 +17,7 @@
             </div>
         </nav>
 
-        <div id="success-message-card" class="container position-absolute z-index-max snackbar-2">
+        <div id="error-snackbar" class="container position-absolute z-index-max snackbar-2">
             <div class="d-flex-row align-items-center pl-xs-4 pr-xs-4 pt-xs-4 pb-xs-4 bg-red-300 border-radius-08">
                 <img class="mr-xs-4" src="assets/icon-error.svg" alt="ALT!">
                 <p class="fsize-xs-1 f-w-400 white letter-spacing-1 line-height-sm mr-xs-2">Questo account Spotify è già in uso da un altro profilo Midly, connettine un altro!</p>
@@ -45,10 +45,10 @@
 
             <section id="social-accounts" class="mt-xs-10 mt-lg-5">
                 <h4 class="fsize-xs-5 mb-xs-2 mb-lg-1 letter-spacing-2 f-w-500">Il tuo Spotify</h4>
-                <!-- <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1 mb-xs-4">Connetti Spotify per convertire i tuoi ascolti in punti nelle classifiche degli artisti che segui!</p> -->
-                <div id="spotify-connected" class="w-100 social-card bg-dark-gradient-radial border-radius-1 d-flex-column j-c-center align-items-center">
+                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1 mb-xs-4">Connetti Spotify per convertire i tuoi ascolti in punti nelle classifiche degli artisti che segui!</p>
+                <div id="spotify-to-connect" class="w-100 social-card bg-dark-gradient-radial border-radius-1 d-flex-column j-c-center align-items-center">
                     <img class="social-logo" src="assets/spotify-logo.svg" alt="Spotify">
-                    <span class="mt-xs-4 pt-xs-04 pb-xs-04 pr-xs-4 pl-xs-4 bg-grey-500 grey-300 fsize-xs-1 f-w-300 border-radius-100">Connesso</span>
+                    <span class="mt-xs-4 pt-xs-04 pb-xs-04 pr-xs-4 pl-xs-4 bg-green-spotify fsize-xs-1 f-w-300 border-radius-100">Connetti</span>
                 </div>
             </section>
 
@@ -139,7 +139,7 @@
                         <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Seguiti</span>
                     </div>
                 </a>
-                <a href="profile.html">
+                <a href="profile-spotify-disconnected.html">
                     <div class="d-flex-column align-items-center">
                         <img src="assets/icon-profile-active.svg" alt="Profile">
                         <span class="fsize-xs-0 f-w-300 white letter-spacing-1">Profilo</span>
@@ -149,36 +149,23 @@
         </div>
 
         <script>
-            //get the "spotify connected" card
-            var disconnectSpotify = document.getElementById("spotify-connected");
+            //get the error snackbar
+            var errorSnackbar = document.getElementById("error-snackbar");
+            //get the spotify card
+            var spotifyCard = document.getElementById("spotify-to-connect");
 
-            // get the whole modal group (overlay + actual modal content)
-            var modalGroup = document.getElementById("simple-modal-group");
-            //get the X to close the modal
-            var closeModalBtn = document.getElementById("close-modal-btn");
-            //get the "don't disconnect spotify" button in the modal
-            var cancelDisconnectionButton = document.getElementById("modal-cancel");
-            //get the "disconnect spotify" button in the modal
-            var confirmDisconnectionButton = document.getElementById("modal-confirm");
-
-            //function to open the modal: it changes the CSS display property value from "none" to "block"
-            function openModal(){
-                modalGroup.style.display = "block";
+            //function to initially hide the snackbar
+            function hideSnackbar() {
+                errorSnackbar.style.display = 'none';
             }
-            //function to close the modal with the X button: it changes the CSS display property value from "block" to "none"
-            function closeModal() {
-                modalGroup.style.display = "none";
-            }
-            //function to close the modal when click outside the moda itslef: it changes the CSS display property value from "block" to "none"
-            function outsideClick(e){
-                if ( e.target == modalGroup ) {
-                    modalGroup.style.display = "none";
-                }
+            // function to make the snackbar pop up and then automatically close
+            function showSnackbar() {
+                errorSnackbar.style.display = 'block';
+                window.setTimeout('hideSnackbar();', 3500);
             }
 
-            disconnectSpotify.addEventListener("click", openModal);
-            closeModalBtn.addEventListener("click", closeModal);
-            window.addEventListener("click", outsideClick);
+            hideSnackbar();
+            spotifyCard.addEventListener("click", showSnackbar);
         </script>
     </body>
 </html>
