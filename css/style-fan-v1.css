@@ -139,6 +139,9 @@ hr {
 .bg-red-300 {
     background-color: #FF6565;
 }
+.bg-purple-400 {
+    background-color: #D257FD;
+}
 /**************** GRADIENT ****************/
 .bg-dark-gradient {
     background: linear-gradient(.75turn, #232537, #141622);
