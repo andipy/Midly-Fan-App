@@ -143,7 +143,7 @@ hr {
     background-color: #D257FD;
 }
 .bg-purple-400-op-75 {
-    background-color: rgba(210, 87, 253, 0.75);
+    background-color: rgba(235, 87, 255, 0.75);
 }
 /**************** GRADIENT ****************/
 .bg-dark-gradient {
@@ -162,8 +162,11 @@ hr {
     background: linear-gradient(180deg,#587adc,#395eca);
 }
 .bg-purple-gradient {
-    background: linear-gradient(.75turn,#9658dc,#431379);
+    background: linear-gradient(.75turn,#D257FD,#431379);
 }
+/* .bg-purple-gradient {
+    background: linear-gradient(.75turn,#9658dc,#431379);
+} */
 
 /******************************************/
 /************** BORDER RADIUS *************/
@@ -511,6 +514,11 @@ nav .container {
     position: absolute;
     height: 5rem;
 }
+.top-bar-area-overlay-fixed {
+    width: 100%;
+    position: fixed;
+    height: 5rem;
+}
 .top-bar-area-block {
     width: 100%;
     height: 5rem;
@@ -528,12 +536,6 @@ nav .container {
 .topbar-icon-size-md {
     width: 48px;
     height: 48px;
-}
-.top-fixed-icon {
-    top: 1rem;
-}
-.right-fixed-icon {
-    right: 1.6rem;
 }
 
 /******************************************/ 
