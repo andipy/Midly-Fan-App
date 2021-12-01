@@ -372,6 +372,9 @@ hr {
 .w-70 {
     width: 70%;
 }
+.w-50 {
+    width: 50%;
+}
 .w-33 {
     width: calc(var(--container) / 3);
 }
@@ -518,6 +521,10 @@ nav .container {
     display: flex;
     position: absolute;
     right: 0;
+}
+.topbar-icon-size-md {
+    width: 48px;
+    height: 48px;
 }
 
 /******************************************/ 
