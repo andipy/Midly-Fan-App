@@ -142,6 +142,9 @@ hr {
 .bg-purple-400 {
     background-color: #D257FD;
 }
+.bg-purple-400-op-75 {
+    background-color: rgba(210, 87, 253, 0.75);
+}
 /**************** GRADIENT ****************/
 .bg-dark-gradient {
     background: linear-gradient(.75turn, #232537, #141622);
@@ -525,6 +528,12 @@ nav .container {
 .topbar-icon-size-md {
     width: 48px;
     height: 48px;
+}
+.top-fixed-icon {
+    top: 1rem;
+}
+.right-fixed-icon {
+    right: 1.6rem;
 }
 
 /******************************************/ 
