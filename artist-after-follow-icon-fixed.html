@@ -9,22 +9,18 @@
         <link rel="stylesheet" href="css/style-fan-v1.css">
     </head>
     <body>
-        <div class="top-bar-area-overlay-fixed d-flex-row align-items-center z-index-max">
-            <div class="container d-flex-row j-c-end">
-                <a href="https://www.youtube.com" target="blank">
-                    <div class="d-flex-column j-c-center topbar-icon-size-md bg-purple-400-op-75 border-radius-100">
-                        <div class="d-flex-row j-c-center align-items-center border-radius-100">
-                            <img class="w-50" src="assets/icon-shop.svg" alt="GO">
-                        </div>
-                        <div class="d-flex-row j-c-center">
-                            <span class="fsize-xs-0">Shop</span>
-                        </div>                        
-                    </div>
-                </a>
+        <div class="container d-flex-row j-c-end">
+            <div id="shop-button" class="position-fixed d-flex-column j-c-center topbar-icon-size-md bg-purple-400-op-75 border-radius-100 z-index-max">
+                <div class="d-flex-row j-c-center align-items-center border-radius-100">
+                    <img class="w-50" src="assets/icon-shop.svg" alt="GO">
+                </div>
+                <div class="d-flex-row j-c-center">
+                    <span class="fsize-xs-0">Shop</span>
+                </div>                        
             </div>
-        </div>        
+        </div>
         
-        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
+        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-4">
             <div class="container d-flex-row align-items-center j-c-center">
                 <a class="topbar-icon-left" href="fan-personal-information.html">
                     <img src="assets/icon-arrowleft.svg" alt="BACK">
@@ -53,6 +49,27 @@
         </header>
         
         <div class="container pb-xs-24 pb-lg-8">
+
+            <div id="simple-modal-group" class="modal">
+                <div class="d-flex-column pl-xs-8 pr-xs-8 pt-xs-6 pb-xs-8 pl-sm-4 pr-sm-4 pt-sm-3 pb-sm-3 pl-md-4 pr-md-4 pt-md-3 pb-md-3 pl-lg-2 pr-lg-2 pt-lg-2 pb-lg-2 modal-content border-radius-1">
+                    <h4 class="fsize-xs-5 mb-xs-4 grey-1000 letter-spacing-2 f-w-600">Ottieni punti!</h4>
+                    <p class="fsize-xs-2 f-w-400 grey-800 letter-spacing-1">Per ogni acquisto che fai sullo shop Midly dell'artista ottieni dei punti nella sua classifica 😎
+                        <br>
+                        <span class="f-w-700">🔥 Ma presta attenzione, per ottenere i punti devi seguire una regola:</span> dopo aver scelto sullo shop gli articoli da acquistare, passa dalla pagina del carrello e inserisci nell'apposito campo il tuo codice fan personale che trovi qui sotto, altrimenti non ti verrà riconosciuto alcun punto!
+                    </p>
+                    <h5 class="fsize-xs-3 mt-xs-4 mb-xs-4 grey-1000 letter-spacing-2 f-w-600">Il tuo codice fan:</h5>
+                    <div class="d-flex-row j-c-space-between align-items-center border-radius-08 bg-dark-soft pb-xs-4 pt-xs-4 pl-xs-8 pr-xs-8">
+                        <h3 class="fsize-xs-4 f-w-500 white letter-spacing-2">DANI4301</h3>
+                        <img src="assets/icon-copy.svg" alt="COPY">
+                    </div>
+                    <div class="d-flex-column align-items-center mt-xs-8 mt-md-4">
+                        <button id="modal-cancel" class="bg-blue-gradient border-radius-100">
+                            <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Vai allo shop</span>
+                        </button>
+                    </div>                    
+                </div>
+            </div>
+
             <div>
                 <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Segui l'artista e guadagna un punto in classifica per ogni suo brano che ascolti su Spotify!</p>
                 <button class="bg-dark-soft" onclick="location.href = 'artist-before-follow.html'">
@@ -150,6 +167,27 @@
                     </div>
                 </a>                
             </div>
-        </div>  
+        </div>
+
+        <script>
+            // get shop button
+            var shopButton = document.getElementById("shop-button");
+            // get the whole modal group (overlay + actual modal content)
+            var modalGroup = document.getElementById("simple-modal-group");
+            
+            //function to open the modal: it changes the CSS display property value from "none" to "block"
+            function openModal(){
+                modalGroup.style.display = "block";
+            };
+            //function to close the modal when click outside the moda itslef: it changes the CSS display property value from "block" to "none"
+            function outsideClick(e){
+                if ( e.target == modalGroup ) {
+                    modalGroup.style.display = "none";
+                }
+            };
+
+            shopButton.addEventListener("click", openModal);
+            window.addEventListener("click", outsideClick);
+        </script>
     </body>
 </html>

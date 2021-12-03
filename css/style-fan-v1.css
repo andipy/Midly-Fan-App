@@ -512,16 +512,16 @@ nav .container {
 .top-bar-area-overlay {
     width: 100%;
     position: absolute;
-    height: 5rem;
+    height: var(--top-bar-height);
 }
 .top-bar-area-overlay-fixed {
     width: 100%;
     position: fixed;
-    height: 5rem;
+    height: var(--top-bar-height);
 }
 .top-bar-area-block {
     width: 100%;
-    height: 5rem;
+    height: var(--top-bar-height);
 }
 .topbar-icon-left {
     display: flex;
@@ -536,6 +536,7 @@ nav .container {
 .topbar-icon-size-md {
     width: 48px;
     height: 48px;
+    top: calc((var(--top-bar-height)/2) - 24px);
 }
 
 /******************************************/ 
@@ -573,12 +574,7 @@ nav .container {
 /************** MEDIA QUERIES *************/
 /******************************************/
 :root {
-    --85vw: 85vw;
-    --vw70: 85vw;
-    --vw60: 85vw;
-    --vw60: 85vw;
-    --vw50: 85vw;
-    --vw40: 85vw;
+    --top-bar-height: 5rem;
 }
 @media (min-width: 0px){
     :root {
