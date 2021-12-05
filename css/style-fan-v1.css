@@ -306,7 +306,7 @@ hr {
     justify-content: space-around;
 }
 .j-c-start {
-    justify-content: start;
+    justify-content: flex-start;
 }
 .j-c-center {
     justify-content: center;
@@ -318,7 +318,7 @@ hr {
     align-items: center;
 }
 .align-items-end {
-    align-items: end;
+    align-items: flex-end;
 }
 .align-items-stretch {
     align-items: stretch;
