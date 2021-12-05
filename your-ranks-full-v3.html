@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Your Rank</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style-fan-v1.css">
+        <style>
+            .meter { 
+                height: .6rem;
+                position: relative;
+                width: calc(var(--container)/2.4);
+                overflow: hidden;
+            }
+            .meter > span {
+                display: block;
+                height: 100%;
+                position: relative;
+            }
+            .cover-img {
+                width: 120px;
+                height: 120px;
+            }
+            .height-15px {
+                height: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center j-c-center">
+                <a href="#">
+                    <img src="assets/logo.svg" alt="MIDLY">
+                </a>
+            </div>
+        </nav>
+        
+        <div class="container pb-xs-24 pb-lg-8">
+            <div id="page-title">
+                <h2>Seguiti</h2>
+                <!-- <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Le classifiche degli artisti che segui</p> -->
+            </div>
+
+            <section id="followed-artists" class="mt-xs-5 mt-lg-5">
+                <a href="artist-after-follow.html">
+                    <div class="d-flex-row align-items-center bg-dark-gradient border-radius-1 mb-xs-4 pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4">                        
+                        <img class="cover-img object-fit-cover border-radius-1" src="assets/calcutta.png" alt="{{artist-picture}}">
+
+                        <div class="d-flex-column ml-xs-8 z-index-2">
+                            <h5 class="fsize-xs-4 f-w-500 letter-spacing-1 mb-xs-8">Calcutta</h5>
+
+                            <div class="d-flex-row align-items-end j-c-space-between mb-xs-8">
+                                <div class="d-flex-column">
+                                    <p class="fsize-xs-0 grey-300 letter-spacing-1">La tua posizione</p>
+                                    <div class="d-flex-row align-items-center">
+                                        <div class="meter bg-grey-500 border-radius-100">
+                                            <span class="bg-purple-400" style="width: 25%;"></span>
+                                        </div>
+                                        <img class="ml-xs-5" src="assets/icon-gold-sm.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex-row align-items-center">
+                                <img class="mr-xs-2" src="assets/icon-gift-xs.svg" alt="">
+                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px"><span class="fsize-xs-4">3</span> premi in classifica</p>                                                               
+                            </div>
+                        </div>                        
+                    </div>
+                </a>
+
+                <a href="artist-after-follow.html">
+                    <div class="d-flex-row align-items-center bg-dark-gradient border-radius-1 mb-xs-4 pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4">                        
+                        <img class="cover-img object-fit-cover border-radius-1" src="assets/arcticmonkeys.jpg" alt="{{artist-picture}}">
+
+                        <div class="d-flex-column ml-xs-8 z-index-2 w-85">
+                            <h5 class="fsize-xs-4 f-w-500 letter-spacing-1 mb-xs-8">Arctic Monkeys</h5>
+
+                            <div class="d-flex-row align-items-end j-c-space-between mb-xs-8">
+                                <div class="d-flex-column">
+                                    <p class="fsize-xs-0 grey-300 letter-spacing-1">La tua posizione</p>
+                                    <div class="d-flex-row align-items-center">
+                                        <div class="meter bg-grey-500 border-radius-100">
+                                            <span class="bg-purple-400" style="width: 87%;"></span>
+                                        </div>
+                                        <img class="ml-xs-5" src="assets/icon-gold-sm.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex-row align-items-center">
+                                <img class="mr-xs-2" src="assets/icon-gift-xs.svg" alt="">
+                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px"><span class="fsize-xs-4">2</span> premi in classifica</p>                                                               
+                            </div>
+                        </div>                        
+                    </div>
+                </a>
+
+                <a href="search.html">
+                    <div class="d-flex-column align-items-center j-c-center bg-dark-gradient border-radius-1 z-index-2 mt-xs-10 pt-xs-6 pb-xs-6">
+                        <img class="mb-xs-1" src="assets/icon-plus.svg" alt="ADD">
+                        <h5 class="fsize-xs-3 mb-xs-2 f-w-300 letter-spacing-1">Segui altri artisti</h5>                                
+                    </div>
+                </a>
+            </section>
+
+            <section id="faq-shortcut" class="mt-xs-24 mt-lg-12">
+                <div class="mb-xs-8">
+                    <h4 class="fsize-xs-5 mb-xs-1 letter-spacing-2 f-w-500">Domande frequenti</h4>
+                    <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Vuoi sapere di più su come funziona Midly? Vai alle <a class="text-underline blue-300 f-w-400" href="">FAQ</a> e troverai tutte le risposte alle tue domande!</p>
+                </div>
+            </section>
+        </div>            
+        
+        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+            <div class="container d-flex-row align-items-center j-c-space-between">                
+                <a href="search.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="assets/icon-search-inactive.svg" alt="Search">
+                        <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Cerca</span>
+                    </div>                    
+                </a>
+                <a href="your-ranks-full.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="assets/icon-rankings-active.svg" alt="Ranks">
+                        <span class="fsize-xs-0 f-w-300 white letter-spacing-1">Seguiti</span>
+                    </div>
+                </a>
+                <a href="profile-spotify-connected.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="assets/icon-profile-inactive.svg" alt="Profile">
+                        <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Profilo</span>
+                    </div>
+                </a>                
+            </div>
+        </div>  
+    </body>
+</html>
