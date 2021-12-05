@@ -293,10 +293,12 @@ hr {
 /******************************************/
 .d-flex-row {
     display: flex;
+    display:-webkit-flex;
     flex-direction: row;
 }
 .d-flex-column {
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
 }
 .j-c-space-between {
