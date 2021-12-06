@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Artist Page Before Follow</title>
+        <title>Artist Page After Follow</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style-fan-v1.css">
@@ -11,72 +11,59 @@
     <body>
         <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
             <div class="container d-flex-row align-items-center">
-                <a href="search.html">
+                <a href="arcticmonkeys-after-follow.html">
                     <img src="../assets/icon-arrowleft.svg" alt="BACK">
                 </a>
             </div>
         </nav>
 
         <header class="position-relative">            
-            <div class="h-xs-40 h-lg-40">
-                <img class="w-100 h-inherit object-fit-cover" src="../assets/thasup.jpg" alt="{{artist-name}}">
+            <div class="h-xs-40">
+                <img class="w-100 h-inherit object-fit-cover" src="../assets/arcticmonkeys.jpg" alt="{{artist-name}}">
                 <div class="overlay-header bg-dark-overlay-header"></div>
             </div>
 
             <div class="container">
                 <div class="position-absolute d-flex-row align-items-center bottom-5 z-index-2">
                     <div class="artist-avatar-wrapper position-relative">
-                        <img class="artist-avatar border-radius-100" src="../assets/thasup.jpg"">                       
+                        <img class="artist-avatar border-radius-100" src="../assets/arcticmonkeys.jpg">                       
                         <img class="artist-avatar-verified-icon" src="../assets/icon-verified-artist.svg" alt="Verified">
                     </div>
                     <div class="d-flex-column no-shrink j-c-start ml-xs-8">
-                        <h5 class="fsize-xs-5 f-w-500">tha Supreme</h5>
-                        <span class="fsize-xs-1 f-w-300 grey-200 letter-spacing-1">1.1M followers</span>
+                        <h5 class="fsize-xs-5 f-w-500">Arctic Monkeys</h5>
+                        <span class="fsize-xs-1 f-w-300 grey-200 letter-spacing-1">867K followers</span>
                     </div>                    
                 </div>
             </div>
         </header>
         
         <div class="container pb-xs-24 pb-lg-8">
-            <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Segui l'artista ed entra nel suo mondo!</p>
+            <section id="rank" class="mt-xs-10">
+                <div class="mb-xs-8">
+                    <h4 class="fsize-xs-5 mb-xs-1 letter-spacing-2 f-w-500">Invita tutti i tuoi amici!</h4>
+                    <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Per ognuno di loro che si iscrive e segue un artista guadagnerai 15 punti su Midly!</p>
+                </div>
+            </section>
 
-            <div class="d-flex-row align-items-center j-c-space-around mt-xs-5">
-                <div class="d-flex-column j-c-center align-items-center">
-                    <img src="../assets/illustration-rank.svg" alt="CLASSIFICHE!">
-                    <h5 class="fsize-xs-2 f-w-500 dark-500">Classifica</h5>
-                </div>
-                <div class="d-flex-column j-c-center align-items-center">
-                    <img src="../assets/illustration-prize.svg" alt="PREMI!">
-                    <h5 class="fsize-xs-2 f-w-500 dark-500">Premi</h5>
-                </div>
-                <div class="d-flex-column j-c-center align-items-center">
-                    <img src="../assets/illustration-friends.svg" alt="AMICI!">
-                    <h5 class="fsize-xs-2 f-w-500 dark-500">Amici</h5>
-                </div>
-            </div>
-            
-            <div class="container position-absolute bottom-12">                           
-                <button class="bg-blue-gradient" onclick="location.href=''">
-                    <span class="fsize-xs-3 f-w-500 white letter-spacing-1">Segui</span>                        
+            <div class="container position-absolute bottom-5">
+                <button class="bg-green-whatsapp" onclick="location.href=''">
+                    <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Invita tramite whatsapp</span>                        
                 </button>
-                <!-- <button class="bg-green-spotify" onclick="location.href=''">
-                <span class="fsize-xs-3 f-w-500 white letter-spacing-1">Connetti spotify e segui</span>                        
-            </button> -->
-            </div>          
+            </div>
         </div>            
         
-        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+        <!-- <div class="app-bar-area d-flex-row j-c-center z-index-max">            
             <div class="container d-flex-row align-items-center j-c-space-between">                
                 <a href="search.html">
                     <div class="d-flex-column align-items-center">
-                        <img src="../assets/icon-search-active.svg" alt="Search">
-                        <span class="fsize-xs-0 f-w-300 white letter-spacing-1">Cerca</span>
+                        <img src="../assets/icon-search-inactive.svg" alt="Search">
+                        <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Cerca</span>
                     </div>                    
                 </a>
                 <a href="your-ranks-full.html">
                     <div class="d-flex-column align-items-center">
-                        <img src="../assets/icon-rankings-inactive.svg" alt="Ranks">
-                        <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Seguiti</span>
+                        <img src="../assets/icon-rankings-active.svg" alt="Ranks">
+                        <span class="fsize-xs-0 f-w-300 white letter-spacing-1">Seguiti</span>
                     </div>
                 </a>
                 <a href="profile-spotify-disconnected.html">
@@ -86,6 +73,6 @@
                     </div>
                 </a>                
             </div>
-        </div>  
+        </div>   -->
     </body>
 </html>
