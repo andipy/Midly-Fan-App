@@ -225,6 +225,12 @@ hr {
 .grey-1000 {
     color: #141414;
 }
+.dark-500 {
+    color: #40434f;
+}
+.dark-900 {
+    color: #1C1E27;
+}
 .black {
     color: #000000;
 }
@@ -816,7 +822,7 @@ nav .container {
         font-size: .9rem;
     }
     .fsize-xs-3 {
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .fsize-xs-4 {
         font-size: 1.1rem;
