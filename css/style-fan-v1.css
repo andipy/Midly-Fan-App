@@ -21,6 +21,9 @@ p {
 .line-height-sm {
     line-height: 1.1rem;
 }
+.line-height-11 {
+    line-height: 5rem;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -155,6 +158,9 @@ hr {
 .bg-dark-overlay-header {
     background: linear-gradient(0turn, #0F111C, #0f111c00);
 }
+.bg-pink-blue-gradient {
+    background: linear-gradient(270deg, rgb(229, 111, 139) 0%, rgb(57, 94, 202) 100%);
+}
 .bg-dark-overlay-card {
     background: linear-gradient(180deg,rgba(10,10,10,0) 2.49%,rgba(10,10,10,.5) 39.64%,#0a0a0a);
 }
@@ -191,6 +197,10 @@ hr {
 }
 .border-radius-100 {
     border-radius: 100rem;
+}
+
+.underline-landing {
+    border-bottom: 3px solid #f1cbff;
 }
 
 /******************************************/
@@ -255,6 +265,9 @@ hr {
 .red-500 {
     color: #FF0000;
 }
+/* .pink-blue-gradient {
+    color: linear-gradient(270deg, rgb(229, 111, 139) 0%, rgb(57, 94, 202) 100%);
+} */
 
 /************** TEXT WEIGHT **************/
 .f-w-200 {
@@ -334,9 +347,15 @@ hr {
 .no-shrink {
     flex-shrink: 0;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .overflow-x {
     overflow-x: auto;
     overflow-y: hidden;
+}
+.overflow-x-clip {
+    overflow-x: clip;
 }
 .overflow-hidden {
     overflow-x: hidden;
@@ -353,6 +372,10 @@ hr {
 .container {
     margin: 0 auto;
 }
+.container-landing {
+    margin: 0 auto;
+    width: 85vw;
+}
 .z-index-1 {
     z-index: 1;
 }
@@ -367,6 +390,9 @@ hr {
 }
 .z-index-max {
     z-index: 999;
+}
+.m-auto {
+    margin: 0 auto;
 }
 .bottom-0 {
     bottom: 0;
@@ -398,11 +424,17 @@ hr {
 .w-50 {
     width: 50%;
 }
+.w-20 {
+    width: 20%;
+}
 .w-33 {
     width: calc(var(--container) / 3);
 }
 .h-100 {
     height: 100%;
+}
+.h-100vh {
+    height: 100vh;
 }
 .h-inherit {
     height: inherit;
@@ -411,6 +443,9 @@ hr {
     margin-left: -7.5%;
     padding: 0 7.5%;
     width: 115%;
+}
+.d-none {
+    display: none;
 }
 
 /******************************************/
@@ -554,6 +589,27 @@ nav .container {
     width: 48px;
     height: 48px;
     top: calc((var(--top-bar-height)/2) - 24px);
+}
+
+/******************************************/ 
+/**************** LANDING *****************/
+/******************************************/ 
+.icon-landing {
+    width: 56px;
+}
+.number-landing {
+    color: rgba(255, 255, 255, 0.063);
+    font-size: 96px;
+    font-weight: 800;
+    top: 0px;
+    left: 0px;
+    line-height: 1.625rem;
+}
+.opacity-03 {
+    opacity: 0.3;
+}
+.footer-landing {
+    border-top: 1px solid #1C1E27;
 }
 
 /******************************************/ 
@@ -845,6 +901,48 @@ nav .container {
     .fsize-xs-10 {
         font-size: 2.25rem;
     }
+    .title-landing {
+        width: 100%;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+    }
+    .subtitle-landing {
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-weight: 400;
+    }
+    .button-landing {
+        width: 100%;
+        padding: 4% 0;
+        border-radius: .6em;
+        margin-top: 4%;
+        color: #ffffff;
+        font-size: 1.15rem;
+        border: none;  
+    }
+    .cell-landing {
+        width: 50.1%;
+        margin-top: 15%;
+    }
+    .mockup-landing {
+        width: 90%;
+    }
+    .theme-landing {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+    }
+    .waves-landing {
+        position: absolute;
+        bottom: 0;
+        max-width: 200%;
+        z-index: -1;
+    }
+    .footer-landing img {
+        width: 18%;
+    }
 
     nav {
         padding: 6% 0;
@@ -1102,7 +1200,42 @@ nav .container {
     .fsize-sm-10 {
         font-size: 2.5rem;
     }
+    .title-landing {
+        width: 80%;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    .subtitle-landing {
+        width: 70%;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .button-landing {
+        width: 50%;
+        padding: 2.5% 0;
+        border-radius: .6em;
+        margin-top: 4%;
+    }
+    .cell-landing {
+        width: 50%;
+        margin-top: 15%;
+    }
+    .mockup-landing {
+        width: 80%;
+    }
+    .theme-landing {
+        width: 65%;
+    }
+    .waves-landing {
+        max-width: 150%;
+    }
+    .footer-landing img {
+        width: 15%;
+    }
 
+    .d-sm-block {
+        display: block;
+    }
     nav {
         padding: 4% 0;
     }
@@ -1359,6 +1492,41 @@ nav .container {
     .fsize-md-10 {
         font-size: 2.65rem;
     }
+    .title-landing {
+        width: 75%;
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+    }
+    .subtitle-landing {
+        width: 69%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+    .button-landing {
+        width: 40%;
+        padding: 2% 0;
+        border-radius: .6em;
+        margin-top: 2%;
+    }
+    .cell-landing {
+        width: 50%;
+        margin-top: 10%;
+    }
+    .mockup-landing {
+        width: 75%;
+    }
+    .theme-landing {
+        width: 60%;
+    }
+    .waves-landing {
+        bottom: 200px;
+        max-width: 120%;
+    }
+    .footer-landing img {
+        width: 12%;
+    }
+
 
     nav {
         padding: 3% 0;
@@ -1616,6 +1784,40 @@ nav .container {
     .fsize-lg-10 {
         font-size: 2.7rem;
     }
+    .title-landing {
+        width: 65%;
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+    .subtitle-landing {
+        width: 60%;
+        font-size: 1.25rem;
+        line-height: 2.1rem;
+        font-weight: 400;
+    }
+    .button-landing {
+        width: 35%;
+        padding: 1.5% 0;
+        border-radius: .8em;
+        margin-top: 2%;
+    }
+    .cell-landing {
+        width: 25%;
+        margin-top: 8%;
+    }
+    .mockup-landing {
+        width: 70%;
+    }
+    .theme-landing {
+        width: 55%;
+    }
+    .waves-landing {
+        max-width: 100%;
+    }
+    .footer-landing img {
+        width: 10%;
+    }
+
 
     footer {
         padding: 6% 0;
@@ -1870,6 +2072,41 @@ nav .container {
     .fsize-xl-10 {
         font-size: 2.8rem;
     }
+    .title-landing {
+        width: 60%;
+        font-size: 3.8rem;
+        line-height: 4.2rem;
+    }
+    .subtitle-landing {
+        width: 55%;
+        font-size: 1.35rem;
+        line-height: 2.1rem;
+        font-weight: 400;
+    }
+    .button-landing {
+        width: 30%;
+        padding: 1.5% 0;
+        border-radius: .8em;
+        margin-top: 2%;  
+    }
+    .cell-landing {
+        width: 25%;
+        margin-top: 6%;
+    }
+    .mockup-landing {
+        width: 60%;
+    }
+    .theme-landing {
+        width: 50%;
+    }
+    .waves-landing {
+        max-width: 100%;
+        bottom: -80%;
+    }
+    .footer-landing img {
+        width: 8%;
+    }
+
 
     footer {
         padding: 4% 0;
@@ -2124,6 +2361,41 @@ nav .container {
     }
     .fsize-xxl-10 {
         font-size: 3rem;
+    }
+    .title-landing {
+        width: 50%;
+        font-size: 4.2rem;
+        line-height: 5rem;
+    }
+    .subtitle-landing {
+        width: 48%;
+        font-size: 1.25rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .button-landing {
+        width: 25%;
+        padding: 1.5% 0;
+        border-radius: .8em;
+        margin-top: 2%; 
+    }
+    .cell-landing {
+        width: 25%;
+        margin-top: 4%;
+    }
+    .mockup-landing {
+        width: 60%;
+    }
+    .theme-landing {
+        width: 45%;
+    }
+    .waves-landing {
+        max-width: 100%;
+        bottom: -280%;
+    }
+    .footer-landing img {
+        width: 7%;
     }
 
     footer {
