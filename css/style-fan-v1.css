@@ -21,9 +21,6 @@ p {
 .line-height-sm {
     line-height: 1.1rem;
 }
-.line-height-11 {
-    line-height: 5rem;
-}
 a {
     text-decoration: none;
     color: inherit;
@@ -93,6 +90,11 @@ hr {
     width: var(--container);
     animation-name: modalOpen;
     animation-duration: 400ms;
+}
+.modal-close-button {
+    font-size: 2rem;
+    line-height: 1.7rem;
+    color: #292929;
 }
 @keyframes modalOpen {
     from{opacity: 0}
