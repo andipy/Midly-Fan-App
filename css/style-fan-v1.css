@@ -70,6 +70,9 @@ hr {
     border-left: none;
 }
 
+/******************************************/
+/*********** MODALS & SNACKBARS ***********/
+/******************************************/
 .modal {
     display: none;
     position: fixed;
@@ -100,7 +103,6 @@ hr {
     from{opacity: 0}
     to{opacity: 1}
 }
-
 .snackbar {
     top: 3%;
     left: 50%;
@@ -371,12 +373,24 @@ hr {
 .position-fixed {
     position: fixed;
 }
+.d-inline-block {
+    display: inline-block;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-clear {
+    clear: both;
+}
 .container {
     margin: 0 auto;
 }
 .container-landing {
     margin: 0 auto;
-    width: 85vw;
+    width: var(--container-landing);
 }
 .z-index-1 {
     z-index: 1;
@@ -656,13 +670,14 @@ nav .container {
 /******************************************/
 :root {
     --top-bar-height: 5rem;
+    --container-landing: 85vw;
 }
 @media (min-width: 0px){
     :root {
         --container: 85vw;
     }
     .container {
-        width: 85vw;
+        width: var(--container);
     }
     #logo {
         width: 25%;
@@ -951,6 +966,9 @@ nav .container {
     .footer-landing img {
         width: 18%;
     }
+    .footer-column-landing {
+        width: calc(var(--container-landing)/1);
+    }
 
     nav {
         padding: 6% 0;
@@ -964,7 +982,7 @@ nav .container {
         --container: 56vw;
     }
     .container {
-        width: 56vw;
+        width: var(--container);
     }
     #logo {
         width: 25%;
@@ -1238,7 +1256,10 @@ nav .container {
         max-width: 150%;
     }
     .footer-landing img {
-        width: 15%;
+        width: 14%;
+    }
+    .footer-column-landing {
+        width: calc(var(--container-landing)/1);
     }
 
     .d-sm-block {
@@ -1256,7 +1277,7 @@ nav .container {
         --container: 48vw;
     }
     .container {
-        width: 48vw;
+        width: var(--container);
     }
     #logo {
         width: 25%;
@@ -1532,7 +1553,10 @@ nav .container {
         max-width: 120%;
     }
     .footer-landing img {
-        width: 12%;
+        width: 34%;
+    }
+    .footer-column-landing {
+        width: calc(var(--container-landing)/3);
     }
 
 
@@ -1548,7 +1572,7 @@ nav .container {
         --container: 42vw;
     }
     .container {
-        width: 42vw;
+        width: var(--container);
     }
     #logo {
         width: 25%;
@@ -1823,7 +1847,10 @@ nav .container {
         max-width: 100%;
     }
     .footer-landing img {
-        width: 10%;
+        width: 26%;
+    }
+    .footer-column-landing {
+        width: calc(var(--container-landing)/3);
     }
 
 
@@ -1836,7 +1863,7 @@ nav .container {
         --container: 36vw;
     }
     .container {
-        width: 36vw;
+        width: var(--container);
     }
     #logo {
         width: 25%;
@@ -2112,7 +2139,10 @@ nav .container {
         bottom: -80%;
     }
     .footer-landing img {
-        width: 8%;
+        width: 22%;
+    }
+    .footer-column-landing {
+        width: calc(var(--container-landing)/3);
     }
 
 
@@ -2126,7 +2156,7 @@ nav .container {
         --container: 30vw;
     }
     .container {
-        width: 30vw;
+        width: var(--container);
     }
     #logo {
         width: 25%;
@@ -2403,7 +2433,10 @@ nav .container {
         bottom: -280%;
     }
     .footer-landing img {
-        width: 7%;
+        width: 22%;
+    }
+    .footer-column-landing {
+        width: calc(var(--container-landing)/3);
     }
 
     footer {
