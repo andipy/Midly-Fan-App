@@ -113,6 +113,12 @@ hr {
     left: 50%;
     transform: translate(-50%);
 }
+.winner-message {
+    border-radius: 0 0 1rem 1rem;
+}
+.winner-message button {
+    margin: 0;
+}
 
 
 /******************************************/
