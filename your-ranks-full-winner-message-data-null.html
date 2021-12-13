@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Your Rank</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style-fan-v1.css">
+    </head>
+    <body>
+        <div id="winner-message" class="winner-message w-100 z-index-max pt-xs-8 pb-xs-6 pt-sm-6 pb-sm-4 pt-md-4 pb-md-4 pt-lg-2 pb-lg-2 bg-purple-gradient">
+            <div class="container">
+                <h5 class="fsize-xs-5 mb-xs-2 mb-lg-1 letter-spacing-2 f-w-500">Hai vinto un premio!</h5>
+                <p class="fsize-xs-2 f-w-400 white letter-spacing-1 mb-xs-4">
+                    Sei arrivata
+                    <span id="rank-position">1°</span>
+                    nella classifica di
+                    <span id="rank-month">novembre</span>
+                    di
+                    <span id="rank-artist">rovere</span>,
+                    hai vinto
+                    <span id="rank-prize">Felpa freddo cane</span>!
+                        <br>
+                    Hai tempo fino al 14
+                    <span id="current-month">dicembre</span>
+                    per redimere il premio 👉
+                </p>
+                <button class="bg-white" onclick="location.href='redeem-prize-extended-message-data-null.html'">
+                    <span class="fsize-xs-3 f-w-500 dark-900 letter-spacing-1 border-radius-100">Redimi il premio</span>                        
+                </button>
+            </div>            
+        </div>
+
+        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center j-c-center">
+                <a href="#">
+                    <img src="assets/logo.svg" alt="MIDLY">
+                </a>
+            </div>
+        </nav>
+        
+        <div class="container pb-xs-24 pb-lg-8">
+            <div id="page-title">
+                <h1>Le tue classifiche</h1>
+                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Le classifiche degli artisti che segui</p>
+            </div>
+
+            <section id="followed-artists" class="mt-xs-10 mt-lg-5">
+                <div class="carousel d-flex-row overflow-x">                    
+                    <a class="mr-xs-5" href="artist-after-follow.html">
+                        <div class="artist-card bg-dark-gradient border-radius-1 position-relative">
+                            <div class="overlay-card bg-dark-overlay-card border-radius-1 z-index-1"></div>
+                            <img class="artist-card object-fit-cover border-radius-1" src="assets/calcutta.png" alt="{{artist-picture}}">
+                            <div class="d-flex-column position-absolute bottom-5 ml-xs-8 z-index-2">
+                                <h5 class="fsize-xs-3 mb-xs-2 f-w-300 letter-spacing-1">Artist name name</h5>
+                                <p class="fsize-xs-1 grey-300 letter-spacing-1">536781 followers</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a class="mr-xs-5" href="artist-after-follow.html">
+                        <div class="artist-card bg-dark-gradient border-radius-1 position-relative">
+                            <div class="overlay-card bg-dark-overlay-card border-radius-1 z-index-1"></div>
+                            <img class="artist-card object-fit-cover border-radius-1" src="assets/calcutta.png" alt="{{artist-picture}}">
+                            <div class="d-flex-column position-absolute bottom-5 ml-xs-8 z-index-2">
+                                <h5 class="fsize-xs-3 mb-xs-2 f-w-300 letter-spacing-1">Artist name name</h5>
+                                <p class="fsize-xs-1 grey-300 letter-spacing-1">536781 followers</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="search.html">
+                        <div class="artist-card d-flex-row j-c-center align-items-center bg-dark-gradient border-radius-1">
+                            <div class="d-flex-column align-items-center j-c-center z-index-2">
+                                <img class="mb-xs-4" src="assets/icon-plus.svg" alt="ADD">
+                                <h5 class="fsize-xs-3 mb-xs-2 f-w-300 letter-spacing-1">Segui altri artisti</h5>                                
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+            </section>
+
+            <section id="faq-shortcut" class="mt-xs-24 mt-lg-12">
+                <div class="mb-xs-8">
+                    <h4 class="fsize-xs-5 mb-xs-1 letter-spacing-2 f-w-500">Domande frequenti</h4>
+                    <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Vuoi sapere di più su come funziona Midly? Vai alle <a class="text-underline blue-300 f-w-400" href="">FAQ</a> e troverai tutte le risposte alle tue domande!</p>
+                </div>
+            </section>
+        </div>            
+        
+        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+            <div class="container d-flex-row align-items-center j-c-space-between">                
+                <a href="search.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="assets/icon-search-inactive.svg" alt="Search">
+                        <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Cerca</span>
+                    </div>                    
+                </a>
+                <a href="your-ranks-full.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="assets/icon-rankings-active.svg" alt="Ranks">
+                        <span class="fsize-xs-0 f-w-300 white letter-spacing-1">Seguiti</span>
+                    </div>
+                </a>
+                <a href="profile-spotify-connected.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="assets/icon-profile-inactive.svg" alt="Profile">
+                        <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Profilo</span>
+                    </div>
+                </a>                
+            </div>
+        </div>  
+    </body>
+</html>
