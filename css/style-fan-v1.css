@@ -543,6 +543,10 @@ hr {
     width: calc(var(--container) / 1.8);
     height: calc(var(--container) / 1.3);
 }
+.artist-card-referral {
+    width: 100%;
+    height: calc(var(--container) / 1.3);
+}
 .object-fit-cover {
     object-fit: cover;
 }
