@@ -9,7 +9,15 @@
         <link rel="stylesheet" href="../css/style-fan-v1.css">
     </head>
     <body>
-        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
+
+        <div id="link-copied-message" class="container position-absolute z-index-max snackbar d-none">
+            <div class="d-flex-row align-items-center pl-xs-4 pr-xs-4 pt-xs-4 pb-xs-4 bg-green-300 border-radius-08">
+                <img class="mr-xs-4" src="../assets/icon-success-standard.svg" alt="YE!">
+                <p class="fsize-xs-1 f-w-400 white letter-spacing-1 line-height-sm mr-xs-2">Link copiato negli appunti!</p>
+            </div>
+        </div>
+
+        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-4">
             <div class="container d-flex-row align-items-center">
                 <a href="artist-after-follow.html">
                     <img src="../assets/icon-arrowleft.svg" alt="BACK">
@@ -45,9 +53,9 @@
                 </div>
             </section>
 
-            <section id="ecommerce-fan-code" class="mt-xs-12">
+            <section id="invite-friend-link-section" class="mt-xs-12">
                 <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1 mb-xs-1">Copia e invia il link dove vuoi</p>
-                <div class="d-flex-row j-c-space-between align-items-center border-radius-08 bg-dark-soft pb-xs-4 pt-xs-4 pl-xs-8 pr-xs-8">
+                <div id="invite-friend-link" class="d-flex-row j-c-space-between align-items-center border-radius-08 bg-dark-soft pb-xs-4 pt-xs-4 pl-xs-8 pr-xs-8">
                     <span class="fsize-xs-1 f-w-400 white letter-spacing-1">https://www.midly.it/signup?..</span>
                     <img src="../assets/icon-copy.svg" alt="COPY">
                 </div>
@@ -85,6 +93,22 @@
                     </div>
                 </a>                
             </div>
-        </div>  
+        </div>
+
+        <script>
+            var linkCopiedMessage = document.getElementById("link-copied-message");
+            var inviteLink = document.getElementById("invite-friend-link");
+
+            function hideMessage() {
+                linkCopiedMessage.style.display = 'none';
+            }
+            function showMessage() {
+                linkCopiedMessage.style.display = 'block';
+                setTimeout(hideMessage, 3000);
+            }
+
+            inviteLink.addEventListener('click', showMessage);
+
+        </script>
     </body>
 </html>
