@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fan Delivery Data View</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-v1.css">
+    </head>
+    <body>
+        <div id="confirm-data" class="winner-message w-100 z-index-max pt-xs-6 pb-xs-6 pt-sm-6 pb-sm-4 pt-md-4 pb-md-4 pt-lg-2 pb-lg-2 bg-purple-gradient">
+            <div class="container">
+                <!-- <h5 class="fsize-xs-5 mb-xs-2 mb-lg-1 letter-spacing-2 f-w-500">Leggi e conferma i tuoi dati</h5> -->
+                <p class="fsize-xs-2 f-w-400 white letter-spacing-1">Inserisci tutti i tuoi dati mancanti; quando saranno tutti compilati, potrai confermali.</p>
+            </div>            
+        </div>
+
+        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center j-c-center">
+                <a class="topbar-icon-left" href="redeem-prize-extended-message-data-null.html">
+                    <img src="../assets/icon-arrowleft.svg" alt="BACK">
+                </a>
+                <h5 class="f-w-500 fsize-xxl-4 fsize-xl-4 fsize-lg-4 fsize-md-4 fsize-sm-4 fsize-xs-4 letter-spacing-1 j-c-center">I tuoi dati</h5>
+            </div>
+        </nav>
+
+        <div class="container pb-xs-12 pb-lg-1">
+            <div id="delivery-data" class="mt-xs-8 mt-lg-4 mb-xs-8 mb-lg-4">
+                <div class="d-flex-row align-items-center j-c-space-between">
+                    <h4 class="fsize-xs-5 mb-xs-2 mb-lg-1 letter-spacing-2 f-w-500">Spedizione</h4>
+                    <div class="d-flex-row align-items-center j-c-start" onclick="location.href='redeem-prize-fan-personal-information-delivery-data-edit-mode.html'">
+                        <img class="w-25 blue-300" src="../assets/icon-edit-xs-blue.svg" alt="EDIT">
+                        <h6 class="fsize-xs-1 f-w-500 text-underline blue-300 letter-spacing-1">Modifica</h6>
+                    </div>
+                </div>
+                
+                <div id="fan-name" class="mt-xs-2 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">NOME</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">Gufo</p>
+                </div>
+                <div id="fan-name" class="mt-xs-8 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">COGNOME</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">Selvaggio</p>
+                </div>
+                <div class="mt-xs-8 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">VIA E NUMERO</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">Via dei matti 0</p>
+                </div>
+                <div class="mt-xs-8 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">CAP</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">20148</p>
+                </div>
+                <div class="mt-xs-8 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">COMUNE/CITTÀ</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">Milano</p>
+                </div>
+                <div class="mt-xs-8 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">PROVINCIA</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">MI</p>
+                </div>
+                <div class="mt-xs-8 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">STATO</label>
+                    <p class="fsize-xs-2 f-w-300 grey-50 letter-spacing-1 mt-xs-2">Italia</p>
+                </div>
+            </div>
+
+            <div id="phone" class="mt-xs-24 mt-lg-12">
+                <div class="d-flex-row align-items-center j-c-space-between">
+                    <h4 class="fsize-xs-5 mb-xs-2 mb-lg-1 letter-spacing-2 f-w-500">Telefono</h4>
+                    <div class="d-flex-row align-items-center j-c-start" onclick="location.href='redeem-prize-fan-personal-information-phone-edit-mode.html'">
+                        <img class="w-25 blue-300" src="../assets/icon-edit-xs-blue.svg" alt="EDIT">
+                        <h6 class="fsize-xs-1 f-w-500 text-underline blue-300 letter-spacing-1">Modifica</h6>
+                    </div>
+                </div>
+                
+                <div id="fan-name" class="mt-xs-2 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">CELLULARE</label>
+                    <p class="fsize-xs-2 f-w-300 grey-400 letter-spacing-1 mt-xs-2">Nessun cellulare! Aggiungilo ☝️</p>
+                </div>
+            </div>
+
+            <!-- Let's leave this param out for the moment -->
+            <!-- <div id="cloth-size" class="mt-xs-24 mt-lg-12">
+                <div class="d-flex-row align-items-center j-c-space-between">
+                    <h4 class="fsize-xs-5 mb-xs-2 mb-lg-1 letter-spacing-2 f-w-500">Vestiario</h4>
+                    <div class="d-flex-row align-items-center j-c-start">
+                        <img class="w-25 blue-300" src="../assets/icon-edit-xs-blue.svg" alt="EDIT">
+                        <h6 class="fsize-xs-1 f-w-500 text-underline blue-300 letter-spacing-1">Modifica</h6>
+                    </div>
+                </div>
+                
+                <div id="fan-name" class="mt-xs-2 mb-xs-8">
+                    <label class="fsize-xs-1 grey-300 letter-spacing-3" for="input-name">TAGLIA DI VESTIARIO</label>
+                    <p class="fsize-xs-2 f-w-300 grey-400 letter-spacing-1 mt-xs-2">Nessuna taglia! Aggiungila ☝️</p>
+                </div>
+            </div> -->
+        </div>        
+    </body>
+</html>
