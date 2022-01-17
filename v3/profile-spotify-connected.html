@@ -138,7 +138,7 @@
                         <button id="modal-cancel" class="bg-blue-gradient border-radius-100">
                             <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Non disconnettere</span>
                         </button>
-                        <h6 id="modal-confirm" class="fsize-xs-3 f-w-500 red-500 letter-spacing-1 mt-xs-4 mb-xs-4">Disconnetti</h6>
+                        <h6 id="modal-confirm" class="fsize-xs-3 f-w-500 red-500 letter-spacing-1 mt-xs-4 mb-xs-4" onclick="location.href='profile-spotify-disconnected.html'">Disconnetti</h6>
                     </div>                    
                 </div>
             </div>
@@ -152,7 +152,7 @@
                         <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Cerca</span>
                     </div>                    
                 </a>
-                <a href="your-ranks-full.html">
+                <a href="followed-full.html">
                     <div class="d-flex-column align-items-center">
                         <img src="../assets/icon-rankings-inactive.svg" alt="Ranks">
                         <span class="fsize-xs-0 f-w-200 grey-400 letter-spacing-1">Seguiti</span>
@@ -175,12 +175,15 @@
             // get the whole modal group (overlay + actual modal content)
             var modalGroupSpotify = document.getElementById("simple-modal-group-spotify");
             var modalGroupFanCode = document.getElementById("simple-modal-group-fan-code");
+
             //get the X to close the modal
             var closeModalBtnSpotify = document.getElementById("close-modal-btn-spotify");
-            var closeModalBtnFanCode = document.getElementById("close-modal-btn-fan-code");
+            // var closeModalBtnFanCode = document.getElementById("close-modal-btn-fan-code");
+
             //get the "don't disconnect spotify" button in the modal
             var cancelDisconnectionButton = document.getElementById("modal-cancel");
             var primaryButtonModalBtnFanCode = document.getElementById("fan-code-primary-button");
+
             //get the "disconnect spotify" button in the modal
             var confirmDisconnectionButton = document.getElementById("modal-confirm");
 
@@ -212,6 +215,8 @@
 
             disconnectSpotify.addEventListener("click", openModalSpotify);
             closeModalBtnSpotify.addEventListener("click", closeModalSpotify);
+            cancelDisconnectionButton.addEventListener("click", closeModalSpotify);
+
             fanCodeInfo.addEventListener("click", openModalFanCode);
             // closeModalBtnFanCode.addEventListener("click", closeModalFanCode);
             primaryButtonModalBtnFanCode.addEventListener("click", closeModalFanCode);

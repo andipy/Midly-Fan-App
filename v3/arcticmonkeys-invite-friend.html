@@ -9,7 +9,14 @@
         <link rel="stylesheet" href="../css/style-fan-v1.css">
     </head>
     <body>
-        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
+        <div id="link-copied-message" class="container position-absolute z-index-max snackbar d-none">
+            <div class="d-flex-row align-items-center pl-xs-4 pr-xs-4 pt-xs-4 pb-xs-4 bg-green-300 border-radius-08">
+                <img class="mr-xs-4" src="../assets/icon-success-standard.svg" alt="YE!">
+                <p class="fsize-xs-1 f-w-400 white letter-spacing-1 line-height-sm mr-xs-2">Link copiato negli appunti!</p>
+            </div>
+        </div>
+
+        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-4">
             <div class="container d-flex-row align-items-center">
                 <a href="arcticmonkeys-after-follow.html">
                     <img src="../assets/icon-arrowleft.svg" alt="BACK">
@@ -37,7 +44,7 @@
             </div>
         </header>
         
-        <div class="container pb-xs-12 pb-lg-4">
+        <div class="container pb-xs-8 pb-lg-2">
             <section id="rank" class="mt-xs-10">
                 <div class="mb-xs-8">
                     <h4 class="fsize-xs-5 mb-xs-1 letter-spacing-2 f-w-500">Invita tutti i tuoi amici!</h4>
@@ -63,5 +70,20 @@
                 <span class="fsize-xs-3 f-w-400 white letter-spacing-1">Invita tramite whatsapp</span>                        
             </button>
         </div>
+
+        <script>
+            var linkCopiedMessage = document.getElementById("link-copied-message");
+            var inviteLink = document.getElementById("invite-friend-link");
+
+            function hideMessage() {
+                linkCopiedMessage.style.display = 'none';
+            }
+            function showMessage() {
+                linkCopiedMessage.style.display = 'block';
+                setTimeout(hideMessage, 1500);
+            }
+
+            inviteLink.addEventListener('click', showMessage);
+        </script>
     </body>
 </html>
