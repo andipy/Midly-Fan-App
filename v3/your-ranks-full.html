@@ -7,26 +7,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style-fan-v1.css">
-        <style>
-            .meter { 
-                height: .6rem;
-                position: relative;
-                width: calc(var(--container)/2.4);
-                overflow: hidden;
-            }
-            .meter > span {
-                display: block;
-                height: 100%;
-                position: relative;
-            }
-            .cover-img {
-                width: 120px;
-                height: 120px;
-            }
-            .height-15px {
-                height: 15px;
-            }
-        </style>
     </head>
     <body>
         <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
@@ -43,56 +23,75 @@
                 <!-- <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Le classifiche degli artisti che segui</p> -->
             </div>
 
-            <section id="followed-artists" class="mt-xs-5 mt-lg-5">
+            <section id="followed-artists" class="mt-xs-2 mt-lg-2">
                 <a href="calcutta-after-follow.html">
                     <div class="d-flex-row align-items-center bg-dark-gradient border-radius-1 mb-xs-4 pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4">                        
-                        <img class="cover-img object-fit-cover border-radius-1" src="../assets/calcutta.png" alt="{{artist-picture}}">
+                        <img class="followed-artist-img object-fit-cover border-radius-1" src="../assets/calcutta.png" alt="{{artist-picture}}">
 
-                        <div class="d-flex-column ml-xs-8 z-index-2">
-                            <h5 class="fsize-xs-4 f-w-500 letter-spacing-1 mb-xs-8">Calcutta</h5>
+                        <div class="d-flex-column ml-xs-6 z-index-2">
+                            <h5 class="fsize-xs-4 f-w-500 mb-xs-4">Calcutta</h5>
 
                             <div class="d-flex-row align-items-end j-c-space-between mb-xs-8">
                                 <div class="d-flex-column">
-                                    <p class="fsize-xs-0 grey-300 letter-spacing-1">La tua posizione</p>
-                                    <div class="d-flex-row align-items-center">
-                                        <div class="meter bg-grey-500 border-radius-100">
-                                            <span class="bg-purple-400" style="width: 25%;"></span>
-                                        </div>
-                                        <img class="ml-xs-5" src="../assets/icon-gold-sm.svg" alt="">
-                                    </div>
+                                    <p class="fsize-xs-0 grey-200 letter-spacing-1">Coraggio! Spingi di più!</p>
                                 </div>
                             </div>
 
                             <div class="d-flex-row align-items-center">
-                                <img class="mr-xs-2" src="../assets/icon-gift-xs.svg" alt="">
-                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px"><span class="fsize-xs-4">3</span> premi in classifica</p>                                                               
+                                <img class="mr-xs-2" src="../assets/icon-gift-sm.svg" alt="">
+                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px no-shrink"><span class="fsize-xs-4">3</span> premi in classifica</p>                                                               
                             </div>
                         </div>                        
                     </div>
                 </a>
 
                 <a href="arcticmonkeys-after-follow.html">
-                    <div class="d-flex-row align-items-center bg-dark-gradient border-radius-1 mb-xs-4 pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4">                        
-                        <img class="cover-img object-fit-cover border-radius-1" src="../assets/arcticmonkeys.jpg" alt="{{artist-picture}}">
+                    <div class="d-flex-row align-items-center bg-dark-gradient border-radius-1 mb-xs-4 pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4 ">                        
+                        <img class="followed-artist-img object-fit-cover border-radius-1" src="../assets/arcticmonkeys.jpg" alt="{{artist-picture}}">
 
-                        <div class="d-flex-column ml-xs-8 z-index-2 w-85">
-                            <h5 class="fsize-xs-4 f-w-500 letter-spacing-1 mb-xs-8">Arctic Monkeys</h5>
+                        <div class="d-flex-column ml-xs-6 z-index-2 w-85">
+                            <h5 class="fsize-xs-3 f-w-500 mb-xs-4">Arctic Monkeys</h5>
 
                             <div class="d-flex-row align-items-end j-c-space-between mb-xs-8">
                                 <div class="d-flex-column">
-                                    <p class="fsize-xs-0 grey-300 letter-spacing-1">La tua posizione</p>
+                                    <p class="fsize-xs-0 grey-300 letter-spacing-1">Sei in zona podio, dai!</p>
                                     <div class="d-flex-row align-items-center">
                                         <div class="meter bg-grey-500 border-radius-100">
                                             <span class="bg-purple-400" style="width: 87%;"></span>
                                         </div>
-                                        <img class="ml-xs-5" src="../assets/icon-gold-sm.svg" alt="">
+                                        <img class="ml-xs-5" src="../assets/icon-podium-sm.svg" alt="">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="d-flex-row align-items-center">
-                                <img class="mr-xs-2" src="../assets/icon-gift-xs.svg" alt="">
-                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px"><span class="fsize-xs-4">2</span> premi in classifica</p>                                                               
+                                <img class="mr-xs-2" src="../assets/icon-gift-sm.svg" alt="">
+                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px no-shrink"><span class="fsize-xs-4">2</span> premi in classifica</p>                                                               
+                            </div>
+                        </div>                        
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="d-flex-row align-items-center bg-dark-gradient border-radius-1 mb-xs-4 pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4 ">                        
+                        <img class="followed-artist-img object-fit-cover border-radius-1" src="../assets/21pilots.jpg" alt="{{artist-picture}}">
+
+                        <div class="d-flex-column ml-xs-6 z-index-2 w-85">
+                            <h5 class="fsize-xs-3 f-w-500 mb-xs-4">21 pilots</h5>
+
+                            <div class="d-flex-row align-items-end j-c-space-between mb-xs-8">
+                                <div class="d-flex-column">
+                                    <p class="fsize-xs-0 grey-300 letter-spacing-1">Sei sul podio, tieni duro!</p>
+                                    <div class="d-flex-row align-items-center">
+                                        <img class="ml-xs-5" src="../assets/icon-silver-sm.svg" alt="">
+                                        <p class="fsize-xs-2 white letter-spacing-1 ml-xs-2">2° in classifica</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex-row align-items-center">
+                                <img class="mr-xs-2" src="../assets/icon-picture-xs.svg" alt="">
+                                <p class="fsize-xs-0 grey-200 letter-spacing-1 height-15px no-shrink"><span class="fsize-xs-4 f-w-500">3 NFT</span> per il podio</p>                                                               
                             </div>
                         </div>                        
                     </div>

@@ -20,10 +20,10 @@
         <div class="container pb-xs-24 pb-lg-8">
             <div id="page-title">
                 <h1>Artisti</h1>
-                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Cerca i tuoi artisti preferiti e inizia a seguirli per scalare le classifiche e vincere i fantastici premi in palio!</p>
+                <!-- <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Cerca i tuoi artisti preferiti e inizia a seguirli per scalare le classifiche e vincere i fantastici premi in palio!</p> -->
             </div>
 
-            <section id="artist-list" class="mt-xs-10">
+            <section id="artist-list" class="mt-xs-2 mt-lg-2">
                 <div class="carousel d-flex-row overflow-x">                    
                     <a class="mr-xs-5" href="thasupreme-before-follow.html">
                         <div class="artist-card bg-dark-gradient border-radius-1 position-relative">
@@ -74,8 +74,16 @@
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a class="mr-xs-5" href="#">
                         <div class="artist-card bg-dark-gradient border-radius-1 position-relative">
+                            <div class="artist-card d-flex-row align-items-center j-c-center position-absolute z-index-3">
+                                <div class="d-flex-row align-items-center j-c-center z-index-4">
+                                    <h5 class="fsize-xs-3 f-w-300 letter-spacing-1">Segui già</h5>
+                                    <img src="../assets/icon-yes.svg" alt="FOLLOWED">
+                                </div>
+                                <div class="overlay-card-followed bg-dark-soft-transp75 border-radius-1"></div>
+                            </div>
+
                             <div class="overlay-card bg-dark-overlay-card border-radius-1 z-index-1"></div>
                             <img class="artist-card object-fit-cover border-radius-1" src="../assets/21pilots.jpg" alt="{{artist-picture}}">
                             <div class="d-flex-column position-absolute bottom-5 ml-xs-8 z-index-2">

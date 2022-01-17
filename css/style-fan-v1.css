@@ -480,6 +480,55 @@ hr {
 }
 
 /******************************************/
+/**************** AVATAR *****************/
+/******************************************/
+.avatar-24 {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+}
+.avatar-28 {
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+}
+.avatar-32 {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+}
+.avatar-40 {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+.avatar-48 {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+}
+.avatar-64 {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+}
+.avatar-72 {
+    height: 72px;
+    width: 72px;
+    object-fit: cover;
+}
+.avatar-80 {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.avatar-96 {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+/******************************************/
 /*********** ARTIST PAGE HEADER ***********/
 /******************************************/
 .overlay-header {
@@ -509,11 +558,6 @@ hr {
     width: 72px;
     height: 72px;
 }
-.artist-avatar {
-    width: 72px;
-    height: 72px;
-    object-fit: cover;
-}
 .artist-avatar-verified-icon {
     position: absolute;
     right: 0;
@@ -521,13 +565,30 @@ hr {
 }
 
 /******************************************/
+/**************** FOLLOWED ****************/
+/******************************************/
+.meter { 
+    height: .6rem;
+    position: relative;
+    width: calc(var(--container)/2.5);
+    overflow: hidden;
+}
+.meter > span {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.followed-artist-img {
+    width: 120px;
+    height: 120px;
+}
+.height-15px {
+    height: 15px;
+}
+
+/******************************************/
 /************** FAN PROFILE ***************/
 /******************************************/
-.fan-avatar {
-    width: 96px;
-    height: 96px;
-    object-fit: cover;
-}
 .social-card {
     height: 25vh;
 }
@@ -563,11 +624,6 @@ hr {
 /******************************************/
 /*************** RANK SECTION *************/
 /******************************************/
-.rank-avatar {
-    height: 48px;
-    width: 48px;
-    object-fit: cover;
-}
 .podium-fan {
     object-fit: cover;
 }
@@ -802,6 +858,9 @@ nav .container {
     }
     .ml-xs-4 {
         margin-left: 4%;
+    }
+    .ml-xs-6 {
+        margin-left: 6%;
     }
     .ml-xs-8 {
         margin-left: 8%;
@@ -1108,6 +1167,9 @@ nav .container {
     .ml-sm-4 {
         margin-left: 4%;
     }
+    .ml-sm-6 {
+        margin-left: 6%;
+    }
     .ml-sm-8 {
         margin-left: 8%;
     }
@@ -1402,6 +1464,9 @@ nav .container {
     }
     .ml-md-4 {
         margin-left: 4%;
+    }
+    .ml-md-6 {
+        margin-left: 6%;
     }
     .ml-md-8 {
         margin-left: 8%;
@@ -1698,6 +1763,9 @@ nav .container {
     .ml-lg-4 {
         margin-left: 4%;
     }
+    .ml-lg-6 {
+        margin-left: 6%;
+    }
     .ml-lg-8 {
         margin-left: 8%;
     }
@@ -1988,6 +2056,9 @@ nav .container {
     }
     .ml-xl-4 {
         margin-left: 4%;
+    }
+    .ml-xl-6 {
+        margin-left: 6%;
     }
     .ml-xl-8 {
         margin-left: 8%;
@@ -2281,6 +2352,9 @@ nav .container {
     }
     .ml-xxl-4 {
         margin-left: 4%;
+    }
+    .ml-xxl-6 {
+        margin-left: 6%;
     }
     .ml-xxl-8 {
         margin-left: 8%;
