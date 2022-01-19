@@ -423,7 +423,7 @@ hr {
     margin: 0 auto;
 }
 .bottom-0 {
-    bottom: 0;
+    bottom: -1px;
 }
 .bottom-5 {
     bottom: 5%;
@@ -436,6 +436,9 @@ hr {
 }
 .right-0 {
     right: 0;
+}
+.left-0 {
+    left: 0;
 }
 .w-100 {
     width: 100%;
@@ -764,6 +767,9 @@ nav .container {
     }
 
     /***** HEIGHT *****/
+    .h-xs-30 {
+        height: 30vh;
+    }
     .h-xs-40 {
         height: 40vh;
     }
