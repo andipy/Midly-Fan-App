@@ -158,7 +158,16 @@ hr {
 .bg-purple-400-op-75 {
     background-color: rgba(235, 87, 255, 0.75);
 }
+.bg-greyish-300 {
+    background-color: #5c5d66;
+}
+.bg-greyish-800 {
+    background-color: #2c2e3f;
+}
 /**************** GRADIENT ****************/
+.bg-apple-music-gradient {
+    background: linear-gradient(0deg, #FA233B 0.38%, #FB5C74 97.84%);
+}
 .bg-dark-gradient {
     background: linear-gradient(.75turn, #232537, #141622);
 }
@@ -277,6 +286,9 @@ hr {
 }
 .red-500 {
     color: #FF0000;
+}
+.greyish-300 {
+    color: #5c5d66;
 }
 /* .pink-blue-gradient {
     color: linear-gradient(270deg, rgb(229, 111, 139) 0%, rgb(57, 94, 202) 100%);
@@ -596,7 +608,8 @@ hr {
 /************** FAN PROFILE ***************/
 /******************************************/
 .social-card {
-    height: 25vh;
+    width: 49%;
+    height: 20vh;
 }
 #spotify .social-logo {
     width: 48px;
