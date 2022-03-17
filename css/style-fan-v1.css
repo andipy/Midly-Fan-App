@@ -287,6 +287,12 @@ hr {
 .red-500 {
     color: #FF0000;
 }
+.purple-200 {
+    color: #e18dff;
+}
+.purple-400 {
+    color: #D257FD;
+}
 .greyish-300 {
     color: #5c5d66;
 }
