@@ -158,6 +158,12 @@ hr {
 .bg-red-300 {
     background-color: #FF6565;
 }
+.bg-purple-300 {
+    background-color: #DE80FF;
+}
+.bg-purple-300-op-15 {
+    background-color: rgba(222, 128, 255, .15);
+}
 .bg-purple-400 {
     background-color: #D257FD;
 }
@@ -331,6 +337,9 @@ hr {
 }
 .purple-200 {
     color: #e18dff;
+}
+.purple-300 {
+    color: #DE80FF;
 }
 .purple-400 {
     color: #D257FD;
