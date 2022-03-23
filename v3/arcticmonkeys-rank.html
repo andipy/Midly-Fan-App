@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/style-fan-v1.css">
     </head>
     <body>
-        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
+        <nav class="top-bar-area-overlay-fixed bg-dark d-flex-row align-items-center j-c-center white z-index-max top-0 shadow-dark-400">
             <div class="container d-flex-row align-items-center j-c-center">
                 <a class="topbar-icon-left" href="arcticmonkeys-after-follow.html">
                     <img src="../assets/icon-arrowleft.svg" alt="BACK">
@@ -26,33 +26,30 @@
             </div>
         </nav>
         
-        <div class="container pb-xs-24 pb-lg-8">
+        <div class="container pt-xs-20 pt-lg-6 pb-xs-24 pb-lg-8">
             <section id="your-position" class="mt-xs-4 mt-lg-4">
-                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-4 pt-xs-4 pr-xs-8 pl-xs-8 border-radius-1" href="#">
-                    <div class="d-flex-row w-100">
-                        <div class="d-flex-row align-items-center j-c-start">
-                            <img class="avatar-40 border-radius-100 mr-xs-4" src="../assets/fan-5.jpg">
-                            <div class="d-flex-column no-shrink">
-                                <div class="d-flex-row align-items-center j-c-start">
-                                    <h6 class="fsize-xs-5 f-w-400 white letter-spacing-1">1124</h6>                                            
-                                    <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
-                                </div>
-                                <span class="fsize-xs-2 grey-200 letter-spacing-1 no-shrink">i tuoi punti</span>
-                            </div>
+                <div class="rank-list-item mb-xs-4 d-flex-column align-items-center j-c-space-between bg-dark-soft pb-xs-4 pt-xs-4 pr-xs-8 pl-xs-8 border-radius-1" href="#">
+                    <div id="your-position-upper-part" class="d-flex-row align-items-center j-c-space-between w-100">
+                        <div class="d-flex-row align-items-center j-c-start no-shrink">
+                            <img class="avatar-32 border-radius-100 mr-xs-6" src="../assets/fan-5.jpg">
+                            <span class="fsize-xs-2 f-w-500 grey-100 letter-spacing-1 no-shrink">La tua posizione</span>
                         </div>
+                        <span class="fsize-xs-7 f-w-400">8°</span>
                     </div>
-                    <span class="fsize-xs-7 f-w-300">8°</span>
+                    <div id="your-position-lower-part" class="mt-xs-4 pt-xs-4 pb-xs-4 pl-xs-6 pr-xs-6 bg-purple-300-op-15 border-radius-04">
+                        <p class="fsize-xs-1 purple-300 f-w-500 letter-spacing-1 line-height-140">Fai 1 solo ascolto per salire di 34 posizioni in classifica</p>
+                    </div>
                 </div>
             </section>
 
-            <section id="rank" class="mt-xs-12 mt-lg-5">
-                <h5 class="fsize-xs-5 mb-xs-1 letter-spacing-1 f-w-600">La classifica</h5>
+            <section id="rank" class="mt-xs-12 mt-lg-8">
+                <!-- <h5 class="fsize-xs-8 mb-xs-1 letter-spacing-1 f-w-700">Classifica</h5> -->
                 <div id="rank-podium" class="mb-xs-8">
                     <div class="d-flex-row">
                         <div class="d-flex-column w-33">
                             <div class="d-flex-row align-items-center j-c-center align-items-stretch position-relative mt-xs-75">
-                                <img id="second-position" class="podium-fan border-radius-100" src="../assets/fan-1.jpg">
-                                <div class="podium-position-indicator d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">2°</div>
+                                <img id="second-position" class="object-fit-cover bg-silver-linear-gradient border-radius-100 p-xs-6" src="../assets/fan-1.jpg">
+                                <div class="podium-position-indicator p-xs-14 bg-silver-radial-gradient d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">2°</div>
                             </div>
                             <div class="text-info d-flex-column align-items-center">
                                 <div class="fsize-xs-1 t-align-center letter-spacing-1">Danny Snatch Vito</div>
@@ -65,8 +62,8 @@
 
                         <div class="d-flex-column w-33">
                             <div class="d-flex-row align-items-center j-c-center align-items-stretch position-relative">
-                                <img id="first-position" class="podium-fan border-radius-100" src="../assets/fan-2.jfif">
-                                <div class="podium-position-indicator d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">1°</div>
+                                <img id="first-position" class="object-fit-cover bg-gold-linear-gradient border-radius-100 p-xs-7" src="../assets/fan-2.jfif">
+                                <div class="podium-position-indicator p-xs-16 bg-gold-radial-gradient d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">1°</div>
                             </div>
                             <div class="text-info d-flex-column align-items-center">
                                 <div class="fsize-xs-1 t-align-center letter-spacing-1">Giuseppe Molloide</div>
@@ -79,8 +76,8 @@
 
                         <div class="d-flex-column w-33">
                             <div class="d-flex-row align-items-center j-c-center align-items-stretch position-relative mt-xs-120">
-                                <img id="third-position" class="podium-fan border-radius-100" src="../assets/fan-6.jpg">
-                                <div class="podium-position-indicator d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">3°</div>
+                                <img id="third-position" class="object-fit-cover bg-bronze-linear-gradient border-radius-100 p-xs-5" src="../assets/fan-6.jpg">
+                                <div class="podium-position-indicator p-xs-12 bg-bronze-radial-gradient d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">3°</div>
                             </div>
                             <div class="text-info d-flex-column align-items-center">
                                 <div class="fsize-xs-1 t-align-center letter-spacing-1">Kola Li Jiu Ha</div>
