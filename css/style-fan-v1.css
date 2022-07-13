@@ -448,6 +448,9 @@ hr {
 .no-shrink {
     flex-shrink: 0;
 }
+.flex-no-wrap {
+    white-space: nowrap;
+}
 .flex-wrap {
     flex-wrap: wrap;
 }
