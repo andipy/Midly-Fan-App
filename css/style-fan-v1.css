@@ -179,6 +179,9 @@ hr {
 .bg-aquamarine-100-op-15 {
     background-color: rgba(204, 255, 240, .15);
 }
+.bg-tiktok-teal {
+    background-color: #00F2EA;
+}
 /**************** GRADIENT ****************/
 .bg-apple-music-gradient {
     background: linear-gradient(0deg, #FA233B 0.38%, #FB5C74 97.84%);
