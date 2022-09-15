@@ -690,7 +690,8 @@ hr {
 }
 .followed-artist-img {
     min-width: 120px;
-    height: 120px;
+    max-width: 120px;
+    aspect-ratio: 1;
 }
 .height-15px {
     height: 15px;
