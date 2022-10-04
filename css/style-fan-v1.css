@@ -585,56 +585,67 @@ hr {
 .avatar-12 {
     height: 12px;
     width: 12px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-24 {
     height: 24px;
     width: 24px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-28 {
     height: 28px;
     width: 28px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-32 {
     height: 32px;
     width: 32px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-36 {
     height: 36px;
     width: 36px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-40 {
     height: 40px;
     width: 40px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-48 {
     height: 48px;
     width: 48px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-64 {
     height: 64px;
     width: 64px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-72 {
     height: 72px;
     width: 72px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-80 {
     height: 80px;
     width: 80px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 .avatar-96 {
     width: 96px;
     height: 96px;
+    aspect-ratio: 1;
     object-fit: cover;
 }
 

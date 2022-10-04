@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Artist Rank</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-v1.css">
+        <style>
+            .thread {
+                display: flex;
+                flex-direction: column;
+                font-size: 1em;
+                border-radius: .8em;
+                padding: 6% 6%;
+                background-color: #1C1E27;
+                margin-bottom: 4%;
+            }
+            .thread-body {
+                display: flex;
+                flex-direction: column;
+            }
+            .thread-body .media {
+                width: 100%;
+                object-fit: cover;
+                border-radius: .6em;
+                margin-bottom: 2%;
+            }
+            .top {
+                font-size: .9em;
+            }
+            .tag-block {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 4px;
+                margin-top: 2%;
+                color: #888B9A;
+            }
+            .tag-block span {
+                letter-spacing: 1px;
+                font-weight: 500;
+                font-size: .85em;
+            }
+
+            .artist-name {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 2%;
+            }
+            .artist-name span {
+                color: gold;
+                font-weight: 600;
+                margin: 2% 0;
+            }
+
+            .time-block {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 2%;
+                color: #888B9A;
+            }
+            .time-block span {
+                border-radius: 20em;
+                background-color: rgba(77, 77, 77, 0.5);
+                padding: 1% 3%;
+                font-size: .9em;
+            }
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid #303340;
+                margin-top: 4%;
+                padding-top: 4%;
+                color: #E18DFF;
+                font-weight: 500;
+            }
+
+            /***** MESSAGE *****/
+            .message {
+                font-size: 1em;
+                display: flex;
+                margin-bottom: 6%;
+            }
+            .username {
+                font-weight: 600;
+                margin-right: 2%;
+                font-size: .9em;
+            }
+            .message-body {
+                font-weight: 400;
+                font-size: .9em;
+            }
+            .color01 {
+                color: #B974FF;
+            }
+            .color02 {
+                color: #FF83BA;
+            }
+            .color03 {
+                color: #65FFFF;
+            }
+            .color04 {
+                color: #52ED8A;
+            }
+            .color05 {
+                color: #AAE828;
+            }
+
+            .text-bar {
+                width: 100vw;
+                height: 56px;
+                position: fixed;
+                bottom: 0;
+                background-color: #303340;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                align-items: center;
+            }
+            .text-bar input {
+                background-color: #1C1E27;
+                border-radius: 100em;
+                height: 40px;
+                color: #FFFFFF;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="top-bar-area-overlay-fixed bg-dark d-flex-row align-items-center j-c-center white z-index-max top-0 shadow-dark-400">
+            <div class="container d-flex-row align-items-center j-c-center">
+                <a class="topbar-icon-left" href="arcticmonkeys-fanclub-threads.html">
+                    <img src="../assets/icon-arrowleft.svg" alt="BACK">
+                </a>
+                <div class="d-flex-column align-items-center w-75">
+                    <div class="d-flex-row align-items-center j-c-start no-shrink">
+                        <div class="position-relative mr-xs-4">
+                            <img class="avatar-36 border-radius-100" src="../assets/arcticmonkeys.jpg">                       
+                            <img class="artist-avatar-verified-icon avatar-12" src="../assets/icon-verified-artist.svg" alt="Verified">
+                        </div>                    
+                        <h2 id="artist-name" class="f-w-600 fsize-xxl-2 fsize-xl-2 fsize-lg-2 fsize-md-2 fsize-sm-2 fsize-xs-2 letter-spacing-1 no-shrink w-100">Arctic Monkeys</h2>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container pt-xs-20 pt-lg-6 pb-xs-24 pb-lg-8">
+            <section id="thread" class="mt-xs-4 mt-lg-4">
+                <div class="thread">
+                    <div class="top">
+                        <div class="tag-block">
+                            <img src="../assets/icon-star-xs.svg" alt="">
+                            <span>Arctic Monkeys</span>
+                        </div>
+                        <div class="artist-name">
+                            <span>YOU:</span>
+                        </div>
+
+                        <div class="thread-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam vero, ducimus ullam tempore quos saepe ratione corrupti, at natus beatae facilis quae illo quas neque, nobis similique qui officia!</p>
+                        </div>
+
+                        <div class="time-block">
+                            <span>10:32</span>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <span>667 comments</span>
+                        <img src="../assets/icon-arrowright-rounded.svg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="messages" class="mt-xs-12 mt-lg-8">
+                <div class="message">
+                    <span class="username color01">moriCon_90:</span>
+                    <span class="message-body">broski se non lo diciamo anessunoooooooooooo</span>
+                </div>
+
+                <div class="message">
+                    <span class="username color02">ema:</span>
+                    <span class="message-body">mi rendere felice lo studio del momento torcente in un sistema di forze in 4 dimensioni</span>
+                </div>
+
+                <div class="message">
+                    <span class="username color03">dani_theDandi:</span>
+                    <span class="message-body">o gesù giuseppe maria, porta in salvo l'anima mia</span>
+                </div>
+
+                <div class="message">
+                    <span class="username color04">pezcoller:</span>
+                    <span class="message-body">raga avete spaccato un botto con il premioOOOOOOO VIAA MOOOOOOOO</span>
+                </div>
+
+                <div class="message">
+                    <span class="username color05">fra_mienere:</span>
+                    <span class="message-body">lo sappiamo solo noiiiiiiiiii</span>
+                </div>
+            </section>
+
+            <section class="text-bar">
+                <div class="container">
+                    <input type="text" name="user-message" id="user-message" placeholder="Type here your message">
+                </div>                
+            </section>
+        </div>
+                
+    </body>
+</html>
