@@ -140,6 +140,9 @@ hr {
 .bg-dark-soft {
     background-color: #1C1E27;
 }
+.bg-grey-transp50 {
+    background-color: rgba(77, 77, 77, 0.5)
+}
 .bg-green-spotify {
     background-color: #1DB954;
 }
@@ -276,6 +279,11 @@ hr {
     border-radius: 100rem;
 }
 
+/************* BORDERS *************/
+.border-top-dark-01 {
+    border-top: 1px solid #303340;
+}
+
 .underline-landing {
     border-bottom: 3px solid #f1cbff;
 }
@@ -321,6 +329,9 @@ hr {
 .dark-400 {
     color: #6E728A;
 }
+.greyish-400 {
+    color: #888B9A;
+}
 .dark-500 {
     color: #40434f;
 }
@@ -365,6 +376,24 @@ hr {
 }
 .aquamarine-200 {
     color: #73FFD5;
+}
+.gold {
+    color: gold;
+}
+.color01 {
+    color: #B974FF;
+}
+.color02 {
+    color: #FF83BA;
+}
+.color03 {
+    color: #65FFFF;
+}
+.color04 {
+    color: #52ED8A;
+}
+.color05 {
+    color: #AAE828;
 }
 /* .pink-blue-gradient {
     color: linear-gradient(270deg, rgb(229, 111, 139) 0%, rgb(57, 94, 202) 100%);
@@ -807,6 +836,28 @@ nav .container {
     width: 48px;
     height: 48px;
     top: calc((var(--top-bar-height)/2) - 24px);
+}
+
+/******************************************/ 
+/**************** TEXT BAR *****************/
+/******************************************/
+
+.text-bar {
+    width: 100vw;
+    height: 56px;
+    position: fixed;
+    bottom: 0;
+    background-color: #1C1E27;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+.text-bar input {
+    background-color: #0F111C;
+    border-radius: 100em;
+    height: 36px;
+    color: #FFFFFF;
 }
 
 /******************************************/ 
