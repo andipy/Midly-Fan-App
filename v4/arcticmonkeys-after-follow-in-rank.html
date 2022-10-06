@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Artist Page After Follow</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-v1.css">
+    </head>
+    <body>
+        <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center">
+                <a href="followed-full.html">
+                    <img src="../assets/icon-arrowleft.svg" alt="BACK">
+                </a>
+            </div>
+        </nav>
+
+        <header class="position-relative">            
+            <div class="h-xs-40 h-lg-40">
+                <img class="w-100 h-inherit object-fit-cover" src="../assets/arcticmonkeys.jpg" alt="{{artist-name}}">
+                <div class="overlay-header bg-dark-overlay-header"></div>
+            </div>
+
+            <div class="container">
+                <div class="position-absolute d-flex-row align-items-center bottom-5 z-index-2">
+                    <div class="artist-avatar-wrapper position-relative">
+                        <img class="avatar-72 border-radius-100" src="../assets/arcticmonkeys.jpg">                       
+                        <img class="artist-avatar-verified-icon" src="../assets/icon-verified-artist.svg" alt="Verified">
+                    </div>
+                    <div class="d-flex-column no-shrink j-c-start ml-xs-6">
+                        <h5 class="fsize-xs-5 f-w-500">Arctic Monkeys</h5>
+                    </div>                    
+                </div>
+            </div>
+        </header>
+        
+        <div class="container pb-xs-24 pb-lg-8">
+            <div>
+                <button class="bg-dark-soft" onclick="location.href=''">
+                    <span class="fsize-xs-3 f-w-500 grey-500 letter-spacing-1">Segui già</span>                        
+                </button>
+            </div>
+
+            <section id="rank" class="mt-xs-5">
+                <a class="d-flex-row j-c-space-between bg-dark-gradient pb-xs-8 pt-xs-8 pr-xs-8 pl-xs-8 border-radius-1_25" href="arcticmonkeys-rank-socials-connected.html">
+                    <div class="d-flex-column">
+                        <div class="d-flex-row align-items-center">
+                            <img class="avatar-40 border-radius-100" src="../assets/fan-5.jpg">
+                            <div class="text-info d-flex-column ml-xs-4 no-shrink">
+                                <div class="fsize-xs-4 mb-xs-4">Sei 8° in classifica!</div>
+                                <div class="d-flex-row">
+                                    <div class="purple-500 fsize-xs-1 line-height-140 font-body">Hai 1124 </div>
+                                    <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex-row align-items-center align-self-start bg-purple-200-transp10 pr-xs-8 pl-xs-4 pt-xs-2 pb-xs-2 border-radius-100 mt-xs-6 mt-md-12">
+                            <img src="../assets/icon-prize-rank-card.svg" alt=" points">
+                            <div class="purple-500 fsize-xs-1 line-height-140 font-body ml-xs-2 no-shrink">3 premi questo mese</div>                                
+                        </div>
+                    </div>                    
+                    <img class="arrow" src="../assets/icon-arrowright-rounded-dark.svg" alt="Go right">
+                </a>
+            </section>
+
+
+            <section id="fan-club" class="mt-xs-4">
+                <a class="d-flex-row j-c-space-between bg-dark-gradient pb-xs-8 pt-xs-8 pr-xs-8 pl-xs-8 border-radius-1_25" href="arcticmonkeys-rank.html">
+                    <div class="d-flex-row">
+                        <div class="text-info d-flex-column">
+                            <div class="fsize-xs-4 mb-xs-4">Abbonati al club privato di Arctic Monkeys!</div>
+                            <div class="purple-500 fsize-xs-1 line-height-140 font-body">Chatta direttamente con l’artista, ricevi news e contenuti esclusivi prima di tutti.</div>
+                        </div>
+                    </div>
+                    <img class="arrow" src="../assets/icon-arrowright-rounded-dark.svg" alt="Go right">
+                </a>
+            </section>
+
+            <section id="invite-friend" class="mt-xs-4">
+                <a class="d-flex-row j-c-space-between bg-dark-gradient pb-xs-8 pt-xs-8 pr-xs-8 pl-xs-8 border-radius-1_25" href="arcticmonkeys-invite-friend.html">
+                    <div class="text-info d-flex-column w-100">
+                        <div class="fsize-xs-4 mb-xs-4">Invita un amico!</div>
+                        <div class="d-flex-row">
+                            <p class="purple-500 fsize-xs-1 line-height-140 font-body">Guadagnerai 15 punti</p>
+                            <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                        </div>
+                        <p class="purple-500 fsize-xs-1 line-height-140 font-body">nella clasifica dell'artista!</p>
+                    </div>
+                    <img src="../assets/icon-arrowright-rounded-dark.svg" alt="Go right">
+                </a>
+            </section>
+
+            <!--
+            <section id="prizes" class="mt-xs-12">
+                <div class="mb-xs-2 mb-lg-2">
+                    <h4 class="fsize-xs-5 letter-spacing-1 f-w-500">Premi di <span id="rank-month">gennaio</span></h4>
+                </div>
+                <div class="carousel d-flex-row overflow-x">
+                    <div class="prize d-flex-column bg-dark-gradient pt-xs-6 pb-xs-6 pl-xs-8 pr-xs-8 pt-lg-1 pb-lg-1 border-radius-1 j-c-space-between mr-xs-4">
+                        <h6 class="mt-xs-8 mt-lg-4 fsize-xs-5 letter-spacing-1 f-w-300">1° classificato</h6>
+                        <div class="d-flex-column">
+                            <h5 class="mt-xs-16 mb-xs-2 mt-lg-8 fsize-xs-6 f-w-400">Una gita in studio</h5>
+                            <p class="fsize-xs-1 grey-300 letter-spacing-1">Non te lo aspettavi eh?! Vieni a trovarci in studio di registrazione!</p>
+                        </div>
+                    </div>
+                    <div class="prize d-flex-column bg-dark-gradient pt-xs-6 pb-xs-6 pl-xs-8 pr-xs-8 pt-lg-1 pb-lg-1 border-radius-1 j-c-space-between mr-xs-4">
+                        <h6 class="mt-xs-8 mt-lg-4 fsize-xs-5 letter-spacing-1 f-w-300">2° classificato</h6>
+                        <div class="d-flex-column">
+                            <h5 class="mt-xs-16 mb-xs-2 mt-lg-8 fsize-xs-6 f-w-400">Maglietta firmata</h5>
+                            <p class="fsize-xs-1 grey-300 letter-spacing-1">Una maglietta limited edition firmata a mano da me!</p>
+                        </div>
+                    </div>
+                    <div class="prize d-flex-column bg-dark-gradient pt-xs-6 pb-xs-6 pl-xs-8 pr-xs-8 border-radius-1 j-c-space-between">
+                        <h6 class="mt-xs-8 mt-lg-4 fsize-xs-5 letter-spacing-1 f-w-300">3° classificato</h6>
+                        <div class="d-flex-column">
+                            <h5 class="mt-xs-16 mb-xs-2 mt-lg-8 fsize-xs-6 f-w-400">Nome del premio</h5>
+                            <p class="fsize-xs-1 grey-300 letter-spacing-1">Nel prossimo concerto avrai accesso al backstage per tutta la durata dello show!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+        </div>            
+        
+        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+            <div class="container d-flex-row align-items-center j-c-space-between">                
+                <a href="search.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-search-inactive.svg" alt="Search">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Cerca</span>
+                    </div>                    
+                </a>
+                <a href="followed-full.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-rankings-active.svg" alt="Ranks">
+                        <span class="fsize-xs-0 f-w-600 purple-200 letter-spacing-1">Seguiti</span>
+                    </div>
+                </a>
+                <a href="profile-apple-disconnected.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-profile-inactive.svg" alt="Profile">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Profilo</span>
+                    </div>
+                </a>                
+            </div>
+        </div>  
+    </body>
+</html>

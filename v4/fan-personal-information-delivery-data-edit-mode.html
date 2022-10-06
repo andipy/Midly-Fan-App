@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fan Delivery Data Edit</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-v1.css">
+    </head>
+    <body>
+        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center j-c-center">
+                <h5 class="f-w-500 fsize-xxl-4 fsize-xl-4 fsize-lg-4 fsize-md-4 fsize-sm-4 fsize-xs-4 letter-spacing-1 j-c-center">Dati di spedizione</h5>
+                <a class="topbar-icon-right" href="fan-personal-information-delivery-data-read-mode.html">
+                    <img src="../assets/icon-exit.svg" alt="CANCEL">
+                </a>
+            </div>
+        </nav>
+
+        <div class="container pb-xs-12 pb-lg-1">
+            <!-- <div id="instructions" class="mt-xs-4">
+                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Aggiorna il tuo indirizzo con tutte le informazioni, è necessario per farti avere i premi, di qualsiasi tipo essi siano!</p>
+            </div> -->
+
+            <div>
+                <form action="POST">
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-name">NOME</label>
+                        <input id="input-name" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="es: Lara">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-last-name">COGNOME</label>
+                        <input id="input-last-name" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="es: Rossini">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-street">VIA E NUMERO</label>
+                        <input id="input-street" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="es: Via dei Matti 20">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-zip-code">CAP</label>
+                        <input id="input-zip-code" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="number" placeholder="es: 21020">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-city">COMUNE/CITTÀ</label>
+                        <input id="input-city" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="es: Milano">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-province">PROVINCIA</label>
+                        <input id="input-province" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="es: (MI)">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-country">STATO</label>
+                        <input id="input-country" class="bg-dark-soft white letter-spacing-1 border-radius-08" type="text" placeholder="es: Italia">
+                    </div>
+                    <!-- Let's leave this param out for the moment -->
+                    <!-- <div class="mt-xs-8 mb-xs-8">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-cloth-size">TAGLIA DI VESTIARIO</label>
+                        <select id="input-cloth-size" class="bg-dark-soft white letter-spacing-1 border-radius-08" name="cloth-size-selector" >
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div> -->
+
+                    <button class="bg-purple-400" onclick="location.href='#'">
+                        <span class="fsize-xs-3 f-w-600 dark-900 letter-spacing-1">Conferma modifiche</span>                        
+                    </button>
+                    <!-- <button class="bg-dark-soft" onclick="location.href=''">
+                        <span class="fsize-xs-3 f-w-400 grey-500 letter-spacing-1">Conferma modifiche</span>                        
+                    </button> -->              
+                </form>
+            </div>
+
+             
+        </div>        
+    </body>
+</html>

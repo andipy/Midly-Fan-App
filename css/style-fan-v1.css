@@ -216,6 +216,9 @@ hr {
 .bg-dark-overlay-full {
     background: linear-gradient(180deg, rgba(15, 17, 28, 0) 5%, #0f111cc8 45.66%);
 }
+.bg-dark-overlay-big-card {
+    background: linear-gradient(180deg, rgba(15, 17, 28, 0) 40.86%, rgba(15, 17, 28, 0.8) 63.86%);
+}
 .bg-pink-blue-gradient {
     background: linear-gradient(270deg, rgb(229, 111, 139) 0%, rgb(57, 94, 202) 100%);
 }
@@ -287,6 +290,9 @@ hr {
 .border-radius-1 {
     border-radius: 1rem;
 }
+.border-radius-1_25 {
+    border-radius: 1.25em;
+}
 .border-radius-2 {
     border-radius: 2rem;
 }
@@ -306,6 +312,14 @@ hr {
 /******************************************/
 /****************** TEXT ******************/
 /******************************************/
+/*************** FONT FAMILY **************/
+.font-heading {
+    font-family: var(--font-heading);
+}
+.font-body {
+    font-family: var(--font-body);
+}
+
 /************* TEXT ALIGNMENT *************/
 .t-align-center {
     text-align: center;
@@ -391,6 +405,9 @@ hr {
 }
 .purple-400 {
     color: #D257FD;
+}
+.purple-500 {
+    color: #CB97FF;
 }
 .greyish-300 {
     color: #5c5d66;
@@ -510,6 +527,9 @@ hr {
 .flex-wrap {
     flex-wrap: wrap;
 }
+.gap-1em {
+    gap: 1em;
+}
 .overflow-x {
     overflow-x: auto;
     overflow-y: hidden;
@@ -520,6 +540,9 @@ hr {
 .overflow-hidden {
     overflow-x: hidden;
 }
+.overflow-all-hidden {
+    overflow: hidden;
+}
 .position-relative {
     position: relative;
 }
@@ -528,6 +551,9 @@ hr {
 }
 .position-fixed {
     position: fixed;
+}
+.position-sticky {
+    position: sticky;
 }
 .d-inline-block {
     display: inline-block;
@@ -581,6 +607,9 @@ hr {
 .top-0 {
     top: 0;
 }
+.top-navbar {
+    top: var(--top-bar-height);
+}
 .right-0 {
     right: 0;
 }
@@ -625,6 +654,9 @@ hr {
 }
 .h-inherit {
     height: inherit;
+}
+.h-artist-card-full {
+    height: calc(96vh - calc(var(--app-bar-height) + var(--top-bar-height)));
 }
 .carousel {
     margin-left: -7.5%;
@@ -910,6 +942,12 @@ nav .container {
 .opacity-1 {
     opacity: 1;
 }
+.blur-0 {
+    filter: blur(0);
+}
+.blur-2_5 {
+    filter: blur(2.5px);
+}
 .footer-landing {
     border-top: 1px solid #1C1E27;
 }
@@ -919,7 +957,7 @@ nav .container {
 /******************************************/ 
 .app-bar-area {
     width: 100%;    
-    height: 72px;
+    height: var(--app-bar-height);
     position: fixed;
     bottom: -2px;
     border-radius: 24px 24px 0 0;    
@@ -928,7 +966,7 @@ nav .container {
 }
 .app-bar-area-suspended {
     width: 85%;    
-    height: 72px;
+    height: var(--app-bar-height);
     position: fixed;    
     bottom: 3%;
     left: 50%;
@@ -949,8 +987,11 @@ nav .container {
 /************** MEDIA QUERIES *************/
 /******************************************/
 :root {
-    --top-bar-height: 5rem;
+    --top-bar-height: 12vh;
+    --app-bar-height: 12vh;
     --container-landing: 85vw;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
 }
 @media (min-width: 0px){
     :root {
@@ -1189,6 +1230,9 @@ nav .container {
     .pr-xs-8 {
         padding-right: 8%;
     }
+    .pr-xs-60 {
+        padding-right: 60%;
+    }
     /* PADDING ALL SIDES */
     .p-xs-1 {
         padding: 1%;
@@ -1232,7 +1276,7 @@ nav .container {
 
     /**** TEXT SIZE ****/
     .fsize-xs-0 {
-        font-size: .65rem;
+        font-size: .6875rem;
     }
     .fsize-xs-1 {
         font-size: .8rem;
@@ -1551,6 +1595,9 @@ nav .container {
     .pr-sm-8 {
         padding-right: 8%;
     }
+    .pr-sm-60 {
+        padding-right: 60%;
+    }
     /* PADDING ALL SIDES */
     .p-sm-10 {
         padding: 10%;
@@ -1866,6 +1913,9 @@ nav .container {
     }
     .pr-md-8 {
         padding-right: 8%;
+    }
+    .pr-md-60 {
+        padding-right: 60%;
     }
     /* PADDING ALL SIDES */
     .p-md-10 {
@@ -2183,6 +2233,9 @@ nav .container {
     .pr-lg-8 {
         padding-right: 8%;
     }
+    .pr-lg-60 {
+        padding-right: 60%;
+    }
     /* PADDING ALL SIDES */
     .p-lg-10 {
         padding: 10%;
@@ -2494,6 +2547,9 @@ nav .container {
     }
     .pr-xl-8 {
         padding-right: 8%;
+    }
+    .pr-xl-60 {
+        padding-right: 60%;
     }
     /* PADDING ALL SIDES */
     .p-xl-10 {
@@ -2808,6 +2864,9 @@ nav .container {
     }
     .pr-xxl-8 {
         padding-right: 8%;
+    }
+    .pr-xxl-60 {
+        padding-right: 60%;
     }
     /* PADDING ALL SIDES */
     .p-xxl-10 {
