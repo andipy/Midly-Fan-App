@@ -197,6 +197,9 @@ hr {
 .bg-orange-400 {
     background-color: #F5BE6B;
 }
+.bg-apple-music {
+    background-color: #FE2C55;
+}
 /**************** GRADIENT ****************/
 .bg-apple-music-gradient {
     background: linear-gradient(0deg, #FA233B 0.38%, #FB5C74 97.84%);
@@ -1164,6 +1167,12 @@ nav .container {
     .pb-xs-12 {
         padding-bottom: 12%;
     }
+    .pb-xs-20 {
+        padding-bottom: 20%;
+    }
+    .pb-xs-22 {
+        padding-bottom: 22%;
+    }
     .pb-xs-24 {
         padding-bottom: 24%;
     }
@@ -1529,6 +1538,12 @@ nav .container {
     .pb-sm-12 {
         padding-bottom: 12%;
     }
+    .pb-sm-20 {
+        padding-bottom: 20%;
+    }
+    .pb-sm-22 {
+        padding-bottom: 22%;
+    }
     .pb-sm-24 {
         padding-bottom: 24%;
     }
@@ -1847,6 +1862,12 @@ nav .container {
     }
     .pb-md-12 {
         padding-bottom: 12%;
+    }
+    .pb-md-20 {
+        padding-bottom: 20%;
+    }
+    .pb-md-22 {
+        padding-bottom: 22%;
     }
     .pb-md-24 {
         padding-bottom: 24%;
@@ -2167,6 +2188,12 @@ nav .container {
     .pb-lg-12 {
         padding-bottom: 12%;
     }
+    .pb-lg-20 {
+        padding-bottom: 20%;
+    }
+    .pb-lg-22 {
+        padding-bottom: 22%;
+    }
     .pb-lg-24 {
         padding-bottom: 24%;
     }
@@ -2481,6 +2508,12 @@ nav .container {
     }
     .pb-xl-12 {
         padding-bottom: 12%;
+    }
+    .pb-xl-20 {
+        padding-bottom: 20%;
+    }
+    .pb-xl-22 {
+        padding-bottom: 22%;
     }
     .pb-xl-24 {
         padding-bottom: 24%;
@@ -2798,6 +2831,12 @@ nav .container {
     }
     .pb-xxl-12 {
         padding-bottom: 12%;
+    }
+    .pb-xxl-20 {
+        padding-bottom: 20%;
+    }
+    .pb-xxl-22 {
+        padding-bottom: 22%;
     }
     .pb-xxl-24 {
         padding-bottom: 24%;
