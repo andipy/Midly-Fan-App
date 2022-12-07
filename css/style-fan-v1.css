@@ -659,7 +659,7 @@ hr {
     height: inherit;
 }
 .h-artist-card-full {
-    height: calc(88vh - calc(var(--app-bar-height) + var(--top-bar-height)));
+    height: calc(86vh - calc(var(--app-bar-height) + var(--top-bar-height)));
 }
 .carousel {
     margin-left: -7.5%;
