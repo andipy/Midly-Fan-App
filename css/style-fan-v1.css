@@ -531,6 +531,9 @@ hr {
 .no-shrink {
     flex-shrink: 0;
 }
+.grow-1 {
+    flex-grow: 1;
+}
 .flex-no-wrap {
     white-space: nowrap;
 }
@@ -683,6 +686,18 @@ hr {
 .avatar-12 {
     height: 12px;
     width: 12px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.avatar-14 {
+    height: 14px;
+    width: 14px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.avatar-16 {
+    height: 16px;
+    width: 16px;
     aspect-ratio: 1;
     object-fit: cover;
 }
