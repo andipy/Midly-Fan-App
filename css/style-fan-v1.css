@@ -66,6 +66,9 @@ input {
     border: none;
     text-indent: 0px;
 }
+.ml-input-search-center {
+    margin-left: calc( calc( var(--container) - 100vw ) / 2);
+}
 input::placeholder {
     color: #8d8d8d;
     letter-spacing: .1em;
@@ -589,6 +592,7 @@ hr {
     position: fixed;
 }
 .position-sticky {
+    position: -webkit-sticky;
     position: sticky;
 }
 .d-inline-block {
@@ -654,6 +658,9 @@ hr {
 }
 .left-0 {
     left: 0;
+}
+.w-100vw {
+    width: 100vw;
 }
 .w-100 {
     width: 100%;
