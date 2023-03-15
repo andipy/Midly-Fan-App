@@ -587,6 +587,9 @@ hr {
 .flex-wrap {
     flex-wrap: wrap;
 }
+.gap-0_5em {
+    gap: 0.5em;
+}
 .gap-1em {
     gap: 1em;
 }
@@ -1052,6 +1055,9 @@ nav .container {
 }
 .opacity-0 {
     opacity: 0;
+}
+.opacity-002 {
+    opacity: 0.02;
 }
 .opacity-005 {
     opacity: 0.05;
