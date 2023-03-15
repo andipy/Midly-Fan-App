@@ -6,66 +6,74 @@
         <title>Artist Page After Follow</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style-fan-v1.css">
     </head>
-    <body>
+    <body class="bg-black position-relative">
         <nav class="top-bar-area-overlay d-flex-row align-items-center j-c-center white z-index-max">
-            <div class="container-landing d-flex-row align-items-center j-c-center position-relative">
-                <img class="topbar-icon-left" src="../assets/logo-landing.svg" alt="MIDLY">
-                <a class="topbar-icon-right" href="https://www.midly.it/login">
-                    <span class="d-none d-sm-block">Hai già un account?</span>
-                    <span class="underline-landing">Accedi</span>
-                </a>
+            <div class="container-landing d-flex-row align-items-center j-c-space-between position-relative">
+                <img src="../assets/logo-landing.svg" alt="MIDLY">
+                <div class="d-flex-row align-items-center j-c-end">
+                    <span class="d-none d-sm-block font-body black f-w-400 no-shrink">Hai già un account?</span>
+                    <a class="font-body black f-w-600 pt-xs-8 pb-xs-8 pl-xs-8 pr-xs-8 no-shrink" href="https://www.midly.it/login">Accedi</a>
+                </div>
             </div>
         </nav>
 
         <div class="container-landing">
-            <section class="d-flex-row align-items-center h-100vh">
-                <div class="z-index-2 mt-xs-10">
-                    <h1 class="title-landing mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Connettiti ai tuoi artisti preferiti!</h1>
-                    <h3 class="subtitle-landing">Ascolta i tuoi artisti preferiti, guadagna punti e riscatta i premi! Ti basta collegare le tue app di streaming musicale con un click!</h3>
-                    <button class="button-landing bg-pink-blue-gradient" onclick="location.href='https://www.midly.it/signup'">Iscriviti subito</button>                    
-                </div>
-                <img class="theme-landing" src="../assets/theme.png" alt="">
+            <section class="d-flex-row align-items-start j-c-end position-absolute container-landing gap-1em">
+                <div id="s1" class="h-80vh bg-light-red z-index-max w-15 opacity-005"></div>
+                <div id="s2" class="h-60vh bg-light-red z-index-max w-15 opacity-01"></div>
+                <div id="s3" class="h-40vh bg-light-red z-index-max w-15 opacity-01"></div>
             </section>
 
-            <section class="d-flex-column j-c-center">
+            <section class="d-flex-row align-items-center h-100vh">
+                <div class="z-index-2 mt-xs-10">
+                    <h1 class="title-landing font-heading mb-xs-2">Connettiti ai tuoi artisti preferiti!</h1>
+                    <h3 class="subtitle-landing font-body">Ascolta i tuoi artisti preferiti, guadagna punti e riscatta i premi! Ti basta collegare le tue app di streaming musicale con un click!</h3>
+                    <button class="button-landing bg-acid-lime black font-body mt-xs-2">Iscriviti subito</button>                    
+                </div>
+                <img class="theme-landing" src="../assets/theme_new_above.png" alt="">
+            </section>
+
+            <section class="d-flex-column j-c-center h-100vh">
                 <div class="d-flex-row j-c-center">
-                    <h1 class="t-align-center title-landing mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Come funziona?</h1>
+                    <h3 class="t-align-center title-landing font-heading mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2 space-gradient-text">Come funziona?</h3>
                 </div>
                 <div class="d-flex-row j-c-center flex-wrap mb-xs-4">
                     <div class="d-flex-column align-items-center cell-landing position-relative">
                         <img class="icon-landing" src="../assets/apple-music-landing-logo.svg" alt="">                      
-                        <p class="subtitle-landing t-align-center">Collega il tuo account Spotify o Apple Music al tuo profilo Midly</p>
-                        <span class="position-absolute number-landing">01</span>
+                        <p class="paragraph-landing font-body t-align-center">Collega il tuo account Spotify o Apple Music al tuo profilo Midly</p>
+                        <span class="position-absolute number-landing font-body">01</span>
                     </div>
                     <div class="d-flex-column align-items-center cell-landing position-relative">
                         <img class="icon-landing" src="../assets/Artist.svg" alt="">
-                        <p class="subtitle-landing t-align-center">Inizia a seguire i tuoi artisti preferiti su Midly</p>
-                        <span class="position-absolute number-landing">02</span>
+                        <p class="paragraph-landing font-body t-align-center">Inizia a seguire i tuoi artisti preferiti su Midly</p>
+                        <span class="position-absolute number-landing font-body">02</span>
                     </div>
                     <div class="d-flex-column align-items-center cell-landing position-relative">
                         <img class="icon-landing" src="../assets/Audio.svg" alt="">
-                        <p class="subtitle-landing t-align-center">Torna su Spotify o Apple Music e ascolta i loro brani</p>
-                        <span class="position-absolute number-landing">03</span>
+                        <p class="paragraph-landing font-body t-align-center">Torna su Spotify o Apple Music e ascolta i loro brani</p>
+                        <span class="position-absolute number-landing font-body">03</span>
                     </div>
                     <div class="d-flex-column align-items-center cell-landing position-relative">
                         <img class="icon-landing" src="../assets/Star.svg" alt="">
-                        <p class="subtitle-landing t-align-center">Accumula punti e scala le classifiche degli artisti</p>
-                        <span class="position-absolute number-landing">04</span>
+                        <p class="paragraph-landing font-body t-align-center">Accumula punti e scala le classifiche degli artisti</p>
+                        <span class="position-absolute number-landing font-body">04</span>
                     </div>
                 </div>
                 <div class="d-flex-row j-c-center">
-                    <button class="button-landing bg-pink-blue-gradient" onclick="location.href='https://www.midly.it/signup'">Crea account</button>
+                    <button class="button-landing bg-light-blue-flash black font-body mt-xs-2">Crea account</button>
                 </div>    
             </section>
 
             <section class="d-flex-column align-items-center j-c-center h-100vh position-relative overflow-hidden">
-                <h1 class="t-align-center title-landing mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Ogni tuo ascolto su Spotify o Apple Music vale un punto!</h1>
-                <p class="subtitle-landing t-align-center">Teniamo traccia di tutti i tuoi ascolti su Spotify o Apple Music e li convertiamo in punti: un ascolto vale un punto! Sei pronto a scalare le classifiche dei tuoi artisti preferiti?</p>
-                <button class="button-landing bg-pink-blue-gradient" onclick="location.href='https://www.midly.it/signup'">Inizia ora</button>
+                <h3 class="t-align-center title-landing font-heading mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Ogni tuo ascolto su Spotify o Apple Music vale un punto!</h3>
+                <p class="subtitle-landing font-body t-align-center">Teniamo traccia di tutti i tuoi ascolti su Spotify o Apple Music e li convertiamo in punti: un ascolto vale un punto! Sei pronto a scalare le classifiche dei tuoi artisti preferiti?</p>
+                <button class="button-landing bg-acid-lime black font-body mt-xs-2">Inizia ora</button>
 
-                <div class="d-flex-row position-absolute opacity-03">
+                <div class="d-flex-row position-absolute opacity-1">
                     <img src="../assets/audio-wave.svg" alt="">
                     <img src="../assets/audio-wave.svg" alt="">
                 </div>
@@ -73,31 +81,31 @@
 
             <section class="d-flex-column align-items-center j-c-center h-100vh mb-xs-5">
                 <div>
-                    <h1 class="title-landing mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Vinci i premi messi in palio dai tuoi artisti preferiti su Midly!</h1>
-                    <h3 class="subtitle-landing">Scala la classifica e arriva tra le prime posizioni: riceverai così i premi messi in palio direttamente dai tuoi artisti preferiti!</h3>
-                    <button class="button-landing bg-pink-blue-gradient" onclick="location.href='https://www.midly.it/signup'">Crea un account, è gratis</button>
+                    <h1 class="title-landing font-heading mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Vinci i premi messi in palio dai tuoi artisti preferiti su Midly!</h1>
+                    <h3 class="subtitle-landing font-body">Scala la classifica e arriva tra le prime posizioni: riceverai così i premi messi in palio direttamente dai tuoi artisti preferiti!</h3>
+                    <button class="button-landing bg-acid-lime black font-body mt-xs-2">Crea un account, è gratis</button>
                 </div>
             </section>
 
             <section class="d-flex-column align-items-center j-c-center">
-                <h1 class="t-align-center title-landing mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Midly ti aspetta!</h1>
-                <p class="subtitle-landing t-align-center">La nostra missione è quella di connettere i fan con i loro artisti preferiti: ascolta, accumula punti e vinci i premi!</p>
-                <img class="mockup-landing" src="../assets/Mockup For Landing.png" alt="">
-                <button class="button-landing bg-white" onclick="location.href='https://www.midly.it/signup'">
-                    <span class="blue-500">Diventa un top fan</span>
+                <h1 class="t-align-center title-landing font-heading black mb-xs-8 mb-sm-4 mb-md-6 mb-lg-4 mb-xl-2">Midly ti aspetta!</h1>
+                <p class="subtitle-landing font-body black t-align-center">La nostra missione è connettere i fan con i loro artisti preferiti: ascolta, accumula punti e vinci i premi!</p>
+                <img class="mockup-landing" src="../assets/app-screen.png" alt="">
+                <button class="button-landing bg-black font-body mt-xs-2">
+                    <span class="space-gradient-text-2">Diventa un top fan</span>
                 </button>                
             </section>
 
-            <footer class="d-inline-block overflow-x-clip footer-landing pb-xs-8 pb-lg-4 mt-xs-12 mt-md-8 mt-lg-4">
+            <footer class="d-inline-block overflow-x-clip footer-landing pb-xs-8 pb-lg-4 mt-xs-12 mt-md-8 mt-lg-4 position-relative">
                 <div class="d-flex-column footer-column-landing float-left mt-xs-4">
-                    <img src="../assets/logo-landing.svg" alt="">
-                    <p class="fsize-xs-2 f-w-300 mt-xs-4">© 2022 Midly
+                    <img src="../assets/logo-landing-black.svg" alt="">
+                    <p class="fsize-xs-2 f-w-300 mt-xs-4 font-body black">© 2022 Midly
                         <br>
                         All rights reserved
                     </p>
                 </div>
                 <div class="d-flex-column footer-column-landing float-left pl-md-8 mt-xs-4">
-                    <p class="fsize-xs-2 f-w-300 mt-xs-4">
+                    <p class="fsize-xs-2 f-w-300 mt-xs-4 font-body black">
                         <span class="f-w-600">Mydly SRL</span>
                         <br>
                         Via Umberto Maddalena 20
@@ -108,14 +116,16 @@
                     </p>                  
                 </div>
                 <div class="d-flex-column footer-column-landing float-left pl-md-8 mt-xs-4">
-                    <a class="fsize-xs-2 f-w-300 mt-xs-4 text-underline" href="https://www.midly.it/legal/terms-and-conditions-fans" target="blank">Termini e condizioni fan</a>
-                    <a class="fsize-xs-2 f-w-300 mt-xs-4 text-underline" href="https://www.midly.it/legal/privacy-policy-fans" target="blank">Privacy policy fan</a>
-                    <a class="fsize-xs-2 f-w-300 mt-xs-4 text-underline" href="https://www.midly.it/legal/terms-and-conditions-artists" target="blank">Termini e condizioni artista</a>
-                    <a class="fsize-xs-2 f-w-300 mt-xs-4 text-underline" href="https://www.midly.it/legal/privacy-policy-artists" target="blank">Privacy policy artista</a>
-                    <a class="fsize-xs-2 f-w-300 mt-xs-4 text-underline" href="https://www.midly.it/legal/cookie-policy" target="blank">Cookie policy</a>
-                    <a class="fsize-xs-2 f-w-300 mt-xs-4 text-underline" href="https://midly-assets.s3.eu-west-1.amazonaws.com/RegolamentoMIDLY_2021_Finale.pdf" target="blank">Regolamento del concorso a premi</a>
+                    <a class="fsize-xs-2 f-w-300 font-body black mt-xs-4 text-underline" href="https://www.midly.it/legal/terms-and-conditions-fans" target="blank">Termini e condizioni fan</a>
+                    <a class="fsize-xs-2 f-w-300 font-body black mt-xs-4 text-underline" href="https://www.midly.it/legal/privacy-policy-fans" target="blank">Privacy policy fan</a>
+                    <a class="fsize-xs-2 f-w-300 font-body black mt-xs-4 text-underline" href="https://www.midly.it/legal/terms-and-conditions-artists" target="blank">Termini e condizioni artista</a>
+                    <a class="fsize-xs-2 f-w-300 font-body black mt-xs-4 text-underline" href="https://www.midly.it/legal/privacy-policy-artists" target="blank">Privacy policy artista</a>
+                    <a class="fsize-xs-2 f-w-300 font-body black mt-xs-4 text-underline" href="https://www.midly.it/legal/cookie-policy" target="blank">Cookie policy</a>
+                    <a class="fsize-xs-2 f-w-300 font-body black mt-xs-4 text-underline" href="https://midly-assets.s3.eu-west-1.amazonaws.com/RegolamentoMIDLY_2021_Finale.pdf" target="blank">Regolamento del concorso a premi</a>
                 </div>
-            </footer>
+            </footer>            
         </div>
+
+        <img class="w-100vw position-absolute bottom-0 right-0 z-index-negative1" src="../assets/theme_new_bottom.png" alt="">
     </body>
 </html>
