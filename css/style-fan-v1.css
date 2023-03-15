@@ -718,6 +718,12 @@ hr {
 .w-50 {
     width: 50%;
 }
+.w-35 {
+    width: 35%;
+}
+.w-30 {
+    width: 30%;
+}
 .w-25 {
     width: 25%;
 }
@@ -1437,8 +1443,8 @@ nav .container {
     }
     .title-landing {
         width: 100%;
-        font-size: 3.4rem;
-        line-height: 3.4rem;
+        font-size: 3rem;
+        line-height: 3.2rem;
         font-weight: 800;
     }
     .subtitle-landing {
@@ -1448,8 +1454,8 @@ nav .container {
         font-weight: 400;
     }
     .paragraph-landing {
-        width: 80%;
-        font-size: 1.2rem;
+        width: 100%;
+        font-size: 1rem;
         line-height: 1.8rem;
         font-weight: 400;
     }
@@ -1794,6 +1800,12 @@ nav .container {
         width: 70%;
         font-size: 1.2rem;
         line-height: 2rem;
+    }
+    .paragraph-landing {
+        width: 80%;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 400;
     }
     .button-landing {
         width: 60%;
