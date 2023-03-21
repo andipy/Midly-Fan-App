@@ -31,28 +31,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-button {
-    width: 100%;
-    padding: 5% 0;
-    border-radius: .8em;
-    margin: 5.5% 0;
-    border: none;                
-}
-.secondary {
-    width: 100%;
-    padding: 2% 0;
-    border-radius: .8em;
-    margin: 5.5% 0;
-    background: none;
-    border: 1.5px solid #8d8d8d;
-}
-.button-special {
-    width: 100%;
-    padding: 4% 0;
-    border-radius: .8em;
-    margin: 0;
-    border: none; 
-}
 .chat-button {
     padding: 0;
     margin: 0;
@@ -60,43 +38,14 @@ button {
     width: 40px;
     aspect-ratio: 1 / 1;
 }
-input {
-    width: 100%;
-    padding: 5% 0;
-    margin: 1% 0;
-    border: none;
-    text-indent: 20px;
-}
-.input-search {
-    padding: 2% 0;
-    margin: 1% 0;
-    border: none;
-    text-indent: 0px;
-}
-.ml-input-search-center {
-    margin-left: calc( calc( var(--container) - 100vw ) / 2);
-}
-input::placeholder {
-    color: #8d8d8d;
-    letter-spacing: .1em;
-}
-input[type=checkbox] {
-    width: 24px;
-    height: 24px;
-    border-radius: 16px;
-}
-select {
-    width: 100%;
-    padding: 5% 0;
-    margin: 1% 0;
-    border: none;
-    text-indent: 20px;
-}
 hr {
     border-top: 1px solid #4D4D4D;
     border-bottom: none;
     border-right: none;
     border-left: none;
+}
+li {
+    list-style: none;
 }
 
 /******************************************/
@@ -1127,9 +1076,21 @@ nav .container {
     --color-main-bg-transp_0: #00000000;
 }
 
+.ml-input-search-center {
+    margin-left: calc( calc( var(--container) - 100vw ) / 2);
+}
+
+.button-special {
+    width: 100%;
+    padding: 4% 0;
+    border-radius: .8em;
+    margin: 0;
+    border: none; 
+}
+
 @media (min-width: 0px){
     :root {
-        --container: 85vw;
+        --container: 88vw;
         --container-landing: 85vw;
     }
     .container {
@@ -1141,6 +1102,60 @@ nav .container {
     }
     #logo img {
         width: 100%;
+    }
+
+    /***** BUTTONS *****/
+    button {
+        width: 100%;
+        padding: 4% 0;
+        border-radius: .8em;
+        border: none;                
+    }
+    .secondary {
+        width: 100%;
+        padding: 4% 0;
+        border-radius: .8em;
+        background: none;
+        border: 1.5px solid #8d8d8d;
+    }
+    .button-landing {
+        width: 100%;
+        padding: 4% 0;
+        border-radius: .8em;
+        font-size: 1.15rem;
+        font-weight: 500;
+        border: none;  
+    }    
+
+    /***** INPUTS *****/
+    input {
+        width: 100%;
+        padding: 4% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
+    }
+    .input-search {
+        padding: 2% 0;
+        margin: 1% 0;
+        border: none;
+        text-indent: 0px;
+    }
+    input::placeholder {
+        color: #8d8d8d;
+        letter-spacing: .1em;
+    }
+    input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+    }
+    select {
+        width: 100%;
+        padding: 4% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
     }
 
     /***** HEIGHT *****/
@@ -1469,15 +1484,7 @@ nav .container {
         font-size: 1rem;
         line-height: 1.8rem;
         font-weight: 400;
-    }
-    .button-landing {
-        width: 100%;
-        padding: 4% 0;
-        border-radius: .6em;
-        font-size: 1.15rem;
-        font-weight: 500;
-        border: none;  
-    }
+    }    
     .cell-landing {
         width: 50.1%;
         margin-top: 15%;
@@ -1520,7 +1527,7 @@ nav .container {
 }
 @media (min-width: 577px) {
     :root {
-        --container: 56vw;
+        --container: 65vw;
         --container-landing: 85vw;
     }
     .container {
@@ -1532,6 +1539,57 @@ nav .container {
     }
     #logo img {
         width: 100%;
+    }
+
+    /***** BUTTONS *****/
+    button {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;                
+    }
+    .secondary {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        background: none;
+        border: 1.5px solid #8d8d8d;
+    }
+    .button-landing {
+        width: 60%;
+        padding: 3% 0;
+        border-radius: .8em;
+    }
+
+    /***** INPUTS *****/
+    input {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
+    }
+    .input-search {
+        padding: 2% 0;
+        margin: 1% 0;
+        border: none;
+        text-indent: 0px;
+    }
+    input::placeholder {
+        color: #8d8d8d;
+        letter-spacing: .1em;
+    }
+    input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+    }
+    select {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
     }
 
     /***** HEIGHT *****/
@@ -1818,11 +1876,6 @@ nav .container {
         line-height: 1.8rem;
         font-weight: 400;
     }
-    .button-landing {
-        width: 60%;
-        padding: 3% 0;
-        border-radius: .6em;
-    }
     .cell-landing {
         width: 50%;
         margin-top: 15%;
@@ -1858,7 +1911,7 @@ nav .container {
 }
 @media (min-width: 768px) {
     :root {
-        --container: 48vw;
+        --container: 50vw;
         --container-landing: 80vw;
     }
     .container {
@@ -1870,6 +1923,57 @@ nav .container {
     }
     #logo img {
         width: 100%;
+    }
+
+    /***** BUTTONS *****/
+    button {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;                
+    }
+    .secondary {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        background: none;
+        border: 1.5px solid #8d8d8d;
+    }
+    .button-landing {
+        width: 50%;
+        padding: 2.6% 0;
+        border-radius: .8em;
+    }
+
+    /***** INPUTS *****/
+    input {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
+    }
+    .input-search {
+        padding: 2% 0;
+        margin: 1% 0;
+        border: none;
+        text-indent: 0px;
+    }
+    input::placeholder {
+        color: #8d8d8d;
+        letter-spacing: .1em;
+    }
+    input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+    }
+    select {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
     }
 
     /***** HEIGHT *****/
@@ -2151,11 +2255,6 @@ nav .container {
         line-height: 2rem;
         font-weight: 400;
     }
-    .button-landing {
-        width: 50%;
-        padding: 2.6% 0;
-        border-radius: .6em;
-    }
     .cell-landing {
         width: 50%;
         margin-top: 10%;
@@ -2194,7 +2293,7 @@ nav .container {
 }
 @media (min-width: 992px) {
     :root {
-        --container: 42vw;
+        --container: 45vw;
         --container-landing: 80vw;
     }
     .container {
@@ -2206,6 +2305,57 @@ nav .container {
     }
     #logo img {
         width: 100%;
+    }
+
+    /***** BUTTONS *****/
+    button {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;                
+    }
+    .secondary {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        background: none;
+        border: 1.5px solid #8d8d8d;
+    }
+    .button-landing {
+        width: 45%;
+        padding: 2% 0;
+        border-radius: .8em;
+    }
+
+    /***** INPUTS *****/
+    input {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
+    }
+    .input-search {
+        padding: 2% 0;
+        margin: 1% 0;
+        border: none;
+        text-indent: 0px;
+    }
+    input::placeholder {
+        color: #8d8d8d;
+        letter-spacing: .1em;
+    }
+    input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+    }
+    select {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
     }
 
     /***** HEIGHT *****/
@@ -2490,11 +2640,6 @@ nav .container {
         line-height: 2rem;
         font-weight: 400;
     }
-    .button-landing {
-        width: 45%;
-        padding: 2% 0;
-        border-radius: .6em;
-    }
     .cell-landing {
         width: 25%;
         margin-top: 8%;
@@ -2541,6 +2686,57 @@ nav .container {
     }
     #logo img {
         width: 100%;
+    }
+
+    /***** BUTTONS *****/
+    button {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;                
+    }
+    .secondary {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        background: none;
+        border: 1.5px solid #8d8d8d;
+    }
+    .button-landing {
+        width: 50%;
+        padding: 2% 0;
+        border-radius: .8em;
+    }
+
+    /***** INPUTS *****/
+    input {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
+    }
+    .input-search {
+        padding: 2% 0;
+        margin: 1% 0;
+        border: none;
+        text-indent: 0px;
+    }
+    input::placeholder {
+        color: #8d8d8d;
+        letter-spacing: .1em;
+    }
+    input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+    }
+    select {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
     }
 
     /***** HEIGHT *****/
@@ -2822,11 +3018,6 @@ nav .container {
         line-height: 2rem;
         font-weight: 400;
     }
-    .button-landing {
-        width: 50%;
-        padding: 2% 0;
-        border-radius: .6em;
-    }
     .cell-landing {
         width: 25%;
         margin-top: 6%;
@@ -2875,6 +3066,57 @@ nav .container {
     }
     #logo img {
         width: 100%;
+    }
+
+    /***** BUTTONS *****/
+    button {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;                
+    }
+    .secondary {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        background: none;
+        border: 1.5px solid #8d8d8d;
+    }
+    .button-landing {
+        width: 35%;
+        padding: 1.7% 0;
+        border-radius: .8em;
+    }
+
+    /***** INPUTS *****/
+    input {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
+    }
+    .input-search {
+        padding: 2% 0;
+        margin: 1% 0;
+        border: none;
+        text-indent: 0px;
+    }
+    input::placeholder {
+        color: #8d8d8d;
+        letter-spacing: .1em;
+    }
+    input[type=checkbox] {
+        width: 24px;
+        height: 24px;
+        border-radius: 16px;
+    }
+    select {
+        width: 100%;
+        padding: 3.5% 0;
+        border-radius: .8em;
+        border: none;
+        text-indent: 20px;
     }
 
     /***** HEIGHT *****/
@@ -3156,11 +3398,6 @@ nav .container {
         line-height: 2.4rem;
         font-weight: 400;
         margin-bottom: 0;
-    }
-    .button-landing {
-        width: 35%;
-        padding: 1.7% 0;
-        border-radius: .6em;
     }
     .cell-landing {
         width: 25%;
