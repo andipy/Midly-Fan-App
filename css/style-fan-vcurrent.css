@@ -1359,6 +1359,15 @@ nav .container {
     .mb-xs-10 {
         margin-bottom: 10%;
     }
+    .mb-xs-12 {
+        margin-bottom: 12%;
+    }
+    .mb-xs-14 {
+        margin-bottom: 14%;
+    }
+    .mb-xs-16 {
+        margin-bottom: 16%;
+    }
     .mb-xs-20 {
         margin-bottom: 20%;
     }    
@@ -1811,6 +1820,15 @@ nav .container {
     .mb-sm-10 {
         margin-bottom: 10%;
     }
+    .mb-sm-12 {
+        margin-bottom: 12%;
+    }
+    .mb-sm-14 {
+        margin-bottom: 14%;
+    }
+    .mb-sm-16 {
+        margin-bottom: 16%;
+    }
     .mb-sm-20 {
         margin-bottom: 20%;
     }
@@ -2208,6 +2226,15 @@ nav .container {
     .mb-md-10 {
         margin-bottom: 10%;
     }
+    .mb-md-12 {
+        margin-bottom: 12%;
+    }
+    .mb-md-14 {
+        margin-bottom: 14%;
+    }
+    .mb-md-16 {
+        margin-bottom: 16%;
+    }
     .mb-md-20 {
         margin-bottom: 20%;
     }
@@ -2602,6 +2629,15 @@ nav .container {
     .mb-lg-10 {
         margin-bottom: 10%;
     }
+    .mb-lg-12 {
+        margin-bottom: 12%;
+    }
+    .mb-lg-14 {
+        margin-bottom: 14%;
+    }
+    .mb-lg-16 {
+        margin-bottom: 16%;
+    }
     .mb-lg-20 {
         margin-bottom: 20%;
     }
@@ -2993,6 +3029,15 @@ nav .container {
     }
     .mb-xl-10 {
         margin-bottom: 10%;
+    }
+    .mb-xl-12 {
+        margin-bottom: 12%;
+    }
+    .mb-xl-14 {
+        margin-bottom: 14%;
+    }
+    .mb-xl-16 {
+        margin-bottom: 16%;
     }
     .mb-xl-20 {
         margin-bottom: 20%;
@@ -3388,6 +3433,15 @@ nav .container {
     }
     .mb-xxl-10 {
         margin-bottom: 10%;
+    }
+    .mb-xxl-12 {
+        margin-bottom: 12%;
+    }
+    .mb-xxl-14 {
+        margin-bottom: 14%;
+    }
+    .mb-xxl-16 {
+        margin-bottom: 16%;
     }
     .mb-xxl-20 {
         margin-bottom: 20%;
