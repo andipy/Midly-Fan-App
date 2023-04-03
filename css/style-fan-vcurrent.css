@@ -205,6 +205,9 @@ li {
 .bg-acid-lime {
     background-color: #DAEF64;
 }
+.bg-acid-lime-op-75 {
+    background-color: #daef64c3;
+}
 .bg-light-blue-flash {
     background-color: #97EAC6;
 }
@@ -469,6 +472,12 @@ li {
 .green-fluo {
     color: #01FF2F
 }
+.lime-400 {
+    color: #DAEF64
+}
+.lime-500 {
+    color: #c7d865
+}
 /* .pink-blue-gradient {
     color: linear-gradient(270deg, rgb(229, 111, 139) 0%, rgb(57, 94, 202) 100%);
 } */
@@ -483,7 +492,6 @@ li {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 /************** TEXT WEIGHT **************/
