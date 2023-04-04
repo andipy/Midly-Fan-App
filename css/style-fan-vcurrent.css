@@ -1040,14 +1040,17 @@ li {
 #first-position {
     width: calc(var(--container) / 2.7);
     height: calc(var(--container) / 2.7);
+    aspect-ratio: 1;
 }
 #second-position {
     width: calc(var(--container) / 3.7);
     height: calc(var(--container) / 3.7);
+    aspect-ratio: 1;
 }
 #third-position {
     width: calc(var(--container) / 4);
     height: calc(var(--container) / 4);
+    aspect-ratio: 1;
 }
 .podium-position-indicator {
     width: calc(var(--container) / 20);
