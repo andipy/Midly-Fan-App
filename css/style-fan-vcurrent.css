@@ -107,7 +107,7 @@ li {
 .subscription-modal {
     transition: all 300ms ease-out;
 }
-.pricing-panel {
+.slide-up-panel {
     transition: all 450ms cubic-bezier(0.34, 1.30, 0.64, 1);
 }
 @keyframes modalOpen {
@@ -153,6 +153,9 @@ li {
 }
 .bg-grey-transp50 {
     background-color: rgba(77, 77, 77, 0.5)
+}
+.bg-grey-transp25 {
+    background-color: rgba(77, 77, 77, 0.25)
 }
 .bg-green-spotify {
     background-color: #1DB954;
@@ -210,6 +213,9 @@ li {
 }
 .bg-acid-lime-op-75 {
     background-color: #daef64c3;
+}
+.bg-acid-lime-op-10 {
+    background-color: #daef6412;
 }
 .bg-light-blue-flash {
     background-color: #97EAC6;
@@ -339,6 +345,12 @@ li {
 /************* BORDERS *************/
 .border-top-dark-01 {
     border-top: 1px solid #303340;
+  }
+.border-dark-3 {
+    border: 3px solid var(--color-main-bg);
+}
+.border-dark-6 {
+    border: 6px solid var(--color-main-bg);
 }
 
 .underline-landing {
@@ -634,6 +646,11 @@ li {
 .position-fixed {
     position: fixed;
 }
+.position-fixed-x {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .position-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -696,8 +713,17 @@ li {
 .bottom-12 {
     bottom: 12%;
 }
+.bottom-15 {
+    bottom: 15%;
+}
 .bottom-appbar {
     bottom: calc(var(--app-bar-height) * 1.2);
+}
+.bottom-avatar-header {
+    bottom: calc(var(--avatar-72) * -0.9);
+}
+.mt-avatar-header {
+    margin-top: calc(var(--avatar-72) * 1.1);
 }
 .top-0 {
     top: 0;
@@ -713,6 +739,12 @@ li {
 }
 .top-navbar {
     top: var(--top-bar-height);
+}
+.top-navbar-more-1_1 {
+    top: calc(var(--top-bar-height) * 1.1 );
+}
+.top-navbar-more-1_5 {
+    top: calc(var(--top-bar-height) * 1.5 );
 }
 .right-0 {
     right: 0;
@@ -834,22 +866,28 @@ li {
 /******************************************/
 /**************** AVATAR *****************/
 /******************************************/
+.avatar-6 {
+    width: var(--avatar-6);
+    height: var(--avatar-6);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
 .avatar-12 {
-    height: 12px;
-    width: 12px;
-    aspect-ratio: 1;
+    width: var(--avatar-12);
+    height: var(--avatar-12);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-14 {
-    height: 14px;
-    width: 14px;
-    aspect-ratio: 1;
+    width: var(--avatar-14);
+    height: var(--avatar-14);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-16 {
-    height: 16px;
-    width: 16px;
-    aspect-ratio: 1;
+    width: var(--avatar-16);
+    height: var(--avatar-16);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-18 {
@@ -859,9 +897,9 @@ li {
     object-fit: cover;
 }
 .avatar-20 {
-    height: 20px;
-    width: 20px;
-    aspect-ratio: 1;
+    width: var(--avatar-20);
+    height: var(--avatar-20);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-22 {
@@ -871,63 +909,69 @@ li {
     object-fit: cover;
 }
 .avatar-24 {
-    height: 24px;
-    width: 24px;
-    aspect-ratio: 1;
+    width: var(--avatar-24);
+    height: var(--avatar-24);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-28 {
-    height: 28px;
-    width: 28px;
-    aspect-ratio: 1;
+    width: var(--avatar-28);
+    height: var(--avatar-28);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-32 {
-    height: 32px;
-    width: 32px;
-    aspect-ratio: 1;
+    width: var(--avatar-32);
+    height: var(--avatar-32);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-36 {
-    height: 36px;
-    width: 36px;
-    aspect-ratio: 1;
+    width: var(--avatar-36);
+    height: var(--avatar-36);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-40 {
-    height: 40px;
-    width: 40px;
-    aspect-ratio: 1;
+    width: var(--avatar-40);
+    height: var(--avatar-40);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-48 {
-    height: 48px;
-    width: 48px;
-    aspect-ratio: 1;
+    width: var(--avatar-48);
+    height: var(--avatar-48);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.avatar-56 {
+    width: var(--avatar-56);
+    height: var(--avatar-56);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-64 {
-    height: 64px;
-    width: 64px;
-    aspect-ratio: 1;
+    width: var(--avatar-64);
+    height: var(--avatar-64);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-72 {
-    height: 72px;
-    width: 72px;
-    aspect-ratio: 1;
+    width: var(--avatar-72);
+    height: var(--avatar-72);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-80 {
-    height: 80px;
-    width: 80px;
-    aspect-ratio: 1;
+    width: var(--avatar-80);
+    height: var(--avatar-80);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 .avatar-96 {
-    width: 96px;
-    height: 96px;
-    aspect-ratio: 1;
+    width: var(--avatar-96);
+    height: var(--avatar-96);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -1153,9 +1197,12 @@ nav .container {
 }
 .blur-0 {
     filter: blur(0);
+  }
+.blur-1_7 {
+    filter: blur(1.7px);
 }
 .blur-2_5 {
-    filter: blur(2.5px);
+filter: blur(2.5px);
 }
 .footer-landing {
     border-top: 1px solid #1C1E27;
@@ -1190,19 +1237,41 @@ nav .container {
 .app-bar a {
     max-height: 36px;
     max-width: 36px;
-}            
+}
 
+.marker {
+    width: 100%;
+    height: 5px;
+}
 /******************************************/
 /************** MEDIA QUERIES *************/
 /******************************************/
 :root {
-    --top-bar-height: 12vh;
+    --top-bar-height: 10vh;
     --app-bar-height: 12vh;
     --font-heading: 'Inter', sans-serif;;
     --font-body: 'Inter', sans-serif;
     --font-special-01: 'Exo 2', sans-serif;
     --color-main-bg: #000000;
     --color-main-bg-transp_0: #00000000;
+    --avatar-6: 6px;
+    --avatar-12: 12px;
+    --avatar-14: 14px;
+    --avatar-16: 16px;
+    --avatar-18: 18px;
+    --avatar-20: 20px;
+    --avatar-22: 22px;
+    --avatar-24: 24px;
+    --avatar-28: 28px;
+    --avatar-32: 32px;
+    --avatar-36: 36px;
+    --avatar-40: 40px;
+    --avatar-48: 48px;
+    --avatar-56: 56px;
+    --avatar-64: 64px;
+    --avatar-72: 72px;
+    --avatar-80: 80px;
+    --avatar-96: 96px;
 }
 
 .ml-input-search-center {
@@ -1288,6 +1357,9 @@ nav .container {
     }
 
     /***** HEIGHT *****/
+    .h-xs-20 {
+        height: 20vh;
+    }
     .h-xs-30 {
         height: 30vh;
     }

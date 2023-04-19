@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Artist Page After Follow</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-vcurrent.css">
+    </head>
+    <body>
+        <nav id="nav-bar" class="top-bar-area-overlay-fixed d-flex-row align-items-center j-c-center white z-index-max top-0">
+            <div class="container d-flex-row align-items-center j-c-space-between">
+                <div class="avatar-28">
+                    <img class="avatar-28 bg-dark-soft-transp75 border-radius-100" src="../assets/icon-arrowleft.svg" alt="BACK" />
+                </div>                
+
+                <div id="artist-topbar-name" class="d-flex-row d-xs-none align-items-center j-c-center grow-1">
+                    <div class="avatar-36 position-relative mr-xs-4">
+                        <img class="avatar-36 border-radius-100" src="../assets/arcticmonkeys.jpg" alt="" />                       
+                        <img class="artist-avatar-verified-icon avatar-12" src="../assets/icon-verified-artist.svg" alt="Verified" />
+                    </div>                    
+                    <h2 id="artist-name" class="f-w-600 fsize-xs-1 letter-spacing-1">Arctic Monkeys</h2>
+                </div>
+
+                <div id="icon-prizes" class="d-xs-none align-items-center j-c-center border-radius-100 avatar-36 bg-dark-soft-transp75">
+                    <img class="avatar-28" src="../assets/icon-prize-rank-card.svg" alt="" />
+                    <p class="artist-avatar-verified-icon avatar-16 fsize-xs-1 bg-red-300 border-radius-100 d-flex-row align-items-center j-c-center dark-900 f-w-600">5</p>                        
+                </div>
+            </div>
+        </nav>
+
+        <header class="position-relative h-xs-20">
+            <img class="w-100 h-inherit object-fit-cover" src="../assets/arcticmonkeys.jpg" alt="" />
+
+            <div class="container w-100 position-absolute-x bottom-avatar-header z-index-2 d-flex-row align-items-center">
+                <div class="position-relative avatar-72">
+                    <img class="avatar-72 border-radius-100 border-dark-6" src="../assets/arcticmonkeys.jpg" alt="" />                       
+                    <img class="artist-avatar-verified-icon" src="../assets/icon-verified-artist.svg" alt="Verified" />
+                </div>
+                <div class="d-flex-column no-shrink j-c-start ml-xs-4">
+                    <h5 class="fsize-xs-4 f-w-600">Arctic Monkeys</h5>
+                </div>                    
+            </div>                
+        </header>
+        
+        <div class="container mb-xs-4 mt-avatar-header position-sticky top-navbar z-index-max bg-dark">            
+            <div class="d-flex-row bg-dark-900">
+                <div class="d-flex-column grow-1 align-items-center">
+                    <span class="fsize-xs-3 grey-300 mb-xs-2">Fan Club</span>
+                    <span class="marker bg-grey-500"></span>
+                </div>
+                <div class="d-flex-column grow-1 align-items-center">
+                    <span class="fsize-xs-3 lime-400 f-w-600 mb-xs-2">Classifica</span>
+                    <span class="marker bg-acid-lime"></span>
+                </div>                
+            </div>
+        </div>
+
+        <div class="container pb-xs-appbar">
+            <article id="your-position" class="d-flex-row align-items-center j-c-space-between w-100 position-sticky z-index-5 top-navbar-more-1_5 bg-dark-soft pb-xs-6 pt-xs-6 pr-xs-6 pl-xs-6 border-radius-1 mb-xs-4">
+                <div class="d-flex-row align-items-center j-c-start no-shrink">
+                    <img class="avatar-28 border-radius-100 mr-xs-6" src="../assets/fan-2.jfif" alt="" />
+                    <span class="fsize-xs-2 f-w-500 grey-100 no-shrink">La tua posizione</span>
+                </div>
+
+                <div class="d-flex-row align-items-center gap-1em">
+                    <div class="d-flex-row align-items-center">
+                        <div class="fsize-xs-3">1124 </div>
+                        <img class="avatar-12 ml-xs-2" src="../assets/icon-point-xs.svg" alt="points" />
+                    </div>
+
+                    <span class="fsize-xs-5 f-w-400">1108°</span>                              
+                </div>
+            </article>
+
+            <div class="d-flex-row align-items-center j-c-space-between bg-acid-lime-op-10 pr-xs-4 pl-xs-4 pt-xs-4 pb-xs-4 border-radius-08 mb-xs-4">
+                <div class="d-flex-row align-items-center">
+                    <img src="../assets/icon-prize-rank-card.svg" alt="" />
+                    <div class="lime-400 fsize-xs-2 font-body ml-xs-2 no-shrink">5 premi questo mese</div>
+                </div>
+                <img src="../assets/icon-arrowright-rounded.svg" alt="" />
+            </div>
+
+            <section id="rank" class="mt-xs-12 mt-lg-8">
+                <div id="rank-podium" class="mb-xs-8">
+                    
+                    <!-- 1st in the rank -->
+                    <div class="d-flex-row j-c-center">
+                        <div class="d-flex-column w-33">
+                            <div class="d-flex-row align-items-center j-c-center align-items-stretch position-relative">
+                                <img id="first-position" class="object-fit-cover bg-gold-linear-gradient border-radius-100 p-xs-7" src="../assets/fan-2.jfif">
+                                <div class="podium-position-indicator p-xs-16 bg-gold-radial-gradient d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">1°</div>
+                            </div>
+                            <div class="text-info d-flex-column align-items-center">
+                                <div class="fsize-xs-1 t-align-center letter-spacing-1">Giuseppe Molloide</div>
+                                <div class="d-flex-row letter-spacing-1">
+                                    <div class="grey-400 fsize-xs-1 letter-spacing-1">2763 </div>
+                                    <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2nd in the rank -->
+                    <div class="d-flex-row j-c-start mt-xs-negative20">
+                        <div class="d-flex-column w-33">
+                            <div class="d-flex-row align-items-center j-c-center align-items-stretch position-relative">
+                                <img id="second-position" class="object-fit-cover bg-silver-linear-gradient border-radius-100 p-xs-6" src="../assets/fan-1.jpg">
+                                <div class="podium-position-indicator p-xs-14 bg-silver-radial-gradient d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">2°</div>
+                            </div>
+                            <div class="text-info d-flex-column align-items-center">
+                                <div class="fsize-xs-1 t-align-center letter-spacing-1">Danny Snatch Vito</div>
+                                <div class="d-flex-row letter-spacing-1">
+                                    <div class="grey-400 fsize-xs-1 letter-spacing-1">2479 </div>
+                                    <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd in the rank -->
+                    <div class="d-flex-row j-c-end mt-xs-negative25">
+                        <div class="d-flex-column w-33">
+                            <div class="d-flex-row align-items-center j-c-center align-items-stretch position-relative">
+                                <img id="third-position" class="object-fit-cover bg-bronze-linear-gradient border-radius-100 p-xs-5" src="../assets/fan-6.jpg">
+                                <div class="podium-position-indicator p-xs-12 bg-bronze-radial-gradient d-flex-row align-items-center j-c-center position-absolute border-radius-100 top-0 right-0">3°</div>
+                            </div>
+                            <div class="text-info d-flex-column align-items-center">
+                                <div class="fsize-xs-1 t-align-center letter-spacing-1">Kola Li Jiu Ha</div>
+                                <div class="d-flex-row letter-spacing-1">
+                                    <div class="grey-400 fsize-xs-1 letter-spacing-1">2231 </div>
+                                    <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-11.jfif">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">Danny Snatch</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">1984 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">4°</span>
+                </article>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-7.jfif">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">Polly Lolly</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">1888 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">5°</span>
+                </article>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-14.jpg">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">Kop Kalisti</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">1467 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">6°</span>
+                </article>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-10.jpg">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">John Snow</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">1391 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">7°</span>
+                </article>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-5.jpg">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">Lucky Strike</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">1124 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">8°</span>
+                </article>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-8.jfif">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">Bugs Bunny</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">903 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">9°</span>
+                </article>
+
+                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                    <div class="d-flex-row w-100">
+                        <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-4.jpg">
+                        <div class="text-info d-flex-column">
+                            <div class="letter-spacing-1">Marney Simpson</div>
+                            <div class="d-flex-row letter-spacing-1">
+                                <div class="grey-400 fsize-xs-1 letter-spacing-1">505 </div>
+                                <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="fsize-xs-7 f-w-300">10°</span>
+                </article>
+            </section>
+
+            <article id="invite-friend" class="mt-xs-12">
+                <a class="d-flex-row j-c-space-between bg-dark-gradient pb-xs-8 pt-xs-8 pr-xs-8 pl-xs-8 border-radius-1_25" href="arcticmonkeys-invite-friend.html">
+                    <div class="text-info d-flex-column w-100">
+                        <div class="fsize-xs-4 mb-xs-4">Invita un amico!</div>
+                        <div class="d-flex-row">
+                            <p class="lime-500 fsize-xs-1 line-height-140 font-body">Guadagnerai 15 punti</p>
+                            <img class="ml-xs-2" src="../assets/icon-point-xs.svg" alt=" points">
+                        </div>
+                        <p class="lime-500 fsize-xs-1 line-height-140 font-body">nella clasifica dell'artista!</p>
+                    </div>
+                    <img src="../assets/icon-arrowright-rounded-dark.svg" alt="Go right">
+                </a>
+            </article>
+        </div>
+        
+        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+            <div class="container d-flex-row align-items-center j-c-space-between">                
+                <a href="search.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-search-inactive.svg" alt="Search">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Search</span>
+                    </div>                    
+                </a>
+                <a href="followed-full.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-rankings-active.svg" alt="Ranks">
+                        <span class="fsize-xs-0 f-w-600 lime-400 letter-spacing-1">Following</span>
+                    </div>
+                </a>
+                <a href="profile-socials-disconnected.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-profile-inactive.svg" alt="Profile">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Profile</span>
+                    </div>
+                </a>                
+            </div>
+        </div>  
+    </body>
+
+    <script>
+        let artistTopbarName = document.getElementById("artist-topbar-name");
+        let navBar = document.getElementById("nav-bar");
+        let iconPrize = document.getElementById("icon-prizes");
+        window.addEventListener("scroll", () => {
+            if ( window.pageYOffset >= 100 ) {
+                artistTopbarName.classList.add("d-flex-row");
+                artistTopbarName.classList.remove("d-xs-none");
+
+                navBar.classList.add("bg-dark");
+
+                iconPrize.classList.add("d-flex-row");
+                iconPrize.classList.remove("d-xs-none");
+            } else {
+                artistTopbarName.classList.add("d-xs-none");
+                artistTopbarName.classList.remove("d-flex-row");
+
+                navBar.classList.remove("bg-dark");
+
+                iconPrize.classList.add("d-xs-none");
+                iconPrize.classList.remove("d-flex-row");            
+            }        
+        })
+    </script>
+</html>
