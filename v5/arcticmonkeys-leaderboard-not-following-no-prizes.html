@@ -25,8 +25,7 @@
                 </div>
 
                 <div id="icon-prizes" class="d-xs-none align-items-center j-c-center border-radius-100 avatar-36 bg-dark-soft-transp75">
-                    <img class="avatar-28" src="../assets/icon-prize-rank-card.svg" alt="" />
-                    <p class="artist-avatar-verified-icon avatar-16 fsize-xs-1 bg-red-300 border-radius-100 d-flex-row align-items-center j-c-center dark-900 f-w-600">5</p>                        
+                    <img class="avatar-28" src="../assets/icon-prize-rank-card.svg" alt="" />                       
                 </div>
             </div>
         </nav>
@@ -44,8 +43,25 @@
                 </div>                    
             </div>                
         </header>
+
+        <div id="connect-socials-panel" class="slide-up-panel container bg-purple-gradient w-100 position-fixed-x d-flex-column pt-xs-4 pb-xs-4 pl-xs-6 pr-xs-6 border-radius-1 z-index-max bottom-hidden">
+            <span id="close-modal" class="d-flex-row white j-c-end modal-close-button">&times;</span>
+
+            <div class="d-flex-row align-items-center align-self-start pt-xs-2 pb-xs-2 pl-xs-2 pr-xs-4 border-radius-100 bg-purple-200-transp10">
+                <img src="../assets/icon-crown-xs.svg" alt="" />
+                <span class="font-body fsize-xs-0 ml-xs-2 purple-100 no-shrink letter-spacing-1">Competi nella classifica</span>
+            </div>
+
+            <div class="mt-xs-4 mb-xs-4">
+                <p class="fsize-xs-6 line-height-140">Connetti i tuoi social musicali!</p>
+                <span class="font-body fsize-xs-2 purple-100">Per competere nella classifica, devi connettere uno dei tuoi social musicali: Midly traccia i tuoi ascolti e li trasforma in punti nelle classifiche degli artisti in cui decidi di competere.</span>
+            </div>
+
+            <button class="bg-orange-400 dark-900 f-w-700 letter-spacing-1 fsize-xs-1 pt-xs-6 pb-xs-6 mb-xs-2">CONNETTI SPOTIFY</button>
+            <button class="bg-orange-400 dark-900 f-w-700 letter-spacing-1 fsize-xs-1 pt-xs-6 pb-xs-6">CONNETTI APPLE MUSIC</button>
+        </div>
         
-        <div class="container mb-xs-4 mt-avatar-header position-sticky top-navbar z-index-max bg-dark">            
+        <div class="container mb-xs-4 mt-avatar-header position-sticky top-navbar z-index-5 bg-dark">            
             <div class="d-flex-row bg-dark-900">
                 <div class="d-flex-column grow-1 align-items-center">
                     <span class="fsize-xs-3 grey-300 mb-xs-2">Fan Club</span>
@@ -58,20 +74,8 @@
             </div>
         </div>
 
-        <div class="container pb-xs-appbar">            
-            <button id="compete-button" class="fsize-xs-2 z-index-5 mb-xs-4 bg-dark-soft grey-500 f-w-500">Esci dalla classifica</button>
-
-            <article id="your-position" class="position-sticky z-index-5 top-navbar-more-1_5 bg-dark-soft pb-xs-6 pt-xs-6 pr-xs-6 pl-xs-6 border-radius-1 mb-xs-4">
-                <span class="fsize-xs-2 f-w-500 grey-100 no-shrink">Fai il tuo primo punto per posizionarti in classifica!</span>
-            </article>
-
-            <div class="d-flex-row align-items-center j-c-space-between bg-acid-lime-op-10 pr-xs-4 pl-xs-4 pt-xs-4 pb-xs-4 border-radius-08 mb-xs-4">
-                <div class="d-flex-row align-items-center">
-                    <img src="../assets/icon-prize-rank-card.svg" alt="" />
-                    <div class="lime-400 fsize-xs-2 font-body ml-xs-2 no-shrink">5 premi questo mese</div>
-                </div>
-                <img src="../assets/icon-arrowright-rounded.svg" alt="" />
-            </div>
+        <div class="container pb-xs-appbar">
+            <button id="compete-button" class="fsize-xs-2 position-sticky z-index-5 mb-xs-4 bg-acid-lime dark-900 f-w-600 top-navbar-more-1_5">Competi nella classifica</button>
 
             <section id="rank" class="mt-xs-12 mt-lg-8">
                 <!-- <h5 class="fsize-xs-8 mb-xs-1 letter-spacing-1 f-w-700">Classifica</h5> -->
@@ -130,7 +134,7 @@
 
                 </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-11.jfif">
                         <div class="text-info d-flex-column">
@@ -142,9 +146,9 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">4°</span>
-                </article>
+                </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-7.jfif">
                         <div class="text-info d-flex-column">
@@ -156,9 +160,9 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">5°</span>
-                </article>
+                </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-14.jpg">
                         <div class="text-info d-flex-column">
@@ -170,9 +174,9 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">6°</span>
-                </article>
+                </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-10.jpg">
                         <div class="text-info d-flex-column">
@@ -184,9 +188,9 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">7°</span>
-                </article>
+                </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-5.jpg">
                         <div class="text-info d-flex-column">
@@ -198,9 +202,9 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">8°</span>
-                </article>
+                </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-8.jfif">
                         <div class="text-info d-flex-column">
@@ -212,9 +216,9 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">9°</span>
-                </article>
+                </div>
 
-                <article class="mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1">
+                <div class="rank-list-item mb-xs-4 d-flex-row align-items-center j-c-space-between bg-dark-gradient pb-xs-6 pt-xs-6 pr-xs-8 pl-xs-8 border-radius-1" href="#">
                     <div class="d-flex-row w-100">
                         <img class="avatar-48 border-radius-100 mr-xs-4" src="../assets/fan-4.jpg">
                         <div class="text-info d-flex-column">
@@ -226,7 +230,7 @@
                         </div>
                     </div>
                     <span class="fsize-xs-7 f-w-300">10°</span>
-                </article>
+                </div>
             </section>
 
             <article id="invite-friend" class="mt-xs-12">
@@ -290,6 +294,22 @@
                 iconPrize.classList.add("d-xs-none");
                 iconPrize.classList.remove("d-flex-row");            
             }        
+        })
+
+        let competeButton = document.getElementById("compete-button");
+        let connectSocialsPanel = document.getElementById("connect-socials-panel");
+        let closeModal = document.getElementById("close-modal");
+        competeButton.addEventListener("click", () => {
+            connectSocialsPanel.classList.remove("bottom-hidden");
+            connectSocialsPanel.classList.add("bottom-appbar");
+            // setTimeout(() => {
+            //     connectSocialsPanel.classList.remove("bottom-appbar");
+            //     connectSocialsPanel.classList.add("bottom-hidden");
+            // }, 10000)
+        })
+        closeModal.addEventListener("click", () => {
+            connectSocialsPanel.classList.remove("bottom-appbar");
+            connectSocialsPanel.classList.add("bottom-hidden");
         })
     </script>
 </html>
