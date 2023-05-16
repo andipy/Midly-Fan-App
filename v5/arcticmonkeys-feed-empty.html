@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Artist Page After Follow</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-vcurrent.css">
+    </head>
+    <body>
+        <nav id="nav-bar" class="top-bar-area-overlay-fixed d-flex-row align-items-center j-c-center white z-index-max top-0">
+            <div class="container d-flex-row align-items-center j-c-space-between">
+                <div class="avatar-28">
+                    <img class="avatar-28 bg-dark-soft-transp75 border-radius-100" src="../assets/icon-arrowleft.svg" alt="BACK" />
+                </div>                
+
+                <div id="artist-topbar-name" class="d-xs-none align-items-center j-c-center grow-1">
+                    <div class="avatar-36 position-relative mr-xs-4">
+                        <img class="avatar-36 border-radius-100" src="../assets/arcticmonkeys.jpg" alt="" />                       
+                        <img class="artist-avatar-verified-icon avatar-12" src="../assets/icon-verified-artist.svg" alt="Verified" />
+                    </div>                    
+                    <h2 id="artist-name" class="f-w-600 fsize-xs-1 letter-spacing-1">Arctic Monkeys</h2>
+                </div>
+
+                <div class="d-flex-row align-items-center j-c-center border-radius-100 avatar-36"></div>
+            </div>
+        </nav>
+
+        <header class="position-relative h-xs-20">
+            <img class="w-100 h-inherit object-fit-cover" src="../assets/arcticmonkeys.jpg" alt="" />
+
+            <div class="container w-100 position-absolute-x bottom-avatar-header z-index-2 d-flex-row align-items-center">
+                <div class="position-relative avatar-72">
+                    <img class="avatar-72 border-radius-100 border-dark-6" src="../assets/arcticmonkeys.jpg" alt="" />                       
+                    <img class="artist-avatar-verified-icon" src="../assets/icon-verified-artist.svg" alt="Verified" />
+                </div>
+                <div class="d-flex-column no-shrink j-c-start ml-xs-4">
+                    <h5 class="fsize-xs-4 f-w-600">Arctic Monkeys</h5>
+                </div>                    
+            </div>                
+        </header>
+        
+        <div class="container mb-xs-4 mt-avatar-header position-sticky top-navbar z-index-5 bg-dark">            
+            <div class="d-flex-row bg-dark-900">
+                <div class="d-flex-column grow-1 align-items-center">
+                    <span class="fsize-xs-3 lime-400 f-w-600 mb-xs-2">Fan Club</span>
+                    <span class="marker bg-acid-lime"></span>
+                </div>
+                <div class="d-flex-column grow-1 align-items-center">
+                    <span class="fsize-xs-3 grey-300 mb-xs-2">Classifica</span>
+                    <span class="marker bg-grey-500"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-xs-appbar">
+            <div class="d-flex-column j-c-center align-items-center pt-xs-20">
+                <img class="w-25" src="../assets/empty-post.svg" alt="NO POST YET!">
+                <h4 class="fsize-xs-3 mb-xs-4 letter-spacing-1 f-w-400 grey-200 t-align-center mt-xs-2 w-50">L'artista non ha ancora aperto il suo fan club!</h4>
+            </div>
+        </div>
+        
+        <div class="app-bar-area d-flex-row j-c-center z-index-max">            
+            <div class="container d-flex-row align-items-center j-c-space-between">                
+                <a href="search.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-search-inactive.svg" alt="Search">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Search</span>
+                    </div>                    
+                </a>
+                <a href="followed-full.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-rankings-active.svg" alt="Ranks">
+                        <span class="fsize-xs-0 f-w-600 lime-400 letter-spacing-1">Following</span>
+                    </div>
+                </a>
+                <a href="profile-socials-disconnected.html">
+                    <div class="d-flex-column align-items-center">
+                        <img src="../assets/icon-profile-inactive.svg" alt="Profile">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Profile</span>
+                    </div>
+                </a>                
+            </div>
+        </div>  
+    </body>
+
+    <script>
+        let artistTopbarName = document.getElementById("artist-topbar-name");
+        let navBar = document.getElementById("nav-bar");
+        window.addEventListener("scroll", () => {
+            if ( window.pageYOffset >= 100 ) {
+                artistTopbarName.classList.add("d-flex-row");
+                artistTopbarName.classList.remove("d-xs-none");
+                navBar.classList.add("bg-dark");
+            } else {
+                artistTopbarName.classList.add("d-xs-none");
+                artistTopbarName.classList.remove("d-flex-row");
+                navBar.classList.remove("bg-dark");
+            }
+        })
+    </script>
+</html>
