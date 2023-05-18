@@ -24,7 +24,9 @@
                     <h2 id="artist-name" class="f-w-600 fsize-xs-1 letter-spacing-1">Arctic Monkeys</h2>
                 </div>
 
-                <div class="d-flex-row align-items-center j-c-center border-radius-100 avatar-36"></div>
+                <div id="icon-settings" class="d-xs-none align-items-center j-c-center border-radius-100 avatar-36 bg-dark-soft-transp75">
+                    <img class="avatar-28" src="../assets/icon-settings.svg" alt="" />                        
+                </div>
             </div>
         </nav>
 
@@ -155,15 +157,24 @@
     <script>
         let artistTopbarName = document.getElementById("artist-topbar-name");
         let navBar = document.getElementById("nav-bar");
+        let iconSettings = document.getElementById("icon-settings");
         window.addEventListener("scroll", () => {
             if ( window.pageYOffset >= 100 ) {
                 artistTopbarName.classList.add("d-flex-row");
                 artistTopbarName.classList.remove("d-xs-none");
+
                 navBar.classList.add("bg-dark");
+
+                iconSettings.classList.add("d-flex-row");
+                iconSettings.classList.remove("d-xs-none");
             } else {
                 artistTopbarName.classList.add("d-xs-none");
                 artistTopbarName.classList.remove("d-flex-row");
+
                 navBar.classList.remove("bg-dark");
+
+                iconSettings.classList.add("d-xs-none");
+                iconSettings.classList.remove("d-flex-row");
             }
         })
     </script>
