@@ -1175,17 +1175,17 @@ li {
 /******************************************/
 /*************** RANK SECTION *************/
 /******************************************/
-#first-position {
+.first-position {
     width: calc(var(--container) / 2.7);
     height: calc(var(--container) / 2.7);
     aspect-ratio: 1;
 }
-#second-position {
+.second-position {
     width: calc(var(--container) / 3.7);
     height: calc(var(--container) / 3.7);
     aspect-ratio: 1;
 }
-#third-position {
+.third-position {
     width: calc(var(--container) / 4);
     height: calc(var(--container) / 4);
     aspect-ratio: 1;
