@@ -133,6 +133,97 @@ li {
 
 
 /******************************************/
+/**************** DOT LOADER **************/
+/******************************************/
+.dot-loader {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-left: 18px;
+  background-color: #4D4D4D;
+  color: #4D4D4D;
+  animation: dot-loader 1s infinite linear;
+}
+.dot-loader::before, .dot-loader::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-loader::before {
+  left: -12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #4D4D4D;
+  color: #4D4D4D;
+  animation: dot-loader-before 1s infinite linear;
+}
+.dot-loader::after {
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #4D4D4D;
+  color: #4D4D4D;
+  animation: dot-loader-after 1s infinite linear;
+}
+
+@keyframes dot-loader-before {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1.5);
+  }
+  50% {
+    transform: scale(1, 0.67);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes dot-loader {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.5);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes dot-loader-after {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.67);
+  }
+  75% {
+    transform: scale(1, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+/******************************************/
 /************ BACKGROUND COLORS ***********/
 /******************************************/
 /****************** FLAT ******************/
@@ -369,6 +460,9 @@ li {
 }
 .font-special-01 {
     font-family: var(--font-special-01);
+}
+.font-italic {
+    font-style: italic;
 }
 
 /************* TEXT ALIGNMENT *************/
