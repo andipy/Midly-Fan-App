@@ -949,9 +949,9 @@ li {
     height: calc(88vh - calc(var(--app-bar-height) + var(--top-bar-height)));
 }
 .carousel {
-    margin-left: -7.5%;
-    padding: 0 7.5%;
-    width: 115%;
+    margin-left: -5.4%;
+    padding: 0 5.5%;
+    width: 112%;
 }
 .d-none {
     display: none;
@@ -1306,7 +1306,7 @@ filter: blur(2.5px);
 /**************** APP BAR *****************/
 /******************************************/ 
 .app-bar-area {
-    width: 100%;    
+    width: 100vw;
     height: var(--app-bar-height);
     position: fixed;
     bottom: -2px;
