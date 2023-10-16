@@ -52,7 +52,7 @@ li {
 }
 
 .badge {
-    width: 100%;
+    width: 101%;
     aspect-ratio: 1 / 1.25;
     max-height: 80vh;
     background: url(../assets/badge-body.jpg);
@@ -64,13 +64,13 @@ li {
 .badge-top {
     align-self: flex-start;
     z-index: 99;
-    width: 100%;
+    width: 101%;
     aspect-ratio: 2.11 / 1;
 }
 .badge-bottom {
     align-self: flex-start;
     z-index: 99;
-    width: 100%;
+    width: 101%;
     aspect-ratio: 1.288 / 1;
 }
 
@@ -1163,6 +1163,10 @@ li {
 .artist-card-multiple-row {
     width: calc(var(--container) / 2);
     height: calc(var(--container) / 1.6);
+}
+.artist-card-multiple-row-challenge {
+    width: calc(var(--container) / 2);
+    height: calc(var(--container) / 2);
 }
 .artist-card-referral {
     width: 100%;
