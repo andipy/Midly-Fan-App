@@ -321,6 +321,9 @@ li {
 .bg-dark-gradient {
     background: linear-gradient(.75turn, #171717, #111111);
 }
+.bg-dark-gradient-2 {
+    background: linear-gradient(.75turn, #11013b, #0d3029);
+}
 .bg-dark-gradient-radial {
     background: radial-gradient(#171717, #111111);
 }
@@ -942,8 +945,23 @@ li {
 .h-40vh {
     height: 40vh;
 }
+.h-64px {
+    height: 64px;
+}
+.h-56px {
+    height: 56px;
+}
+.h-48px {
+    height: 48px;
+}
 .h-36px {
     height: 36px;
+}
+.h-20px {
+    height: 20px;
+}
+.h-15px {
+    height: 15px;
 }
 .h-10px {
     height: 10px;

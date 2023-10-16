@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz intro</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style-fan-vcurrent.css">
+    </head>
+    <body>
+        <nav id="nav-bar" class="top-bar-area-overlay-fixed d-flex-row align-items-center j-c-center white z-index-max top-0">
+            <div class="container d-flex-row align-items-center j-c-space-between">
+                <a href="followed-full.html">
+                    <div class="avatar-28">
+                        <img class="avatar-28 bg-dark-soft-transp75 border-radius-100" src="../assets/icon-arrowleft.svg" alt="BACK" />
+                    </div>
+                </a>
+
+                <div id="artist-topbar-name" class="d-flex-row d-xs-none align-items-center j-c-center grow-1">
+                    <div class="avatar-36 position-relative mr-xs-4">
+                        <img class="avatar-36 border-radius-100" src="../assets/thasup.jpg" alt="" />                       
+                        <img class="artist-avatar-verified-icon avatar-12" src="../assets/icon-verified-artist.svg" alt="Verified" />
+                    </div>                    
+                    <h2 id="artist-name" class="f-w-600 fsize-xs-1 letter-spacing-1">thasup</h2>
+                </div>
+
+                <div id="icon-prizes" class="d-xs-none align-items-center j-c-center border-radius-100 avatar-36">                        
+                </div>
+            </div>
+        </nav>
+
+        <header class="position-relative h-xs-20">
+            <img class="w-100 h-inherit object-fit-cover" src="../assets/thasup.jpg" alt="" />              
+        </header>
+
+        <div class="container mt-xs-4 pb-xs-8 pb-lg-2">
+            <h4 class="fsize-xs-8 f-w-500 letter-spacing-1 mb-xs-4 t-align-center w-80 m-auto">Vinci il quiz, guadagna punti!</h4>
+
+            <section class="mt-xs-4">
+                <article class="w-75 m-auto">
+                    <div class="h-56px w-100 bg-dark-gradient-2 border-radius-08"></div>
+                    <div class="d-flex-column gap-0_5em mb-xs-4 mt-xs-4">
+                        <div class="h-10px w-80 bg-gold-linear-gradient"></div>
+                        <div class="h-10px w-70 bg-gold-linear-gradient"></div>
+                        <div class="h-10px w-90 bg-gold-linear-gradient"></div>
+                    </div>
+                    <div class="h-56px w-100 bg-dark-gradient-2 border-radius-08"></div>
+                </article>
+
+                <p class="fsize-xs-3 grey-200 t-align-center mt-xs-4">Hai 60 secondi per scrivere <strong class="bg-gold-linear-gradient black">golden line</strong>, la strofa mancante della canzone. Fai fino a 5 punti nella classifica di {{artist_slug}} in base a quanto la strofa è corretta!</p>
+
+                <button id="start-button" class="fsize-xs-2 mt-xs-4 mb-xs-4 bg-acid-lime dark-900 f-w-600">Fai partire il timer e gioca</button>
+            </section>
+        </div>
+    </body>
+
+    <script>
+        let artistTopbarName = document.getElementById("artist-topbar-name");
+        let navBar = document.getElementById("nav-bar");
+        let iconPrize = document.getElementById("icon-prizes");
+        window.addEventListener("scroll", () => {
+            if ( window.pageYOffset >= 100 ) {
+                artistTopbarName.classList.add("d-flex-row");
+                artistTopbarName.classList.remove("d-xs-none");
+
+                navBar.classList.add("bg-dark");
+
+                iconPrize.classList.add("d-flex-row");
+                iconPrize.classList.remove("d-xs-none");
+            } else {
+                artistTopbarName.classList.add("d-xs-none");
+                artistTopbarName.classList.remove("d-flex-row");
+
+                navBar.classList.remove("bg-dark");
+
+                iconPrize.classList.add("d-xs-none");
+                iconPrize.classList.remove("d-flex-row");            
+            }        
+        })
+
+        let competeButton = document.getElementById("compete-button");
+        let connectSocialsPanel = document.getElementById("connect-socials-panel");
+        let closeModal = document.getElementById("close-modal");
+        competeButton.addEventListener("click", () => {
+            connectSocialsPanel.classList.remove("bottom-hidden");
+            connectSocialsPanel.classList.add("bottom-appbar");
+            // setTimeout(() => {
+            //     connectSocialsPanel.classList.remove("bottom-appbar");
+            //     connectSocialsPanel.classList.add("bottom-hidden");
+            // }, 10000)
+        })
+        closeModal.addEventListener("click", () => {
+            connectSocialsPanel.classList.remove("bottom-appbar");
+            connectSocialsPanel.classList.add("bottom-hidden");
+        })
+    </script>
+</html>
