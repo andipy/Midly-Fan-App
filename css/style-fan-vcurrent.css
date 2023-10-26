@@ -807,6 +807,9 @@ li {
 .bottom-0 {
     bottom: -1px;
 }
+.bottom-2 {
+    bottom: 2%;
+}
 .bottom-5 {
     bottom: 5%;
 }
